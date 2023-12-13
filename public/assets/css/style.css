@@ -6609,8 +6609,12 @@ h6, .h6 {
   position: absolute; }
   .price-shapes .shape.one {
     left: 0;
-    bottom: 7%;
-    max-width: 35%; }
+    bottom: 100%;
+    max-width: 200%;
+    border-style: none;
+  
+  }
+
   .price-shapes .shape.two {
     top: 0;
     right: 0;

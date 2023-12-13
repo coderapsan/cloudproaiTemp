@@ -14,7 +14,6 @@ const Pricing = () => {
       .then((response) => response.json())
       .then((parsed) => {
 
-        console.log("helloooooooooooooooooooooo",parsed);
         setCloudServices(parsed);
       })
       .catch((error) => {
@@ -31,7 +30,7 @@ const Pricing = () => {
       .then((response) => response.json())
       .then((parsed) => {
         setDataServices(parsed);
-        console.log("helloooooooo",parsed)
+        console.log("helloooooooo", parsed);
       })
       .catch((error) => {
         console.error("Error fetching services:", error);
@@ -56,7 +55,7 @@ const Pricing = () => {
   return (
     <Layout>
       ,
-      <PageBanner pageName={"Services"} />{" "}
+      <PageBanner pageName={"Services"} />{" Services "}
       <section className="price-plan-page-top pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
@@ -71,12 +70,12 @@ const Pricing = () => {
                   <h4 className="title">Data Engineering</h4>
                 </Link>
 
-                <span className="price-count">5 Services Included</span>
-                <span className="price">29.85</span>
+                <span className="price-count">7 Services Included</span>
+                {/* <span className="price">29.85</span> */}
                 <h5>This Servicces Included :</h5>
 
                 <ul>
-                  {dataServices.slice(0,5).map((service) => (
+                  {dataServices.slice(0, 5).map((service) => (
                     <li key={service.slug}>
                       <Link href={`/services/dataengineering/${service.slug}`}>
                         <h3>{service.title}</h3>
@@ -122,25 +121,28 @@ const Pricing = () => {
             <div className="col-xl-4 col-md-6">
               <div className="pricing-plan-item style-three wow fadeInUp delay-0-4s">
                 <span className="badge">Best Package</span>
-                <h4 className="title">Generative AI and ML</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">49.64</span>
-                <h5>This Plan Included :</h5>
-                
-                  <ul>
-                    {aiServices.slice(0,5).map((service) => (
-                      <li key={service.slug}>
-                        <Link
-                          href={`/services/generativeaiandml/${service.slug}`}
-                        >
-                          <h3>{service.title}</h3>
-                        </Link>
+                <Link href="/services/generativeaiandml">
+                  <h4 className="title">Generative AI and ML</h4>
+                </Link>
 
-                        {/* <p>{service.description}</p> */}
-                      </li>
-                    ))}
-                  </ul>
-                
+                <span className="price-count">7 Services Included</span>
+                {/* <span className="price">49.64</span> */}
+                <h5>This Plan Included :</h5>
+
+                <ul>
+                  {aiServices.slice(0, 3).map((service) => (
+                    <li key={service.slug}>
+                      <Link
+                        href={`/services/generativeaiandml/${service.slug}`}
+                      >
+                        <h3>{service.title}</h3>
+                      </Link>
+
+                      {/* <p>{service.description}</p> */}
+                    </li>
+                  ))}
+                </ul>
+
                 <Link legacyBehavior href="/services/generativeaiandml">
                   <a className="theme-btn style-two">
                     View More <i className="fas fa-long-arrow-right" />
@@ -151,27 +153,29 @@ const Pricing = () => {
             <div className="col-xl-4 col-md-6">
               <div className="pricing-plan-item style-three wow fadeInUp delay-0-6s">
                 <span className="badge">Best Package</span>
-                <h4 className="title">Cloud Engineering </h4>
+                <Link href="/services/cloudengineering">
+                  <h4 className="title">Cloud Engineering </h4>
+                </Link>
+
                 <span className="price-count">7 Services Included</span>
-                <span className="price">98.73</span>
+                {/* <span className="price">98.73</span> */}
                 <h5>This Plan Included :</h5>
                 <ul>
-                    {cloudServices.slice(0,5).map((service) => (
-                      <li key={service.slug}>
-                        <Link
-                          href={`/services/cloudengineering/${service.slug}`}
-                        >
-                          <h3>{service.title}</h3>
-                        </Link>
+                  {cloudServices.slice(0, 5).map((service) => (
+                    <li key={service.slug}>
+                      <Link href={`/services/cloudengineering/${service.slug}`}>
+                        <h3>{service.title}</h3>
+                      </Link>
 
-                        {/* <p>{service.description}</p> */}
-                      </li>
-                    ))}
-                  </ul>
-                
+                      {/* <p>{service.description}</p> */}
+                    </li>
+                  ))}
+                </ul>
+
                 <Link legacyBehavior href="../services/cloudengineering">
                   <a className="theme-btn style-two">
-                    Show More<i className="fas fa-long-arrow-right" />
+                    Show More
+                    <i className="fas fa-long-arrow-right" />
                   </a>
                 </Link>
               </div>
@@ -188,17 +192,25 @@ const Pricing = () => {
               <div className="col-xl-4 col-lg-8 col-md-10">
                 <div className="pricing-tab-wrap mt-75 wow fadeInUp delay-0-2s">
                   <div className="section-title mb-25">
-                    <span className="sub-title mb-15">
-                      Amazing Pricing Plan
-                    </span>
-                    <h2>Affordable Pricing Packages</h2>
+                    <Link href="/services/cloudengineering">
+                      <span className="sub-title mb-15">Cloud Engineering</span>
+                    </Link>
+
+                    <h2>Establshing The Most Effective Environment</h2>
                   </div>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus voluptate
-                    accusantium doloremque laudantium totam aperaus abillo
-                    inventore veritatis quasi architecto
+                    Cloud Engineering emerges as the cornerstone for
+                    establishing highly efficient and scalable environments. It
+                    goes beyond conventional infrastructure management,
+                    introducing a paradigm shift by harnessing the power of
+                    cloud services.
                   </p>
-                  <Nav as="ul" className="nav pricing-tab mt-15" role="tablist">
+                  <Link href="/services/cloudengineering">
+                    <span className="sub-title mb-10">
+                      More Cloud Engineering Services
+                    </span>
+                  </Link>
+                  {/* <Nav as="ul" className="nav pricing-tab mt-15" role="tablist">
                     <li>
                       <Nav.Link
                         as="button"
@@ -219,10 +231,10 @@ const Pricing = () => {
                         Yearly <i className="fas fa-long-arrow-right" />
                       </Nav.Link>
                     </li>
-                  </Nav>
+                  </Nav> */}
                 </div>
               </div>
-              <div className="col-xl-8">
+              {/* <div className="col-xl-8">
                 <Tab.Content className="tab-content wow fadeInUp delay-0-4s">
                   <Tab.Pane className="tab-pane fade" eventKey="monthly">
                     <div className="row">
@@ -401,10 +413,29 @@ const Pricing = () => {
                     </div>
                   </Tab.Pane>
                 </Tab.Content>
-              </div>
+              </div> */}
             </div>
           </Tab.Container>
         </div>
+        <div className="price-page-shapes">
+          <img
+            className="shape one"
+            src="assets/images/shapes/cloud1.png"
+            alt="Shape"
+          />
+           <img
+            className="shape one"
+            src="assets/images/shapes/cloud1.png"
+            alt="Shape"
+          />
+          {/* <img
+            className="shape two"
+            // src="assets/images/shapes/997.png"
+            alt="Shape"
+          /> */}
+        </div>
+      </section>
+      <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="price-page-shapes">
           <img
             className="shape one"
@@ -413,165 +444,142 @@ const Pricing = () => {
           />
           <img
             className="shape two"
-            src="assets/images/shapes/price-page-right.png"
+            src="assets/images/shapes/cloud.png"
+            alt="Shape"
+          />
+        </div>
+        <div className="container">
+          <Tab.Container defaultActiveKey="monthly">
+            <div className="row">
+              <div className="col-xl-4 col-lg-8 col-md-10">
+                <div className="pricing-tab-wrap mt-75 wow fadeInUp delay-0-2s">
+                  <div className="section-title mb-25">
+                    <Link href="/services/dataengineering">
+                      <span className="sub-title mb-15">Data Engineering</span>
+                    </Link>
+
+                    <h2>Unleashing the Power of Data</h2>
+                  </div>
+                  <p>
+                    Empowering businesses through innovative data engineering
+                    solutions, we transform raw data into actionable
+                    intelligence, paving the way for a future-driven world. Join
+                    us on the journey of harnessing the power of data for
+                    unparalleled insights and strategic decision-making
+                  </p>
+
+                  <Link href="/services/dataengineering">
+                    <span className="sub-title mb-15">
+                      More Data Engineering Services
+                    </span>
+                  </Link>
+                  {/* <Nav as="ul" className="nav pricing-tab mt-15" role="tablist">
+                    <li>
+                      <Nav.Link
+                        as="button"
+                        className="nav-link"
+                        data-bs-toggle="tab"
+                        eventKey="monthly"
+                      >
+                        Monthly <i className="fas fa-long-arrow-right" />
+                      </Nav.Link>
+                    </li>
+                    <li>
+                      <Nav.Link
+                        as="button"
+                        className="nav-link"
+                        data-bs-toggle="tab"
+                        eventKey="yearly"
+                      >
+                        Yearly <i className="fas fa-long-arrow-right" />
+                      </Nav.Link>
+                    </li>
+                  </Nav> */}
+                </div>
+              </div>
+            </div>
+          </Tab.Container>
+        </div>
+      </section>
+      <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+        <div className="container">
+          <Tab.Container defaultActiveKey="monthly">
+            <div className="row">
+              <div className="col-xl-4 col-lg-8 col-md-10">
+                <div className="pricing-tab-wrap mt-75 wow fadeInUp delay-0-2s">
+                  <div className="section-title mb-25">
+                    <Link href="/services/generativeaiandml">
+                      <span className="sub-title mb-15">
+                        Generative AI And ML
+                      </span>
+                    </Link>
+                    <h2>Igniting The Creativity And Amplifying Intelligence</h2>
+                  </div>
+                  <p>
+                    In a realm where artificial intelligence converges with
+                    machine learning, a transformative synergy emerges, giving
+                    birth to Generative AI and ML. This dynamic duo not only
+                    learns from data but creates, opening doors to unprecedented
+                    possibilities. Join us as we delve into the realm of
+                    innovation, exploring the seamless integration of Generative
+                    AI and ML
+                  </p>
+                  <Link href="/services/generativeaiandml">
+                    <span className="sub-title mb-15">
+                      More Generative AI And ML Services
+                    </span>
+                  </Link>
+                  {/* <Nav as="ul" className="nav pricing-tab mt-15" role="tablist">
+                    <li>
+                      <Nav.Link
+                        as="button"
+                        className="nav-link"
+                        data-bs-toggle="tab"
+                        eventKey="monthly"
+                      >
+                        Monthly <i className="fas fa-long-arrow-right" />
+                      </Nav.Link>
+                    </li>
+                    <li>
+                      <Nav.Link
+                        as="button"
+                        className="nav-link"
+                        data-bs-toggle="tab"
+                        eventKey="yearly"
+                      >
+                        Yearly <i className="fas fa-long-arrow-right" />
+                      </Nav.Link>
+                    </li>
+                  </Nav> */}
+                </div>
+              </div>
+            </div>
+          </Tab.Container>
+        </div>
+        <div className="price-page-shapes">
+          {/* <img
+            className="shape one"
+            src="assets/images/shapes/aimlright.png"
+
+
+            alt="Shape"
+          /> */}
+          <img
+            className="shape two"
+            src="assets/images/shapes/aimlright.png"
+            
+            alt="Shape"
+          />
+          <img
+            className="shape two"
+            src="assets/images/shapes/aimlright.png"
+            
             alt="Shape"
           />
         </div>
       </section>
       {/* Pricing Plan Area end */}
       {/* Pricing Plan Area start */}
-      <section className="price-plan-page-bottom pt-130 rpt-100 pb-100 rpb-70 rel z-1">
-        <div className="container">
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Amazing Pricing Plan</span>
-            <h2>Affordable Pricing Packages</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-2s">
-                <h4 className="title">Basic Plan</h4>
-                <span className="price-count">5 Services Included</span>
-                <span className="price">0.0</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <br />
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Quality Supports</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Design</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">Market Research</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-2s">
-                <h4 className="title">Standard Plan</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">19.5</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <br />
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Quality Supports</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Design</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Mobile Applications</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-2s">
-                <h4 className="title">silver Plan</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">48.6</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <br />
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Quality Supports</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Design</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Mobile Applications</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-2s">
-                <h4 className="title">golden Plan</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">99.3</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <br />
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Quality Supports</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Design</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Mobile Applications</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
