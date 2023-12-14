@@ -1,64 +1,39 @@
-// import React, { useEffect, useState } from "react";
-// import Link from "next/link";
-
-// const Index = () => {
-//   const [services, setServices] = useState([]);
-//   console.log("services", services)
-
-//   useEffect(() => {
-//     console.log("useEffect is running ");
-
-//     fetch(window.origin +"/api/services/dataengineering/services")
-//       .then((response) => response.json())
-//       .then((parsed) => {
-//         setServices(parsed);
-//       })
-//       .catch((error) => {
-//         console.error("Error fetching services:", error);
-//       });
-//   }, []);
-
-//   return (
-//     <div>
-//       <h2>Data Engineering Landing Page</h2>
-//       {services && services.slice(0,3).map((service) => (
-//         <div key={service.slug}>
-//           <Link href={`/services/generativeaiandml/${service.slug}`}>
-//             <h3>{service.title}</h3>
-//           </Link>
-
-//           <p>{service.description}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
 
 
-
-// export default Index;
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import { JeenaAccordion2 } from "@/src/components/JeenaAccordion";
-import Link from "next/link";
+// import Link from "next/link";
+const Index = () => {
+  const [services, setServices] = useState([]);
 
-const ServiceDetails = () => {
-  const accordionData = [
-    { id: 1, title: "Why Get Our IT Services ?" },
-    { id: 2, title: "BestTeam Member Provider ?" },
-    { id: 3, title: "Leanr About Our Company ?" },
-    { id: 4, title: "Payment Method ?" },
-  ];
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/generativeaiandml/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
   return (
+    
     <Layout>
-      <PageBanner pageName={"Service Details"} />
+      <PageBanner pageName={"Generative AI And ML"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Web Design &amp; Development</h2>
+                  <h2>Generative AI And ML</h2>
+                 
                 </div>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -76,7 +51,7 @@ const ServiceDetails = () => {
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
-                    src="assets/images/services/service-details.jpg"
+                    src="/assets/images/services/service-details.jpg"
                     alt="Service Details"
                   />
                 </div>
@@ -109,7 +84,7 @@ const ServiceDetails = () => {
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
                     <div className="image">
                       <img
-                        src="assets/images/services/service-middle.jpg"
+                        src="/assets/images/services/service-middle.jpg"
                         alt="Service"
                       />
                     </div>
@@ -128,7 +103,7 @@ const ServiceDetails = () => {
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
                   id="faq-accordion"
                 >
-                  <JeenaAccordion2 accordionsData={accordionData} />
+                  {/* <JeenaAccordion2 accordionsData={accordionData} /> */}
                 </div>
               </div>
             </div>
@@ -137,43 +112,26 @@ const ServiceDetails = () => {
                 <div className="widget widget-category wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Services Category</h4>
                   <ul>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        IT Consulting
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Product Design
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Web Design
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        SEO Optimization
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Web Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        UI/UX Strategy
-                      </Link>
-                    </li>
+                    {services.map((service) => (
+                      <div key={service.slug}>
+                        <li>
+                          <Link
+                            href={`/services/generativeaiandml/${service.slug}`}
+                          >
+                            {service.title}
+                          </Link>
+                        </li>
+
+                        {/* <p>{service.description.slice(0.10)}</p> */}
+                      </div>
+                    ))}
                   </ul>
                 </div>
                 <div
                   className="widget widget-cta"
                   style={{
                     backgroundImage:
-                      "url(assets/images/widgets/cta-widget-bg.jpg)",
+                      "url(/assets/images/widgets/cta-widget-bg.jpg)",
                   }}
                 >
                   <span className="h5">Let's Work Together</span>
@@ -189,7 +147,7 @@ const ServiceDetails = () => {
                   </a>
                   <img
                     className="bg-shape"
-                    src="assets/images/widgets/cta-bg-lines.png"
+                    src="/assets/images/widgets/cta-bg-lines.png"
                     alt="Shape"
                   />
                 </div>
@@ -222,7 +180,7 @@ const ServiceDetails = () => {
             <div className="next-prev-item wow fadeInLeft delay-0-2s">
               <div className="image">
                 <img
-                  src="assets/images/services/service-prev.jpg"
+                  src="/assets/images/services/service-prev.jpg"
                   alt="Service"
                 />
               </div>
@@ -268,4 +226,5 @@ const ServiceDetails = () => {
     </Layout>
   );
 };
-export default ServiceDetails;
+
+export default Index;

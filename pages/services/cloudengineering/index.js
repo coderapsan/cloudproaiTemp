@@ -48,7 +48,7 @@ const Index = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin + "/api/services/dataengineering/services")
+    fetch(window.origin + "/api/services/cloudengineering/services")
       .then((response) => response.json())
       .then((parsed) => {
         setServices(parsed);
@@ -72,7 +72,7 @@ const Index = () => {
     //   ))}
     // </div>
     <Layout>
-      <PageBanner pageName={"Service Details"} />
+      <PageBanner pageName={"Cloud Engineering"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
@@ -80,10 +80,7 @@ const Index = () => {
               <div className="service-details-content">
                 <div className="section-title mb-30">
                   <h2>Web Design &amp; Development</h2>
-                  <img
-                    src="/assets/images/logos/1.png"
-                    alt="hello photo "
-                  ></img>
+                  
                 </div>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem

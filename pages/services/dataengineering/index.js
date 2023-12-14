@@ -1,516 +1,277 @@
+// import React, { useEffect, useState } from "react";
+// import Link from "next/link";
+
+// const Index = () => {
+//   const [services, setServices] = useState([]);
+//   console.log("services", services)
+
+//   useEffect(() => {
+//     console.log("useEffect is running ");
+
+//     fetch(window.origin +"/api/services/dataengineering/services")
+//       .then((response) => response.json())
+//       .then((parsed) => {
+//         setServices(parsed);
+//       })
+//       .catch((error) => {
+//         console.error("Error fetching services:", error);
+//       });
+//   }, []);
+
+//   return (
+//     <div>
+//       <h2>Data Engineering Landing Page</h2>
+//       {services && services.map((service) => (
+//         <div key={service.slug}>
+//           <Link href={`/services/dataengineering/${service.slug}`}>
+//             <h3>{service.title}</h3>
+//           </Link>
+
+//           <p>{service.description}</p>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Index;
+
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
-import Link from "next/link";
+import { JeenaAccordion2 } from "@/src/components/JeenaAccordion";
+// import Link from "next/link";
+const Index = () => {
+  const [services, setServices] = useState([]);
 
-const Shop = () => {
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/dataengineering/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
   return (
+    // <div>
+    //   <h2>Data Engineering Landing Page</h2>
+    //   {services.map((service) => (
+    //     <div key={service.slug}>
+    //       <Link href={`/services/cloudengineering/${service.slug}`}>
+    //         <h3>{service.title}</h3>
+    //       </Link>
+
+    //       <p>{service.description}</p>
+    //     </div>
+    //   ))}
+    // </div>
     <Layout>
-      <PageBanner pageName={"Shop"} />
-      <section className="shop-page-area py-130 rpy-100">
+      <PageBanner pageName={"Data Engineering"} />
+      <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
-          <div className="shop-shorter rel z-3 mb-45 wow fadeInUp delay-0-2s">
-            <a className="filter-part" href="#">
-              <i className="fal fa-bars" />
-              <span>Show Filters</span>
-            </a>
-            <div className="sort-text">Showing 1–12 of 30 results</div>
-            <div className="products-dropdown">
-              <select>
-                <option value="default" selected="">
-                  Default Shorting
-                </option>
-                <option value="New">Sort by Newness</option>
-                <option value="old">Sort by Oldest</option>
-                <option value="hight-to-low">High To Low</option>
-                <option value="low-to-high">Low To High</option>
-              </select>
-            </div> 
-            <ul className="grid-list">
-              <li>
-                <a href="#">
-                  <i className="fal fa-border-all" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="far fa-list" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="row gap-60">
-            <div className="col-lg-3">
-              <div className="shop-sidebar rmb-75">
-                <div className="widget widget-search wow fadeInUp delay-0-2s">
-                  <form
-                    onSubmit={(e) => e.preventDefault()}
-                    action="#"
-                    className="default-search-form"
-                  >
-                    <input type="text" placeholder="Search Keywords" required />
-                    <button
-                      type="submit"
-                      className="searchbutton far fa-search"
-                    />
-                  </form>
+          <div className="row gap-100">
+            <div className="col-lg-8">
+              <div className="service-details-content">
+                <div className="section-title mb-30">
+                  <h2>Web Design &amp; Development</h2>
+                  
                 </div>
-                <div className="widget widget-category wow fadeInUp delay-0-4s">
-                  <h5 className="widget-title">Category</h5>
-                  <ul>
-                    <li>
-                      <Link legacyBehavior href="shop">
-                        Book Cover
-                      </Link>{" "}
-                      <span>(8)</span>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="shop">
-                        Logo Branding
-                      </Link>{" "}
-                      <span>(5)</span>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="shop">
-                        T-Shart Design
-                      </Link>{" "}
-                      <span>(3)</span>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="shop">
-                        Business Cards
-                      </Link>{" "}
-                      <span>(9)</span>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="shop">
-                        Web Design
-                      </Link>{" "}
-                      <span>(4)</span>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="shop">
-                        Landing Pages
-                      </Link>{" "}
-                      <span>(6)</span>
-                    </li>
-                  </ul>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudtium totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis quasi architecto beatae vitae
+                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                  sit aspernatur aut odit au fugit sed quia consequuntur magni
+                  dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                  quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius modi
+                  tempora incidunt ut labore et dolore magnam aliquam quaerat
+                  voluptatem. Ut ene minima veniam, quis nostrum exercitationem
+                  ullam corporis suscipit laboriosam aliquid exea commodi
+                  consequatur
+                </p>
+                <div className="image my-40 wow fadeInUp delay-0-2s">
+                  <img
+                    src="/assets/images/services/service-details.jpg"
+                    alt="Service Details"
+                  />
                 </div>
-                <div className="widget widget-products wow fadeInUp delay-0-2s">
-                  <h5 className="widget-title">Best Seller</h5>
-                  <ul>
-                    <li>
-                      <div className="image">
-                        <img
-                          src="assets/images/widgets/product1.jpg"
-                          alt="Product"
-                        />
-                      </div>
-                      <div className="content">
-                        <div className="ratting">
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                        </div>
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Logo Design
-                          </Link>
-                        </h5>
-                        <span className="price">$29.95</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="image">
-                        <img
-                          src="assets/images/widgets/product2.jpg"
-                          alt="Product"
-                        />
-                      </div>
-                      <div className="content">
-                        <div className="ratting">
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                        </div>
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Mobile Apps
-                          </Link>
-                        </h5>
-                        <span className="price">$29.95</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="image">
-                        <img
-                          src="assets/images/widgets/product3.jpg"
-                          alt="Product"
-                        />
-                      </div>
-                      <div className="content">
-                        <div className="ratting">
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                          <i className="fas fa-star" />
-                        </div>
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Business Card
-                          </Link>
-                        </h5>
-                        <span className="price">$29.95</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div className="widget widget-tag-cloud wow fadeInUp delay-0-2s">
-                  <h5 className="widget-title">Popular Tags</h5>
-                  <div className="tag-coulds">
-                    <Link legacyBehavior href="blog">
-                      Printing
-                    </Link>
-                    <Link legacyBehavior href="blog">
-                      Design
-                    </Link>
-                    <Link legacyBehavior href="blog">
-                      Ofset
-                    </Link>
-                    <Link legacyBehavior href="blog">
-                      Branding
-                    </Link>
-                    <Link legacyBehavior href="blog">
-                      3D Printing
-                    </Link>
+                <div className="row">
+                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <h3>We Provide Best IT Services to Growth you Business</h3>
                   </div>
+                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                    <ul className="list-style-one">
+                      <li>Comprehensive UI/UX Assessment</li>
+                      <li>Deep Contextual Research &amp; Planning</li>
+                      <li>Wireframing &amp; Prototyping</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="row pb-30">
+                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                    <p>
+                      Aperiam eaque ipsa quae ab illo inventore veritatis quasi
+                      architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit au
+                      fugit sed quia consequuntur magni dolores eos qui ratione
+                      voluptatem sequi nesciunt. Neque quisquam est, qui dolorem
+                      ipsum quia dolor sit amet, consectetur, adipisci velit,
+                      sed quia non numquam eius modi tempora incidunt ut labore
+                      et dolore magnam aliquam quaerat voluptatem minima
+                      veniamla
+                    </p>
+                  </div>
+                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                    <div className="image">
+                      <img
+                        src="/assets/images/services/service-middle.jpg"
+                        alt="Service"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <h3>Service Management</h3>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit au fugit sed quia consequun tur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque quisquam est, qui
+                  dolorem epsum quia dolor sit amet, consectetur, adipisci
+                  velit, sed quia non numquam eius modi tempora sncidunt ut
+                  labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+                <div
+                  className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
+                  id="faq-accordion"
+                >
+                  {/* <JeenaAccordion2 accordionsData={accordionData} /> */}
                 </div>
               </div>
             </div>
-            <div className="col-lg-9">
-              <div className="row">
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-2s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product1.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Mockup Design
+            <div className="col-lg-4">
+              <div className="service-sidebar">
+                <div className="widget widget-category wow fadeInUp delay-0-2s">
+                  <h4 className="widget-title">Services Category</h4>
+                  <ul>
+                    {services.map((service) => (
+                      <div key={service.slug}>
+                        <li>
+                          <Link
+                            href={`/services/cloudengineering/${service.slug}`}
+                          >
+                            {service.title}
                           </Link>
-                        </h5>
-                        <div className="price">35.98</div>
+                        </li>
+
+                        {/* <p>{service.description.slice(0.10)}</p> */}
                       </div>
-                    </div>
-                  </div>
+                    ))}
+                  </ul>
                 </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-4s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product2.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Virtual Reality Glass
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
+                <div
+                  className="widget widget-cta"
+                  style={{
+                    backgroundImage:
+                      "url(/assets/images/widgets/cta-widget-bg.jpg)",
+                  }}
+                >
+                  <span className="h5">Let's Work Together</span>
+                  <h2>IT Service Agency</h2>
+                  <Link legacyBehavior href="/contact">
+                    <a className="theme-btn style-four">
+                      Contact Us <i className="fas fa-angle-double-right" />
+                    </a>
+                  </Link>
+                  <br />
+                  <a href="callto:+000(123)45688" className="number">
+                    <i className="fas fa-phone" /> +000 (123) 456 88
+                  </a>
+                  <img
+                    className="bg-shape"
+                    src="/assets/images/widgets/cta-bg-lines.png"
+                    alt="Shape"
+                  />
                 </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-6s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product3.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Orange Float Vest
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-2s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product4.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Colourful Water Gun
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-4s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product5.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Trendy Shoe Color
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-6s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product6.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Trendy Shoe Color
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-2s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product7.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Men Winter Dress
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-4s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product8.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Little StylishWatch
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item wow fadeInUp delay-0-6s">
-                    <div className="image">
-                      <img
-                        src="assets/images/shop/product9.jpg"
-                        alt="Product"
-                      />
-                      <div className="social-style-two">
-                        <a href="#">
-                          <i className="far fa-shopping-cart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-heart" />
-                        </a>
-                        <a href="#">
-                          <i className="far fa-eye" />
-                        </a>
-                      </div>
-                    </div>
-                    <div className="content">
-                      <div className="title-price">
-                        <h5>
-                          <Link legacyBehavior href="product-details">
-                            Headphones Head
-                          </Link>
-                        </h5>
-                        <div className="price">35.98</div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="widget widget-download wow fadeInUp delay-0-2s">
+                  <h4 className="widget-title">Download</h4>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Download pdf <i className="far fa-file-pdf" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Download doc <i className="far fa-file-word" />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <ul className="pagination flex-wrap wow fadeInUp delay-0-2s">
-                <li className="page-item disabled">
-                  <span className="page-link">
-                    <i className="fas fa-chevron-left" />
-                  </span>
-                </li>
-                <li className="page-item active">
-                  <span className="page-link">
-                    01
-                    <span className="sr-only">(current)</span>
-                  </span>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    02
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    03
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    04
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">
-                    <i className="fas fa-chevron-right" />
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
+      {/* Service Details Area end */}
+      {/* Next Prev Service start */}
+      <div className="next-prev-service pb-80 rpb-50">
+        <div className="container">
+          <hr />
+          <div className="next-prev-service mt-80">
+            <div className="next-prev-item wow fadeInLeft delay-0-2s">
+              <div className="image">
+                <img
+                  src="/assets/images/services/service-prev.jpg"
+                  alt="Service"
+                />
+              </div>
+              <div className="content">
+                <h4>
+                  <Link legacyBehavior href="service-details">
+                    Product Engineering
+                  </Link>
+                </h4>
+                <Link legacyBehavior href="/service-details">
+                  <a className="read-more">
+                    Read More <i className="fal fa-angle-double-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <Link legacyBehavior href="/services2">
+              <a className="show-all" />
+            </Link>
+            <div className="next-prev-item wow fadeInRight delay-0-2s">
+              <div className="content">
+                <h4>
+                  <Link legacyBehavior href="service-details">
+                    Cyber Security
+                  </Link>
+                </h4>
+                <Link legacyBehavior href="/service-details">
+                  <a className="read-more">
+                    Read More <i className="fal fa-angle-double-right" />
+                  </a>
+                </Link>
+              </div>
+              <div className="image">
+                <img
+                  src="/assets/images/services/service-next.jpg"
+                  alt="Service"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
-export default Shop;
+
+export default Index;
