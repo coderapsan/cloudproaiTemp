@@ -50,7 +50,7 @@ const Footer = () => {
               {/* <div className="footer-logo mb-30"> */}
                 <Link legacyBehavior href="/">
                   <a>
-                    <img  src="assets/images/logos/cloudpro.png" alt="Logo" />
+                    <img  src="/assets/images/logos/cloudpro.png" alt="Logo" />
                   </a>
                 </Link>
               {/* </div> */}

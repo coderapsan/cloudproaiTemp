@@ -161,7 +161,7 @@ const Pricing = () => {
                 {/* <span className="price">98.73</span> */}
                 <h5>This Plan Included :</h5>
                 <ul>
-                  {cloudServices.slice(0, 5).map((service) => (
+                  {cloudServices.slice(0, 3).map((service) => (
                     <li key={service.slug}>
                       <Link href={`/services/cloudengineering/${service.slug}`}>
                         <h3>{service.title}</h3>

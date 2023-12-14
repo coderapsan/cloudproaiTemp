@@ -48,7 +48,7 @@ const Index = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin +"/api/services/cloudengineering/services")
+    fetch(window.origin + "/api/services/dataengineering/services")
       .then((response) => response.json())
       .then((parsed) => {
         setServices(parsed);
@@ -80,9 +80,10 @@ const Index = () => {
               <div className="service-details-content">
                 <div className="section-title mb-30">
                   <h2>Web Design &amp; Development</h2>
-                  <img src="/assets/images/logos/1.png" alt="hello photo ">
-
-                  </img>
+                  <img
+                    src="/assets/images/logos/1.png"
+                    alt="hello photo "
+                  ></img>
                 </div>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -161,36 +162,19 @@ const Index = () => {
                 <div className="widget widget-category wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Services Category</h4>
                   <ul>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        IT Consulting
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Product Design
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Web Design
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        SEO Optimization
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Web Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        UI/UX Strategy
-                      </Link>
-                    </li>
+                    {services.map((service) => (
+                      <div key={service.slug}>
+                        <li>
+                          <Link
+                            href={`/services/cloudengineering/${service.slug}`}
+                          >
+                            {service.title}
+                          </Link>
+                        </li>
+
+                        {/* <p>{service.description.slice(0.10)}</p> */}
+                      </div>
+                    ))}
                   </ul>
                 </div>
                 <div
@@ -290,7 +274,6 @@ const Index = () => {
         </div>
       </div>
     </Layout>
-
   );
 };
 

@@ -8,7 +8,7 @@ const Slug = () => {
 
   useEffect(() => {
     if (slug) {
-      fetch(`http://localhost:3000/api/services/dataengineering/getservice?slug=${slug}`)
+      fetch(window.origin+`/api/services/dataengineering/getservice?slug=${slug}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
