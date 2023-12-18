@@ -10,7 +10,7 @@ const Pricing = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch("http://localhost:3000/api/services/cloudengineering/services")
+    fetch(window.origin+'/api/services/cloudengineering/services')
       .then((response) => response.json())
       .then((parsed) => {
 

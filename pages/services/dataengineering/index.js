@@ -79,22 +79,19 @@ const Index = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Web Design &amp; Development</h2>
-                  
+                  <h2>
+                    The Crucial Role of Data Engineering in Modern Business
+                  </h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudtium totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                  sit aspernatur aut odit au fugit sed quia consequuntur magni
-                  dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                  quisquam est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci velit, sed quia non numquam eius modi
-                  tempora incidunt ut labore et dolore magnam aliquam quaerat
-                  voluptatem. Ut ene minima veniam, quis nostrum exercitationem
-                  ullam corporis suscipit laboriosam aliquid exea commodi
-                  consequatur
+                  In the rapidly evolving landscape of technology and business,
+                  the importance of effective data management cannot be
+                  overstated. As organizations grapple with massive amounts of
+                  data generated every second, the role of data engineering has
+                  become pivotal in ensuring that this data is not just
+                  collected but transformed into actionable insights. In this
+                  article, we delve into the world of data engineering and its
+                  significance in modern business operations.
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -104,7 +101,7 @@ const Index = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>We Provide Best IT Services to Growth you Business</h3>
+                    <h3>What is Data Engineering?</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
@@ -117,15 +114,15 @@ const Index = () => {
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Aperiam eaque ipsa quae ab illo inventore veritatis quasi
-                      architecto beatae vitae dicta sunt explicabo. Nemo enim
-                      ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      fugit sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque quisquam est, qui dolorem
-                      ipsum quia dolor sit amet, consectetur, adipisci velit,
-                      sed quia non numquam eius modi tempora incidunt ut labore
-                      et dolore magnam aliquam quaerat voluptatem minima
-                      veniamla
+                      Data engineering is a multidisciplinary field that
+                      involves designing, developing, and managing the
+                      architecture that allows organizations to process and
+                      analyze vast amounts of data. It encompasses a variety of
+                      tasks, including data collection, data transformation,
+                      data storage, and data retrieval. The ultimate goal of
+                      data engineering is to provide a solid foundation for data
+                      scientists and analysts to derive meaningful insights from
+                      raw data.
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -137,14 +134,12 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <h3>Service Management</h3>
+                <h3>Why Choose CloudPro AI?</h3>
+                <h4>Expertise</h4>
                 <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit au fugit sed quia consequun tur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque quisquam est, qui
-                  dolorem epsum quia dolor sit amet, consectetur, adipisci
-                  velit, sed quia non numquam eius modi tempora sncidunt ut
-                  labore et dolore magnam aliquam quaerat voluptatem.
+                  Our team consists of seasoned data engineers with a deep
+                  understanding of the latest technologies and best practices in
+                  data engineering.
                 </p>
                 <div
                   className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
@@ -233,28 +228,28 @@ const Index = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="service-details">
-                    Product Engineering
+                  <Link legacyBehavior href="/services/cloudengineering">
+                    Cloud Engineering
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/service-details">
+                <Link legacyBehavior href="/services/cloudengineering">
                   <a className="read-more">
                     Read More <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
             </div>
-            <Link legacyBehavior href="/services2">
+            <Link legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="service-details">
-                    Cyber Security
+                  <Link legacyBehavior href="services/generativeaiandml">
+                    Generative AI And ML
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/service-details">
+                <Link legacyBehavior href="/services/genrativeaiandml">
                   <a className="read-more">
                     Read More <i className="fal fa-angle-double-right" />
                   </a>

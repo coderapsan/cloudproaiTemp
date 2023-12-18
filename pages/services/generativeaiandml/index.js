@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
@@ -23,7 +21,6 @@ const Index = () => {
   }, []);
 
   return (
-    
     <Layout>
       <PageBanner pageName={"Generative AI And ML"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
@@ -32,22 +29,16 @@ const Index = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Generative AI And ML</h2>
-                 
+                  <h2>Generative AI and Machine Learning Services</h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudtium totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                  sit aspernatur aut odit au fugit sed quia consequuntur magni
-                  dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                  quisquam est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci velit, sed quia non numquam eius modi
-                  tempora incidunt ut labore et dolore magnam aliquam quaerat
-                  voluptatem. Ut ene minima veniam, quis nostrum exercitationem
-                  ullam corporis suscipit laboriosam aliquid exea commodi
-                  consequatur
+                  Unlock the Power of Intelligent Creation with CloudPro AI In
+                  the era of data-driven innovation, Generative Artificial
+                  Intelligence (AI) and Machine Learning (ML) stand at the
+                  forefront of transformative technologies. CloudPro AI is your
+                  strategic partner in harnessing the full potential of
+                  Generative AI and ML to revolutionize the way you approach
+                  problem-solving, creativity, and decision-making.
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -57,28 +48,32 @@ const Index = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>We Provide Best IT Services to Growth you Business</h3>
+                    <h3>What is Generative AI and ML?</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Comprehensive UI/UX Assessment</li>
-                      <li>Deep Contextual Research &amp; Planning</li>
-                      <li>Wireframing &amp; Prototyping</li>
+                      <li>Creativity Enhancement</li>
+                      <li>Efficiency and Automation</li>
+                      <li>Data-Driven Decision Making</li>
+                      <li>Personalization</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Aperiam eaque ipsa quae ab illo inventore veritatis quasi
-                      architecto beatae vitae dicta sunt explicabo. Nemo enim
-                      ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      fugit sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque quisquam est, qui dolorem
-                      ipsum quia dolor sit amet, consectetur, adipisci velit,
-                      sed quia non numquam eius modi tempora incidunt ut labore
-                      et dolore magnam aliquam quaerat voluptatem minima
-                      veniamla
+                      Generative AI refers to systems that have the capacity to
+                      autonomously create content, whether it be text, images,
+                      videos, or other forms of data. Unlike traditional AI
+                      models that operate based on predefined rules, generative
+                      models utilize advanced algorithms and neural networks to
+                      generate content that is contextually relevant and often
+                      indistinguishable from content created by humans. One of
+                      the hallmark applications of generative AI is in natural
+                      language processing, where models can generate coherent
+                      and contextually appropriate text. This has transformative
+                      implications for content creation, creative writing, and
+                      even dialogue generation.
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -105,6 +100,17 @@ const Index = () => {
                 >
                   {/* <JeenaAccordion2 accordionsData={accordionData} /> */}
                 </div>
+              </div>
+              <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
+                <h3>Why Cloud Pro AI for Generative AI And ML Services?</h3>
+              </div>
+              <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
+                <ul className="list-style-one">
+                  <li>Expertise: </li>
+                  <li>Scalability</li>
+                  <li>Security</li>
+                  <li>Innovation</li>
+                </ul>
               </div>
             </div>
             <div className="col-lg-4">
@@ -143,7 +149,7 @@ const Index = () => {
                   </Link>
                   <br />
                   <a href="callto:+000(123)45688" className="number">
-                    <i className="fas fa-phone" /> +000 (123) 456 88
+                    <i className="fas fa-phone" /> +1 415-393-2021
                   </a>
                   <img
                     className="bg-shape"
@@ -186,28 +192,28 @@ const Index = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="service-details">
-                    Product Engineering
+                  <Link legacyBehavior href="/services/dataengineering">
+                    Data Engineering
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/service-details">
+                <Link legacyBehavior href="/services/dataengineering">
                   <a className="read-more">
                     Read More <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
             </div>
-            <Link legacyBehavior href="/services2">
+            <Link legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="service-details">
-                    Cyber Security
+                  <Link legacyBehavior href="services/cloudengineering">
+                    Cloud Engineering
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/service-details">
+                <Link legacyBehavior href="/services/cloudengineering">
                   <a className="read-more">
                     Read More <i className="fal fa-angle-double-right" />
                   </a>

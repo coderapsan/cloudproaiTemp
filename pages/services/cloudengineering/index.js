@@ -79,22 +79,18 @@ const Index = () => {
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Web Design &amp; Development</h2>
-                  
+                  <h2>Cloud Engineering Services </h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudtium totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                  sit aspernatur aut odit au fugit sed quia consequuntur magni
-                  dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                  quisquam est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci velit, sed quia non numquam eius modi
-                  tempora incidunt ut labore et dolore magnam aliquam quaerat
-                  voluptatem. Ut ene minima veniam, quis nostrum exercitationem
-                  ullam corporis suscipit laboriosam aliquid exea commodi
-                  consequatur
+                  In the ever-evolving landscape of technology, businesses are
+                  increasingly turning to cloud solutions to enhance their
+                  operations, efficiency, and scalability. At CloudPro AI, our
+                  Cloud Engineering Services are designed to empower
+                  organizations in harnessing the full potential of cloud
+                  computing. Whether you are looking to migrate to the cloud,
+                  optimize your existing cloud infrastructure, or leverage
+                  advanced cloud technologies, we have the expertise to drive
+                  your digital transformation.
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -104,13 +100,13 @@ const Index = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>We Provide Best IT Services to Growth you Business</h3>
+                    <h3>We Provide Best Cloud Services to Growth you Business</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Comprehensive UI/UX Assessment</li>
-                      <li>Deep Contextual Research &amp; Planning</li>
-                      <li>Wireframing &amp; Prototyping</li>
+                      <li>Cloud Migration and Adoption:</li>
+                      <li>Cloud Infrastructure Design and Optimization</li>
+                      <li>Wireframing &</li>
                     </ul>
                   </div>
                 </div>
@@ -233,28 +229,28 @@ const Index = () => {
               </div>
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="service-details">
-                    Product Engineering
+                  <Link legacyBehavior href="/services/dataengineering">
+                    Data Engineering
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/service-details">
+                <Link legacyBehavior href="/services/dataengineering">
                   <a className="read-more">
                     Read More <i className="fal fa-angle-double-right" />
                   </a>
                 </Link>
               </div>
             </div>
-            <Link legacyBehavior href="/services2">
+            <Link legacyBehavior href="/services">
               <a className="show-all" />
             </Link>
             <div className="next-prev-item wow fadeInRight delay-0-2s">
               <div className="content">
                 <h4>
-                  <Link legacyBehavior href="service-details">
-                    Cyber Security
+                  <Link legacyBehavior href="services/generativeaiandml">
+                    Generative AI And ML
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/service-details">
+                <Link legacyBehavior href="/services/genrativeaiandml">
                   <a className="read-more">
                     Read More <i className="fal fa-angle-double-right" />
                   </a>

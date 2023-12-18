@@ -33,17 +33,17 @@ const Index = () => {
                 <div className="hero-shapes">
                   <img
                     className="shape one"
-                    src="assets/images/shapes/dabble-plus.png"
+                    src="/assets/images/shapes/dabble-plus.png"
                     alt="Shape"
                   />
                   <img
                     className="shape two"
-                    src="assets/images/shapes/dabble-plus.png"
+                    src="/assets/images/shapes/dabble-plus.png"
                     alt="Shape"
                   />
                   <img
                     className="shape three"
-                    src="assets/images/shapes/plus.png"
+                    src="/assets/images/shapes/plus.png"
                     alt="Shape"
                   />
                 </div>
@@ -51,7 +51,7 @@ const Index = () => {
             </div>
             <div className="col-lg-6 align-self-end">
               <div className="hero-images mt-80 wow fadeInLeft">
-                <img src="assets/images/hero/hero-one.jpg" alt="Hero" />
+                <img src="/assets/images/hero/hero-one.jpg" alt="Hero" />
               </div>
             </div>
           </div>
@@ -59,12 +59,12 @@ const Index = () => {
         <div className="hero-shapes">
           <img
             className="shape bg-lines"
-            src="assets/images/shapes/hero-bg-line-shapes.png"
+            src="/assets/images/shapes/hero-bg-line-shapes.png"
             alt="Shape"
           />
           <img
             className="shape right-shape wow fadeInRight delay-0-8s"
-            src="assets/images/shapes/hero-right-shape.png"
+            src="/assets/images/shapes/hero-right-shape.png"
             alt="Shape"
           />
         </div>
@@ -92,7 +92,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-3s">
                   <img
-                    src="assets/images/partners/partner1.png"
+                    src="/assets/images/partners/partner1.png"
                     alt="Partner"
                   />
                 </a>
@@ -102,7 +102,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-4s">
                   <img
-                    src="assets/images/partners/partner2.png"
+                    src="/assets/images/partners/partner2.png"
                     alt="Partner"
                   />
                 </a>
@@ -112,7 +112,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-5s">
                   <img
-                    src="assets/images/partners/partner3.png"
+                    src="/assets/images/partners/partner3.png"
                     alt="Partner"
                   />
                 </a>
@@ -122,7 +122,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-6s">
                   <img
-                    src="assets/images/partners/partner4.png"
+                    src="/assets/images/partners/partner4.png"
                     alt="Partner"
                   />
                 </a>
@@ -132,7 +132,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-7s">
                   <img
-                    src="assets/images/partners/partner5.png"
+                    src="/assets/images/partners/partner5.png"
                     alt="Partner"
                   />
                 </a>
@@ -202,7 +202,7 @@ const Index = () => {
                     <div className="service-item">
                       <div className="icon">
                         <img
-                          src="assets/images/services/icon2.png"
+                          src="/assets/images/services/icon2.png"
                           alt="Icon"
                         />
                       </div>
@@ -226,24 +226,24 @@ const Index = () => {
                 <div className="top-part">
                   <img
                     className="wow fadeInRight delay-0-3s"
-                    src="assets/images/about/about1(1).jpg"
+                    src="/assets/images/about/about1(1).jpg"
                     alt="About"
                   />
                   <img
                     className="wow zoomIn delay-0-5s"
-                    src="assets/images/about/about-logo.png"
+                    src="/node_modulesassets/images/about/about-logo.png"
                     alt="About"
                   />
                 </div>
                 <div className="bottom-part">
                   <img
                     className="wow fadeInDown delay-0-5s"
-                    src="assets/images/about/about-dots.png"
+                    src="/assets/images/about/about-dots.png"
                     alt="About"
                   />
                   <img
                     className="wow fadeInDown delay-0-3s"
-                    src="assets/images/about/about2.jpg"
+                    src="/assets/images/about/about2.jpg"
                     alt="About"
                   />
                 </div>
@@ -252,102 +252,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* About Area end */}
-      {/* Project Area start */}
-      {/* <section className="project-area overflow-hidden bgc-lighter pt-130 rpt-100 rel z-1">
-        <div className="container">
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Learn Our Project</span>
-            <h2>Our Work Does the Talking</h2>
-          </div>
-          <Slider {...projectSliderActive} className="project-slider-active">
-            <div className="project-slider-item">
-              <div className="video">
-                <img
-                  src="assets/images/projects/project-video.png"
-                  alt="Video"
-                />
-                <a
-                  href="https://www.youtube.com/watch?v=9Y7ma241N8k"
-                  className="mfp-iframe video-play"
-                  tabIndex={-1}
-                >
-                  <i className="fas fa-play" />
-                </a>
-              </div>
-              <div className="content">
-                <h4>
-                  High successful Sa video platform with a patented technology
-                  used by global enterprises.
-                </h4>
-                <p>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike men who are so beguiled and demoralized by the charms
-                  of pleasure of the moment so blinded by desire
-                </p>
-                <ul className="list-style-one">
-                  <li>Bringing new IT solutions to the market</li>
-                  <li>To be included the list of the best 100 IT companies</li>
-                </ul>
-                <Link legacyBehavior href="/project-details">
-                  <a className="theme-btn style-two mt-15">
-                    View Details <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="project-slider-item">
-              <div className="content">
-                <h4>
-                  High successful Sa video platform with a patented technology
-                  used by global enterprises.
-                </h4>
-                <p>
-                  On the other hand, we denounce with righteous indignation and
-                  dislike men who are so beguiled and demoralized by the charms
-                  of pleasure of the moment so blinded by desire
-                </p>
-                <ul className="list-style-one">
-                  <li>Bringing new IT solutions to the market</li>
-                  <li>To be included the list of the best 100 IT companies</li>
-                </ul>
-                <Link legacyBehavior href="/project-details">
-                  <a className="theme-btn style-two mt-15">
-                    View Details <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-              <div className="video">
-                <img
-                  src="assets/images/projects/project-video.png"
-                  alt="Video"
-                />
-                <a
-                  href="https://www.youtube.com/watch?v=9Y7ma241N8k"
-                  className="mfp-iframe video-play"
-                  tabIndex={-1}
-                >
-                  <i className="fas fa-play" />
-                </a>
-              </div>
-            </div>
-          </Slider>
-        </div>
-        <div className="project-shapes">
-          <img
-            className="shape one"
-            src="assets/images/shapes/project-left.png"
-            alt="shape"
-          />
-          <img
-            className="shape two"
-            src="assets/images/shapes/project-right.png"
-            alt="shape"
-          />
-        </div>
-      </section> */}
-      {/* Project Area end */}
-      {/* Services Area start */}
       <section className="services-area bgc-gray text-white pt-75 pb-10 rel z-1">
         <div className="container">
           <div className="row medium-gap">
@@ -362,13 +266,7 @@ const Index = () => {
                 <div className="icon">
                   <i className="flaticon-networking" />
                 </div>
-                {/* {Data.map((data) => (
-  <h4 key={data.id}>
-    <Link legacyBehavior href="service-details">
-      {data.services.subservices.title}
-    </Link>
-  </h4>
-))} */}
+                
 
                 <div className="content">
                   <h4>
@@ -476,8 +374,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Services Area end */}
-      {/* Work Process Area start */}
+      
       <section className="work-process-area pt-130 pb-100 rpt-100 rpb-70 rel z-1">
         <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
           <span className="sub-title mb-15">Working Process</span>
@@ -558,8 +455,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Work Process Area end */}
-      {/* Team Area start */}
+     
       <section className="team-area pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
@@ -654,222 +550,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Team Area end */}
-      {/* Statistics Area start */}
-      {/* <section className="statistics-area rel z-2">
-        <div className="container">
-          <div
-            className="statistics-inner bgs-cover text-white p-80 pb-20"
-            style={{
-              backgroundImage: "url(assets/images/background/statistics.jpg)",
-            }}
-          >
-            <div className="row align-items-xl-start align-items-center">
-              <div className="col-xl-5 col-lg-6">
-                <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
-                  <div className="section-title mb-30">
-                    <span className="sub-title mb-15">Company Statistics</span>
-                    <h2>Learn About Our Comapny Statistics</h2>
-                  </div>
-                  <Link legacyBehavior href="/about">
-                    <a className="read-more">
-                      Learn More <i className="fas fa-long-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-xl-7 col-lg-6">
-                <div className="row">
-                  <div className="col-xl-3 col-small col-6">
-                    <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
-                      <i className="flaticon-target" />
-                      <span
-                        className="count-text plus"
-                        data-speed={3000}
-                        data-stop={2563}
-                      >
-                        <Counter end={2563} />
-                      </span>
-                      <span className="counter-title">Project Complate</span>
-                    </div>
-                  </div>
-                  <div className="col-xl-3 col-small col-6">
-                    <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
-                      <i className="flaticon-target-audience" />
-                      <span
-                        className="count-text percent"
-                        data-speed={3000}
-                        data-stop="98.9"
-                      >
-                        <Counter end={98.9} decimals={1} />
-                      </span>
-                      <span className="counter-title">Clinets Happy</span>
-                    </div>
-                  </div>
-                  <div className="col-xl-3 col-small col-6">
-                    <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
-                      <i className="flaticon-customer-experience" />
-                      <span
-                        className="count-text plus"
-                        data-speed={3000}
-                        data-stop="35.6"
-                      >
-                        <Counter end={35.6} decimals={1} />
-                      </span>
-                      <span className="counter-title">Years Experience</span>
-                    </div>
-                  </div>
-                  <div className="col-xl-3 col-small col-6">
-                    <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
-                      <i className="flaticon-medal" />
-                      <span
-                        className="count-text k-plus"
-                        data-speed={3000}
-                        data-stop={63}
-                      >
-                        <Counter end={63} />
-                      </span>
-                      <span className="counter-title">Award Winning</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Statistics Area end */}
-      {/* Pricing Plan Area start */}
-      {/* <section className="price-plan-area bgc-lighter mt-30 rmt-0 pt-220 pb-100 rpb-70 rel z-1">
-        <div className="container pt-20">
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Amazing Pricing Plan</span>
-            <h2>Affordable Pricing Packages</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-2s">
-                <span className="badge">Best Package</span>
-                <h4 className="title">Basic Plan</h4>
-                <span className="price-count">5 Services Included</span>
-                <span className="price">29.85</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Premium Quality Supports (24/7)</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations (Business Growth)</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Design &amp; Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine Optimization (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">User &amp; Market Research</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-4s">
-                <span className="badge">Best Package</span>
-                <h4 className="title">standard Plan</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">49.64</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Premium Quality Supports (24/7)</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations (Business Growth)</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Design &amp; Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine Optimization (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">User &amp; Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">UX/UI Strategy (Design &amp; Develop)</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Engineering</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-6s">
-                <span className="badge">Best Package</span>
-                <h4 className="title">Golden Package</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">98.73</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Premium Quality Supports (24/7)</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations (Business Growth)</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Design &amp; Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine Optimization (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">User &amp; Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">UX/UI Strategy (Design &amp; Develop)</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Engineering</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="price-shapes">
-          <img
-            className="shape one wow fadeInLeft delay-0-5s"
-            src="assets/images/shapes/price-left.png"
-            alt="Shape"
-          />
-          <img
-            className="shape two"
-            src="assets/images/shapes/price-right.png"
-            alt="Shape"
-          />
-        </div>
-      </section> */}
-      {/* Pricing Plan Area end */}
-      {/* Testimonials Area start */}
-      <section className="testimonials-area py-130 rpy-100 rel z-1">
+            <section className="testimonials-area py-130 rpy-100 rel z-1">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-xl-5 col-lg-6">
@@ -909,134 +590,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Testimonials Area end */}
-      {/* Blog Area start */}
-      {/* <section className="blog-area pb-150 mb-30 rmb-0 rel z-1">
-        <div className="container">
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Our Blog &amp; News</span>
-            <h2>Latest Blog, New &amp; Articles</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item style-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
-                </div>
-                <div className="content">
-                  <ul className="blog-meta">
-                    <li>
-                      <i className="far fa-calendar-alt" />{" "}
-                      <a href="#">Jule 26, 2022</a>
-                    </li>
-                    <li>
-                      <i className="far fa-calendar-alt" />{" "}
-                      <a href="#">Comments (25)</a>
-                    </li>
-                  </ul>
-                  <h4>
-                    <Link legacyBehavior href="blog-details">
-                      Voice Usabilit Consideration Partially Visually Hidden
-                    </Link>
-                  </h4>
-                  <div className="author">
-                    <img src="assets/images/blog/author.jpg" alt="Author" />
-                    <i>Post By </i>
-                    <a href="#">John M. Brecht</a>
-                  </div>
-                  <p>
-                    We denounce righteou indignation and dislike men beguile and
-                    demoralize charms
-                  </p>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="read-more">
-                      Read More <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item style-two wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img src="assets/images/blog/blog2.jpg" alt="Blog" />
-                </div>
-                <div className="content">
-                  <ul className="blog-meta">
-                    <li>
-                      <i className="far fa-calendar-alt" />{" "}
-                      <a href="#">Jule 26, 2022</a>
-                    </li>
-                    <li>
-                      <i className="far fa-calendar-alt" />{" "}
-                      <a href="#">Comments (25)</a>
-                    </li>
-                  </ul>
-                  <h4>
-                    <Link legacyBehavior href="blog-details">
-                      How Create Vanil Java Script Gant Chart Adding Task
-                    </Link>
-                  </h4>
-                  <div className="author">
-                    <img src="assets/images/blog/author.jpg" alt="Author" />
-                    <i>Post By </i>
-                    <a href="#">John M. Brecht</a>
-                  </div>
-                  <p>
-                    We denounce righteou indignation and dislike men beguile and
-                    demoralize charms
-                  </p>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="read-more">
-                      Read More <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item style-two wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img src="assets/images/blog/blog3.jpg" alt="Blog" />
-                </div>
-                <div className="content">
-                  <ul className="blog-meta">
-                    <li>
-                      <i className="far fa-calendar-alt" />{" "}
-                      <a href="#">Jule 26, 2022</a>
-                    </li>
-                    <li>
-                      <i className="far fa-calendar-alt" />{" "}
-                      <a href="#">Comments (25)</a>
-                    </li>
-                  </ul>
-                  <h4>
-                    <Link legacyBehavior href="blog-details">
-                      Smashing Podcast Episode 47 Soueidan Accessibility
-                    </Link>
-                  </h4>
-                  <div className="author">
-                    <img src="assets/images/blog/author.jpg" alt="Author" />
-                    <i>Post By </i>
-                    <a href="#">John M. Brecht</a>
-                  </div>
-                  <p>
-                    We denounce righteou indignation and dislike men beguile and
-                    demoralize charms
-                  </p>
-                  <Link legacyBehavior href="/blog-details">
-                    <a className="read-more">
-                      Read More <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Blog Area end */}
-    </Layout>
+        </Layout>
   );
 };
 export default Index;

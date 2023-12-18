@@ -51,30 +51,14 @@ const MobileMenu = () => {
         >
           <ul className="navigation clearfix">
             <li className="dropdown">
-              <a href="#" onClick={() => active("home")}>
-                
+              <a href="/" onClick={() => active("services")}>
+                CLOUD PRO AI
               </a>
-              <ul style={activeSubMenu("home")}>
-                <li>
-                  <Link href="/">IT Company</Link>
-                </li>
-                <li>
-                  <Link href="index2">IT Solutions</Link>
-                </li>
-                <li>
-                  <Link href="index3">IT Services</Link>
-                </li>
-                <li>
-                  <Link href="index4">IT Agency</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn" onClick={() => active("home")}>
-                <span className="fas fa-chevron-down" />
-              </div>
             </li>
+
             <li className="dropdown">
-              <a href="#" onClick={() => active("services")}>
-                Services
+              <a href="/services" onClick={() => active("services")}>
+                SERVICES
               </a>
               <ul style={activeSubMenu("services")}>
                 <li>
@@ -92,87 +76,68 @@ const MobileMenu = () => {
               </div>
             </li>
             <li className="dropdown">
-              <a href="#" onClick={() => active("Project")}>
-                Project
+              <a href="/industries" onClick={() => active("industries")}>
+                INDUSTRIES
               </a>
-              <ul style={activeSubMenu("Project")}>
+              <ul style={activeSubMenu("industries")}>
                 <li>
-                  <Link href="project-grid">Project Grid</Link>
+                  <Link href="/services/financial">Financial</Link>
                 </li>
                 <li>
-                  <Link href="project-masonry">Project Masonry.</Link>
+                  <Link href="/services/healthcare">Healthcare</Link>
                 </li>
                 <li>
-                  <Link href="project-details">Project Details</Link>
+                  <Link href="/services/manufactoring">Manufacturing</Link>
                 </li>
+                <li>
+                  <Link href="/services/education">Education</Link>
+                </li>
+                <li>
+                  <Link href="/services/Technology">Technology</Link>
+                </li>
+               
               </ul>
-              <div className="dropdown-btn" onClick={() => active("Project")}>
+              <div
+                className="dropdown-btn"
+                onClick={() => active("industries")}
+              >
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
             <li className="dropdown">
-              <a href="#" onClick={() => active("shop")}>
-                shop
+              <a href="/contact" onClick={() => active("contact")}>
+                CONTACT
               </a>
-              <ul style={activeSubMenu("shop")}>
-                <li>
-                  <Link href="shop">shop grid</Link>
-                </li>
-                <li>
-                  <Link href="product-details">product details</Link>
-                </li>
-                <li>
-                  <Link href="cart">cart page</Link>
-                </li>
-                <li>
-                  <Link href="checkout">checkout</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn" onClick={() => active("shop")}>
-                <span className="fas fa-chevron-down" />
-              </div>
             </li>
+
+
+
+
+
             <li className="dropdown">
-              <a href="#" onClick={() => active("blog")}>
-                blog
+              <a href="/about" onClick={() => active("about")}>
+                ABOUT
               </a>
-              <ul style={activeSubMenu("blog")}>
+              <ul style={activeSubMenu("about")}>
                 <li>
-                  <Link href="blog">blog standard</Link>
+                  <Link href="/about/aboutus">About us</Link>
                 </li>
                 <li>
-                  <Link href="blog-details">blog details</Link>
+                  <Link href="/about/our-partners">Our Partners</Link>
                 </li>
+                <li>
+                  <Link href="/about/our-team">Our Team</Link>
+                </li>
+                <li>
+                  <Link href="/about/contact">Contact</Link>
+                </li>
+                
+               
               </ul>
-              <div className="dropdown-btn" onClick={() => active("blog")}>
-                <span className="fas fa-chevron-down" />
-              </div>
-            </li>
-            <li className="dropdown">
-              <a href="#" onClick={() => active("pages")}>
-                pages
-              </a>
-              <ul style={activeSubMenu("pages")}>
-                <li>
-                  <Link href="about">About us</Link>
-                </li>
-                <li>
-                  <Link href="contact">Contact us</Link>
-                </li>
-                <li>
-                  <Link href="team">Team</Link>
-                </li>
-                <li>
-                  <Link href="faqs">faqs</Link>
-                </li>
-                <li>
-                  <Link href="pricing">Pricing Plan</Link>
-                </li>
-                <li>
-                  <Link href="404">404 error</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn" onClick={() => active("pages")}>
+              <div
+                className="dropdown-btn"
+                onClick={() => active("about")}
+              >
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
@@ -216,10 +181,6 @@ const DeskTopMenu = () => {
         <ul className="navigation clearfix">
           <li>
             <a href="/">CLOUD PRO AI</a>
-
-            {/* <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div> */}
           </li>
           <li className="dropdown">
             <a href="/services">SERVICES</a>
@@ -246,9 +207,7 @@ const DeskTopMenu = () => {
               <li>
                 <Link href="/industries/financial">FINANCIAL</Link>
               </li>
-              <li>
-                <Link href="/industries/legal">LEGAL</Link>
-              </li>
+              
               <li>
                 <Link href="/industries/eduvation">EDUCATION</Link>
               </li>
@@ -267,28 +226,17 @@ const DeskTopMenu = () => {
             </div>
           </li>
           <li className="dropdown">
-            <a href="contact">Contact</a>
-            {/* <Link href="contact">CONTACT US</Link> */}
-            {/* <ul>
-              <li>
-                <Link href="shop">COMPLETED PROJECTS</Link>
-              </li>
-              <li>
-                <Link href="product-details">CURRENT PROJECTS</Link>
-              </li>
-              <li>
-                <Link href="cart">FUTURE PROJECTS</Link>
-              </li>
-            </ul> */}
+            <a href="contact">CONTACT</a>
+
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
             </div>
           </li>
           <li className="dropdown">
-            <a href="about">ABOUT US</a>
+            <a href="/about">ABOUT US</a>
             <ul>
               <li>
-                <Link href="about">ABOUT US</Link>
+                <Link href="/about">ABOUT US</Link>
               </li>
               <li>
                 <Link href="index2">OUR TEAM</Link>
@@ -297,39 +245,13 @@ const DeskTopMenu = () => {
                 <Link href="index3">CAREERS</Link>
               </li>
               <li>
-                <Link href="contact">CONTACT US</Link>
+                <Link href="/contact">CONTACT US</Link>
               </li>
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
             </div>
           </li>
-          {/* <li className="dropdown">
-            <a href="#">PARTNERSHIP</a>
-            <ul>
-              <li>
-                <Link href="#">About us</Link>
-              </li>
-              <li>
-                <Link href="contact">Contact us</Link>
-              </li>
-              <li>
-                <Link href="team">Team</Link>
-              </li>
-              <li>
-                <Link href="faqs">faqs</Link>
-              </li>
-              <li>
-                <Link href="pricing">Pricing Plan</Link>
-              </li>
-              <li>
-                <Link href="404">404 error</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li> */}
         </ul>
       </div>
     </nav>
