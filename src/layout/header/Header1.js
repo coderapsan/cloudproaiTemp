@@ -21,7 +21,7 @@ const Header1 = () => {
                 <a href="callto:+000(123)45688">+1 415-393-2021</a>
               </li>
               <li className="for-none">
-                <i className="far fa-clock" /> Working Hours : Monday- Friday,
+                <i className="far fa-clock" /> Working Hours : Monday- Friday 
                 10 am to 5pm
               </li>
               <li>
@@ -73,14 +73,7 @@ const Header1 = () => {
             <div className="nav-search py-10">
               <Search />
             </div>
-            {/* Menu Button */}
-            {/* <div className="menu-btns">
-              <Link legacyBehavior href="/contact">
-                <a className="theme-btn">
-                  Get a Quote <i className="fas fa-long-arrow-right" />
-                </a>
-              </Link>
-            </div> */}
+           
           </div>
         </div>
       </div>

@@ -26,12 +26,22 @@ const MobileMenu = () => {
           <div className="mobile-logo">
             <Link href="/">
               <img
-                src="assets/images/logos/logo-one.png"
+                src="/assets/images/logos/cloudpro.png"
                 alt="Logo"
                 title="Logo"
+                
               />
             </Link>
-          </div>
+           
+            
+          </div> 
+          <div style={{ marginLeft: '200px', color: 'red' }} className="mobile-title">
+  <h4>CLOUD PRO AI</h4>
+</div>
+
+            
+          
+          
           {/* Toggle Button */}
           <Accordion.Toggle
             as={"button"}
@@ -62,13 +72,13 @@ const MobileMenu = () => {
               </a>
               <ul style={activeSubMenu("services")}>
                 <li>
-                  <Link href="services">Generative AI and ML</Link>
+                  <Link href="/services/generativeaiandml">Generative AI and ML</Link>
                 </li>
                 <li>
-                  <Link href="services2">Cloud Engineering</Link>
+                  <Link href="/services/cloudengineering">Cloud Engineering</Link>
                 </li>
                 <li>
-                  <Link href="service-details">Data Engineering</Link>
+                  <Link href="/services/dataengineering">Data Engineering</Link>
                 </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
@@ -148,18 +158,14 @@ const MobileMenu = () => {
   );
 };
 const DeskTopMenu = () => {
-  const router = useRouter();
-
-  const handleRoute = () => {
-    router.push("/services/cloudengineering");
-  };
+  
   return (
     <nav className="main-menu navbar-expand-lg desktop-menu">
       <div className="navbar-header">
         <div className="mobile-logo">
           <Link href="/">
             <img
-              src="assets/images/logos/logo-one.png"
+              src="assets/images/logos/cloudpro.png"
               alt="Logo"
               title="Logo"
             />

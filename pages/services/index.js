@@ -26,11 +26,11 @@ const Pricing = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch("http://localhost:3000/api/services/dataengineering/services")
+    fetch(window.origin +'/api/services/dataengineering/services')
       .then((response) => response.json())
       .then((parsed) => {
         setDataServices(parsed);
-        console.log("helloooooooo", parsed);
+      
       })
       .catch((error) => {
         console.error("Error fetching services:", error);
@@ -42,7 +42,7 @@ const Pricing = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch("http://localhost:3000/api/services/generativeaiandml/services")
+    fetch(window.origin +'/api/services/generativeaiandml/services')
       .then((response) => response.json())
       .then((parsed) => {
         setAiServices(parsed);
