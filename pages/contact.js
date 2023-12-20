@@ -1,10 +1,8 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
+import ContactForm from "@/components/forms/ContactForm"
 const Contact = () => {
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   alert('This feature will be available soon. Thank you!');
-  // };
+  
   return (
     
 
@@ -50,7 +48,6 @@ const Contact = () => {
                   contact@cloudproai.com
                 </a>
                 <br />
-                <a href="http://www.itservice.net">www.itservice.net</a>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
@@ -117,99 +114,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              id="contactForm"
-              className="contactForm"
-              action="assets/php/form-process.php"
-              name="contactForm"
-            >
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="form-control"
-                      defaultValue=""
-                      placeholder="Full name"
-                      required
-                      data-error="Please enter your name"
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      id="phone_number"
-                      name="phone_number"
-                      className="form-control"
-                      defaultValue=""
-                      placeholder="Phone Number"
-                      required
-                      data-error="Please enter your Phone Number"
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="form-control"
-                      defaultValue=""
-                      placeholder="Email Address"
-                      required
-                      data-error="Please enter your Email"
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      className="form-control"
-                      defaultValue=""
-                      placeholder="Subject"
-                      required
-                      data-error="Please enter your Subject"
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      id="message"
-                      className="form-control"
-                      rows={3}
-                      placeholder="Message"
-                      required
-                      data-error="Please enter your Message"
-                      defaultValue={""}
-                    />
-                    <div className="help-block with-errors" />
-                  </div>
-                </div>
-                <div className="col-xl-12">
-                  <div className="form-group text-center mb-0">
-                    <button type="submit" className="theme-btn style-two">
-                      send message <i className="far fa-long-arrow-right" />
-                    </button>
-                    <div id="msgSubmit" className="hidden" />
-                  </div>
-                </div>
-              </div>
-            </form>
+            <ContactForm/>
           </div>
         </div>
       </section>
