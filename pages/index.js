@@ -182,7 +182,7 @@ const Index = () => {
                     <div className="service-item active">
                       <div className="icon">
                         <img
-                          src="assets/images/services/icon1.png"
+                          src="/assets/images/services/icon1.png"
                           alt="Icon"
                         />
                       </div>
@@ -231,7 +231,7 @@ const Index = () => {
                   />
                   <img
                     className="wow zoomIn delay-0-5s"
-                    src="/node_modulesassets/images/about/about-logo.png"
+                    src="/assets/images/about/consultations.jpg"
                     alt="About"
                   />
                 </div>
@@ -381,7 +381,7 @@ const Index = () => {
           <h2>Industry Best Practices to the Core</h2>
         </div>
         <div className="work-process-line text-center">
-          <img src="assets/images/shapes/work-process-line.png" alt="line" />
+          <img src="/assets/images/shapes/work-process-line.png" alt="line" />
         </div>
         <div className="container">
           <div className="row row-cols-xl-5 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
@@ -464,10 +464,10 @@ const Index = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-2s">
+              <div className="team-member style-two wow fadeInUp delay-0-2s">
                 <img src="assets/images/team/member1.jpg" alt="Team" />
-                <h4>Johnathan P. Bailey</h4>
-                <span className="designation">UX/UI Designer</span>
+                <h4>Nimesh Kuinkel</h4>
+                <span className="designation">Data Engineer</span>
                 <div className="social-style-two">
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -485,68 +485,27 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-4s">
+              <div className="team-member style-two wow fadeInUp delay-0-4s">
                 <img src="assets/images/team/member2.jpg" alt="Team" />
-                <h4>Mark M. Hughes</h4>
+                <h4>Apsan Regmi</h4>
                 <span className="designation">Web Developer</span>
                 <div className="social-style-two">
-                  <a href="#">
+                  <a href="https://www.facebook.com/apsan.regmi/">
                     <i className="fab fa-facebook-f" />
                   </a>
                   <a href="#">
                     <i className="fab fa-twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fapsanregmi%3Ffbclid%3DIwAR1uPhOFaNP6QX5AUySco3CZLcsPlLzY8xCjEap8R1M0WGhKfuPrdBOMNhU&h=AT3afhdc1hWKTqtuMqzqrnEP3rHas-o622boJF531ZRndmINYn8rMGoZMubaNXOHM5sKq98ctMAcivwqTUO0ldJsEnw-naVWrbWunDxse7CiAPlZsT71kwmE2xTYtZSjwJL6ZVoqiW4zvc0N_IQk">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fapsan-regmi-b735a91bb%2F%3Ffbclid%3DIwAR2j3gdRMltDrq-sO0dA4dSVy3sG3B_c3AuM48rHQYjoZLVz3QhXiQJzB1I&h=AT2HWojt7AMW9XUS1J5l2wpJLyO76bftwVjsnSV2q7CP_klUYYxrcqY0bquxXbsQQIxB0FJsTeMKE7VziHZxTfVmOUXe9smtU263I2m4P3VcwitS3TcqiY01HUIheASgAKnp5S8FNZeOVpSBChKSkQ">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-6s">
-                <img src="assets/images/team/member3.jpg" alt="Team" />
-                <h4>Donald B. Mitchell</h4>
-                <span className="designation">Software Engineer</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-8s">
-                <img src="assets/images/team/member4.jpg" alt="Team" />
-                <h4>Bennie N. Bannister</h4>
-                <span className="designation">Senior Consultant</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -569,7 +528,7 @@ const Index = () => {
                   alt="Testimonial"
                 />
                 <div className="testi-image-over">
-                  <h3>We Have More 3248+ Reviews From Global Clients</h3>
+                  <h3>We Have More 687+ Reviews From Global Clients</h3>
                   <img
                     src="assets/images/testimonials/signature.png"
                     alt="Signature"

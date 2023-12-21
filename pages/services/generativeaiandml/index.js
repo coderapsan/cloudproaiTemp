@@ -118,8 +118,8 @@ const Index = () => {
                 <div className="widget widget-category wow fadeInUp delay-0-2s">
                   <h4 className="widget-title">Services Category</h4>
                   <ul>
-                    {services.map((service) => (
-                      <div key={service.slug}>
+                    {services.map((service, index) => (
+                      <div key={index}>
                         <li>
                           <Link
                             href={`/services/generativeaiandml/${service.slug}`}

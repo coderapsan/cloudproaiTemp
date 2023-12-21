@@ -165,7 +165,7 @@ const DeskTopMenu = () => {
         <div className="mobile-logo">
           <Link href="/">
             <img
-              src="assets/images/logos/cloudpro.png"
+              src="/assets/images/logos/cloudpro.png"
               alt="Logo"
               title="Logo"
             />
@@ -215,16 +215,16 @@ const DeskTopMenu = () => {
               </li>
               
               <li>
-                <Link href="/industries/eduvation">EDUCATION</Link>
+                <Link href="/industries/education">EDUCATION</Link>
               </li>
               <li>
-                <Link href="industries/healthcare">HEALTHCARE </Link>
+                <Link href="/industries/healthcare">HEALTHCARE </Link>
               </li>
               <li>
-                <Link href="industries/manufacturing">MANUFACTURING</Link>
+                <Link href="/industries/manufacturing">MANUFACTURING</Link>
               </li>
               <li>
-                <Link href="industries/technology">TECHNOLOGY</Link>
+                <Link href="/industries/technology">TECHNOLOGY</Link>
               </li>
             </ul>
             <div className="dropdown-btn">
@@ -232,7 +232,7 @@ const DeskTopMenu = () => {
             </div>
           </li>
           <li className="dropdown">
-            <a href="contact">CONTACT</a>
+            <a href="/contact">CONTACT</a>
 
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
