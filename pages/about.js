@@ -17,15 +17,15 @@ const About = () => {
           <div className="row align-items-center gap-100">
             <div className="col-lg-6">
               <div className="about-five-images mt-55 rel z-1 wow fadeInRight delay-0-2s">
-                <img src="assets/images/about/about-five1.jpg" alt="About" />
-                <img src="assets/images/about/about-five2.jpg" alt="About" />
+                <img src="/assets/images/about/about-five1.jpg" alt="About" />
+                <img src="/assets/images/about/about-five2.jpg" alt="About" />
                 {/* <div className="experience-years">
                   <span className="years">25</span>
                   <h4>Years Of ExperienceIT Solutions</h4>
                 </div> */}
                 <img
                   className="abut-bg-shape"
-                  src="assets/images/about/about-five-bg.png"
+                  src="/assets/images/about/about-five-bg.png"
                   alt="Shape"
                 />
               </div>
@@ -207,11 +207,11 @@ const About = () => {
                       <span
                         className="count-text plus"
                         data-speed={3000}
-                        data-stop={2563}
+                        data-stop={50}
                       >
-                        <Counter end={2563} />
+                        <Counter end={50} />
                       </span>
-                      <span className="counter-title">Project Complate</span>
+                      <span className="counter-title">Project Complated</span>
                     </div>
                   </div>
                   <div className="col-xl-3 col-small col-6">
@@ -220,9 +220,9 @@ const About = () => {
                       <span
                         className="count-text percent"
                         data-speed={3000}
-                        data-stop="98.9"
+                        data-stop="99.8"
                       >
-                        <Counter end={98.9} decimals="1" />
+                        <Counter end={99.8} decimals="1" />
                       </span>
                       <span className="counter-title">Clinets Happy</span>
                     </div>
@@ -233,9 +233,9 @@ const About = () => {
                       <span
                         className="count-text plus"
                         data-speed={3000}
-                        data-stop="35.6"
+                        data-stop="5"
                       >
-                        <Counter end={35.6} decimals="1" />
+                        <Counter end={5} decimals="1" />
                       </span>
                       <span className="counter-title">Years Experience</span>
                     </div>
@@ -244,11 +244,11 @@ const About = () => {
                     <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
                       <i className="flaticon-medal" />
                       <span
-                        className="count-text k-plus"
+                        className="count-text plus"
                         data-speed={3000}
-                        data-stop={63}
+                        data-stop={10}
                       >
-                        <Counter end={63} />
+                        <Counter end={10} />
                       </span>
                       <span className="counter-title">Award Winning</span>
                     </div>
@@ -261,6 +261,8 @@ const About = () => {
       </section>
       {/* Statistics Area end */}
       {/* Team Area start */}
+     
+
       <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
@@ -271,8 +273,8 @@ const About = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="team-member style-two wow fadeInUp delay-0-2s">
                 <img src="assets/images/team/member1.jpg" alt="Team" />
-                <h4>Johnathan P. Bailey</h4>
-                <span className="designation">UX/UI Designer</span>
+                <h4>Nimesh Kuinkel</h4>
+                <span className="designation">Data Engineer</span>
                 <div className="social-style-two">
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -292,81 +294,49 @@ const About = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="team-member style-two wow fadeInUp delay-0-4s">
                 <img src="assets/images/team/member2.jpg" alt="Team" />
-                <h4>Mark M. Hughes</h4>
+                <h4>Apsan Regmi</h4>
                 <span className="designation">Web Developer</span>
                 <div className="social-style-two">
-                  <a href="#">
+                  <a href="https://www.facebook.com/apsan.regmi/">
                     <i className="fab fa-facebook-f" />
                   </a>
                   <a href="#">
                     <i className="fab fa-twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fapsanregmi%3Ffbclid%3DIwAR1uPhOFaNP6QX5AUySco3CZLcsPlLzY8xCjEap8R1M0WGhKfuPrdBOMNhU&h=AT3afhdc1hWKTqtuMqzqrnEP3rHas-o622boJF531ZRndmINYn8rMGoZMubaNXOHM5sKq98ctMAcivwqTUO0ldJsEnw-naVWrbWunDxse7CiAPlZsT71kwmE2xTYtZSjwJL6ZVoqiW4zvc0N_IQk">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fapsan-regmi-b735a91bb%2F%3Ffbclid%3DIwAR2j3gdRMltDrq-sO0dA4dSVy3sG3B_c3AuM48rHQYjoZLVz3QhXiQJzB1I&h=AT2HWojt7AMW9XUS1J5l2wpJLyO76bftwVjsnSV2q7CP_klUYYxrcqY0bquxXbsQQIxB0FJsTeMKE7VziHZxTfVmOUXe9smtU263I2m4P3VcwitS3TcqiY01HUIheASgAKnp5S8FNZeOVpSBChKSkQ">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member style-two wow fadeInUp delay-0-6s">
-                <img src="assets/images/team/member3.jpg" alt="Team" />
-                <h4>Donald B. Mitchell</h4>
-                <span className="designation">Software Engineer</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member style-two wow fadeInUp delay-0-8s">
-                <img src="assets/images/team/member4.jpg" alt="Team" />
-                <h4>Bennie N. Bannister</h4>
-                <span className="designation">Senior Consultant</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
+           
           </div>
         </div>
         <div className="team-shapes">
           <img
             className="shape one"
-            src="assets/images/team/team-shape-one.png"
+            src="/assets/images/team/team-shape-one.png"
             alt="Shape"
           />
           <img
             className="shape two"
-            src="assets/images/team/team-shape-two.png"
+            src="/assets/images/team/team-shape-two.png"
             alt="Shape"
           />
         </div>
       </section>
+
+
+
+
+
+
+
+
+
       {/* Team Area end */}
       {/* Why Choose Us Area start */}
       <section className="why-choose-us-area py-130 rpy-100 rel z-1">
@@ -416,7 +386,7 @@ const About = () => {
                   <div className="col-lg-6">
                     <div className="why-choose-image rmb-55">
                       <img
-                        src="assets/images/about/why-choose1.jpg"
+                        src="/assets/images/about/why-choose1.jpg"
                         alt="Why Choose"
                       />
                     </div>
@@ -480,8 +450,8 @@ const About = () => {
                   <div className="col-lg-6">
                     <div className="why-choose-image rmt-55">
                       <img
-                        src="assets/images/about/why-choose1.jpg"
-                        alt="Why Choose"
+                        src="/assets/images/about/why-choose1.jpg"
+                        alt="Why Choose?"
                       />
                     </div>
                   </div>
@@ -492,7 +462,7 @@ const About = () => {
                   <div className="col-lg-6">
                     <div className="why-choose-image rmb-55">
                       <img
-                        src="assets/images/about/why-choose1.jpg"
+                        src="/assets/images/about/why-choose1.jpg"
                         alt="Why Choose"
                       />
                     </div>
@@ -580,7 +550,7 @@ const About = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item-two wow fadeInUp delay-0-3s">
                   <img
-                    src="assets/images/partners/partner1.png"
+                    src="/assets/images/partners/partner1.png"
                     alt="Partner"
                   />
                 </a>
@@ -590,7 +560,7 @@ const About = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item-two wow fadeInUp delay-0-4s">
                   <img
-                    src="assets/images/partners/partner1.png"
+                    src="/assets/images/partners/partner1.png"
                     alt="Partner"
                   />
                 </a>
@@ -600,7 +570,7 @@ const About = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item-two wow fadeInUp delay-0-5s">
                   <img
-                    src="assets/images/partners/partner3.png"
+                    src="/assets/images/partners/partner3.png"
                     alt="Partner"
                   />
                 </a>
@@ -610,7 +580,7 @@ const About = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item-two wow fadeInUp delay-0-6s">
                   <img
-                    src="assets/images/partners/partner1.png"
+                    src="/assets/images/partners/partner1.png"
                     alt="Partner"
                   />
                 </a>
@@ -620,7 +590,7 @@ const About = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item-two wow fadeInUp delay-0-7s">
                   <img
-                    src="assets/images/partners/partner1.png"
+                    src="/assets/images/partners/partner1.png"
                     alt="Partner"
                   />
                 </a>
