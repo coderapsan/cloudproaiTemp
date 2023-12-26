@@ -103,6 +103,18 @@ const MobileMenu = () => {
                   <Link href="/industries/real-estate">Real Estate</Link>
                 </li>
                 <li>
+                  <Link href="/industries/real-estate">Financial</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Healthcare</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Education</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Manufacturing</Link>
+                </li>
+                <li>
                   <Link href="/industries/alternative-investment">Alternative Investment</Link>
                 </li>
                 <li>
@@ -230,6 +242,19 @@ const DeskTopMenu = () => {
                 </li>
                 <li>
                   <Link href="/industries/alternative-investment">Alternative Investment</Link>
+                  
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Financial</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Healthcare</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Education</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Manufacturing</Link>
                 </li>
                 <li>
                   <Link href="/industries/insurance">Insurance</Link>
