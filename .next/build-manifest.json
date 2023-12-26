@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/industries/entertainment-and-gaming": [
+    "/services/generativeaiandml": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/industries/entertainment-and-gaming.js"
+      "static/chunks/pages/services/generativeaiandml.js"
     ]
   },
   "ampFirstPages": []

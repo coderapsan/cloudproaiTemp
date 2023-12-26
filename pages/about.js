@@ -274,7 +274,7 @@ const About = () => {
               <div className="team-member style-two wow fadeInUp delay-0-2s">
                 <img src="assets/images/team/member1.jpg" alt="Team" />
                 <h4>Nimesh Kuinkel</h4>
-                <span className="designation">Data Engineer</span>
+                <span className="designation">CEO & Founder</span>
                 <div className="social-style-two">
                   <a href="#">
                     <i className="fab fa-facebook-f" />

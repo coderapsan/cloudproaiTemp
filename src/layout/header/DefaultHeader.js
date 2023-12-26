@@ -16,7 +16,7 @@ const DefaultHeader = () => {
                 <Link legacyBehavior href="/index">
                   <a>
                     <img className="navBarLogo"
-                      src="/assets/images/logos/cloudpro.png"
+                      src="/assets/images/logos/logowhite.png"
                       alt="Logo"
                       title="Logo"
                       height={75}
