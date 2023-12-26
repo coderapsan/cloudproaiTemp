@@ -19,7 +19,7 @@ const Header4 = () => {
                   <Link legacyBehavior href="/index">
                     <a>
                       <img className="navBarLogo"
-                        src="/assets/images/logos/cloudpro2.png"
+                        src="/assets/images/logos/logowhite.png"
                         alt="Logo"
                         title="Logo"
                         height={75}

@@ -80,6 +80,9 @@ const MobileMenu = () => {
                 <li>
                   <Link href="/services/dataengineering">Data Engineering</Link>
                 </li>
+                <li>
+                <Link href="/services/bianddataanalytics">BI AND DATA ANALYTICS</Link>
+              </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
                 <span className="fas fa-chevron-down" />
@@ -204,6 +207,9 @@ const DeskTopMenu = () => {
               </li>
               <li>
                 <Link href="/services/dataengineering">DATA ENGINEERING</Link>
+              </li>
+              <li>
+                <Link href="/services/bianddataanalytics">BI AND DATA ANALYTICS</Link>
               </li>
             </ul>
             <div className="dropdown-btn">

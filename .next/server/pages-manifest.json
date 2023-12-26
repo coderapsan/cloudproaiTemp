@@ -2,6 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/services/generativeaiandml": "pages/services/generativeaiandml.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/services/bianddataanalytics": "pages/services/bianddataanalytics.js",
+  "/404": "pages/404.js",
+  "/api/services/bianddataanalytics/services": "pages/api/services/bianddataanalytics/services.js",
+  "/api/services/generativeaiandml/services": "pages/api/services/generativeaiandml/services.js",
+  "/services/generativeaiandml": "pages/services/generativeaiandml.js"
 }
