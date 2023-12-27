@@ -3,6 +3,7 @@ import TestimonialsSlider from "@/src/components/slider/TestimonialsSlider";
 import Layout from "@/src/layout/Layout";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Partner from "@/src/components/Partner";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -261,7 +262,6 @@ const About = () => {
       </section>
       {/* Statistics Area end */}
       {/* Team Area start */}
-     
 
       <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
@@ -312,7 +312,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-           
           </div>
         </div>
         <div className="team-shapes">
@@ -328,14 +327,6 @@ const About = () => {
           />
         </div>
       </section>
-
-
-
-
-
-
-
-
 
       {/* Team Area end */}
       {/* Why Choose Us Area start */}
@@ -493,42 +484,6 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="tab-pane fade" id="wc-tap4">
-                <div className="row gap-90 align-items-center">
-                  <div className="col-lg-6">
-                    <div className="why-choose-content">
-                      <h3>
-                        An impactful Application Needs an innovative and
-                        interactive.
-                      </h3>
-                      <p>
-                        Our experts help create the right website for across all
-                        major platforms and devices. Taking into consideration
-                        your user behavior volu promotey the optimal experience
-                        we design responsive performance
-                      </p>
-                      <ul className="list-style-one pt-5">
-                        <li>Comprehensive UI/UX Assessment</li>
-                        <li>Deep Contextual Research and 360° Planning</li>
-                        <li>Wireframing &amp; Prototyping</li>
-                      </ul>
-                      <Link legacyBehavior href="/about">
-                        <a className="theme-btn mt-30">
-                          Learn More <i className="fas fa-long-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="why-choose-image rmt-55">
-                      <img
-                        src="assets/images/about/why-choose1.jpg"
-                        alt="Why Choose"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -540,120 +495,10 @@ const About = () => {
           <TestimonialsSlider />
         </div>
       </section>
+      <Partner/>
       {/* Testimonials Area Two end */}
       {/* Partners Area start */}
-      <div className="partners-area-three text-center rel z-1 pb-110 rpb-80">
-        <div className="container">
-          <hr className="mb-75" />
-          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
-            <div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-3s">
-                  <img
-                    src="/assets/images/partners/all-state.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-4s">
-                  <img
-                    src="/assets/images/partners/american-express.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-5s">
-                  <img
-                    src="/assets/images/partners/autodesk.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-6s">
-                  <img
-                    src="/assets/images/partners/bay-alarm.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/csi.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div>
-            <div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/eandjgallo.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div><div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/hbo.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div><div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/trinchero.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div><div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/university-of-california.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div><div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/veritas.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div><div className="col">
-              <Link legacyBehavior href="/contact">
-                <a className="partner-item wow fadeInUp delay-0-7s">
-                  <img
-                    src="/assets/images/partners/wells-fargo.png"
-                    alt="Partner"
-                  />
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
-        </div>
+      
     </Layout>
   );
 };

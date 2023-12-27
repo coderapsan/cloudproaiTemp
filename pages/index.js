@@ -86,10 +86,17 @@ const Index = () => {
               shaping the future, and we are privileged to embark on this
               transformative journey together
             </p>
+
+            <h5>
+            Our developers and Partners has experience in delivering projects to top tier companies like:
+
+            </h5>
           </div>
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
             <div className="col">
-              <Link legacyBehavior href="/contact">
+              <h3>
+              </h3>
+              <Link legacyBehavior href="/https://www.allstate.com/">
                 <a className="partner-item wow fadeInUp delay-0-3s">
                   <img
                     src="/assets/images/partners/all-state.png"
@@ -99,7 +106,7 @@ const Index = () => {
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/contact">
+              <Link legacyBehavior href="/https://www.americanexpress.com/">
                 <a className="partner-item wow fadeInUp delay-0-4s">
                   <img
                     src="/assets/images/partners/american-express.png"
@@ -109,7 +116,7 @@ const Index = () => {
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/contact">
+              <Link legacyBehavior href="/https://www.autodesk.com/">
                 <a className="partner-item wow fadeInUp delay-0-5s">
                   <img
                     src="/assets/images/partners/autodesk.png"
