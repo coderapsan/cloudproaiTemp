@@ -71,7 +71,7 @@ const Pricing = () => {
                   <h4 className="title">Data Engineering</h4>
                 </Link>
 
-                <span className="price-count">7 Services Included</span>
+                <span className="price-count">{dataServices.length} Services Included</span>
                 {/* <span className="price">29.85</span> */}
                 <h5>This Servicces Included :</h5>
 
@@ -79,7 +79,7 @@ const Pricing = () => {
                   {dataServices.slice(0, 5).map((service) => (
                     <li key={service.slug}>
                       <Link href={`/services/dataengineering/${service.slug}`}>
-                        <h3>{service.title}</h3>
+                        <h5>{service.title}</h5>
                       </Link>
 
                       {/* <p>{service.description}</p> */}
@@ -126,17 +126,17 @@ const Pricing = () => {
                   <h4 className="title">Generative AI and ML</h4>
                 </Link>
 
-                <span className="price-count">7 Services Included</span>
+                <span className="price-count">{aiServices.length} Services Included</span>
                 {/* <span className="price">49.64</span> */}
                 <h5>This Plan Included :</h5>
 
                 <ul>
-                  {aiServices.slice(0, 3).map((service) => (
+                  {aiServices.slice(0, 5).map((service) => (
                     <li key={service.slug}>
                       <Link
                         href={`/services/generativeaiandml/${service.slug}`}
                       >
-                        <h3>{service.title}</h3>
+                        <h5>{service.title}</h5>
                       </Link>
 
                       {/* <p>{service.description}</p> */}
@@ -158,17 +158,17 @@ const Pricing = () => {
                   <h4 className="title">Cloud Engineering </h4>
                 </Link>
 
-                <span className="price-count">7 Services Included</span>
+                <span className="price-count">{cloudServices.length} Services Included</span>
                 {/* <span className="price">98.73</span> */}
                 <h5>This Plan Included :</h5>
                 <ul>
-                  {cloudServices.slice(0, 3).map((service) => (
+                  {cloudServices.slice(0, 4).map((service) => (
                     <li key={service.slug}>
                       <Link href={`/services/cloudengineering/${service.slug}`}>
-                        <h3>{service.title}</h3>
+                        <h5>{service.title}</h5>
                       </Link>
 
-                      {/* <p>{service.description}</p> */}
+                      
                     </li>
                   ))}
                 </ul>
