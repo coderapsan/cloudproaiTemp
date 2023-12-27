@@ -23,7 +23,7 @@ const Partner = () => {
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/https://www.americanexpress.com/">
+              <Link legacyBehavior href="#">
                 <a className="partner-item wow fadeInUp delay-0-4s">
                   <img
                     src="/assets/images/partners/american-express.png"
@@ -33,7 +33,8 @@ const Partner = () => {
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/https://www.autodesk.com/">
+            <Link legacyBehavior href="#">
+              
                 <a className="partner-item wow fadeInUp delay-0-5s">
                   <img
                     src="/assets/images/partners/autodesk.png"
@@ -43,7 +44,8 @@ const Partner = () => {
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/https://www.bayalarm.com/">
+            <Link legacyBehavior href="#">
+              
                 <a className="partner-item wow fadeInUp delay-0-6s">
                   <img
                     src="/assets/images/partners/bay-alarm.png"
