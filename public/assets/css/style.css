@@ -3651,6 +3651,7 @@ h6, .h6 {
  
 .navBarLogo{
   border-radius: 50%;
+  padding-top:10px;
 }
 .main-header.header-one .header-top {
   padding: 9px; }

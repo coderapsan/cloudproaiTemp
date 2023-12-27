@@ -92,7 +92,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-3s">
                   <img
-                    src="/assets/images/partners/partner1.png"
+                    src="/assets/images/partners/all-state.png"
                     alt="Partner"
                   />
                 </a>
@@ -102,7 +102,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-4s">
                   <img
-                    src="/assets/images/partners/partner2.png"
+                    src="/assets/images/partners/american-express.png"
                     alt="Partner"
                   />
                 </a>
@@ -112,7 +112,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-5s">
                   <img
-                    src="/assets/images/partners/partner3.png"
+                    src="/assets/images/partners/autodesk.png"
                     alt="Partner"
                   />
                 </a>
@@ -122,7 +122,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-6s">
                   <img
-                    src="/assets/images/partners/partner4.png"
+                    src="/assets/images/partners/bay-alarm.png"
                     alt="Partner"
                   />
                 </a>
@@ -132,7 +132,62 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-7s">
                   <img
-                    src="/assets/images/partners/partner5.png"
+                    src="/assets/images/partners/csi.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div>
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/eandjgallo.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/hbo.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/trinchero.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/university-of-california.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/veritas.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/wells-fargo.png"
                     alt="Partner"
                   />
                 </a>

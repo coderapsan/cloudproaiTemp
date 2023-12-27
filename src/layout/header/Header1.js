@@ -57,8 +57,8 @@ const Header1 = () => {
                       src="/assets/images/logos/cloudpro.png"
                       alt="Logo"
                       title="Logo"
-                      height={140}
-                      width={200}
+                      height={75}
+                      width={75}
                     />
                   </a>
                 </Link>
