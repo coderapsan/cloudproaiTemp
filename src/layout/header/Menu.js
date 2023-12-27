@@ -80,6 +80,9 @@ const MobileMenu = () => {
                 <li>
                   <Link href="/services/dataengineering">Data Engineering</Link>
                 </li>
+                <li>
+                <Link href="/services/bianddataanalytics">BI AND DATA ANALYTICS</Link>
+              </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
                 <span className="fas fa-chevron-down" />
@@ -91,19 +94,34 @@ const MobileMenu = () => {
               </a>
               <ul style={activeSubMenu("industries")}>
                 <li>
-                  <Link href="/services/financial">Financial</Link>
+                  <Link href="/industries/media">Media</Link>
                 </li>
                 <li>
-                  <Link href="/services/healthcare">Healthcare</Link>
+                  <Link href="/industries/entertainment-and-gaming">Entertainment And Gaming</Link>
                 </li>
                 <li>
-                  <Link href="/services/manufactoring">Manufacturing</Link>
+                  <Link href="/industries/real-estate">Real Estate</Link>
                 </li>
                 <li>
-                  <Link href="/services/education">Education</Link>
+                  <Link href="/industries/real-estate">Financial</Link>
                 </li>
                 <li>
-                  <Link href="/services/Technology">Technology</Link>
+                  <Link href="/industries/real-estate">Healthcare</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Education</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Manufacturing</Link>
+                </li>
+                <li>
+                  <Link href="/industries/alternative-investment">Alternative Investment</Link>
+                </li>
+                <li>
+                  <Link href="/industries/insurance">Insurance</Link>
+                </li>
+                <li>
+                  <Link href="/industries/security">Security</Link>
                 </li>
                
               </ul>
@@ -202,6 +220,9 @@ const DeskTopMenu = () => {
               <li>
                 <Link href="/services/dataengineering">DATA ENGINEERING</Link>
               </li>
+              <li>
+                <Link href="/services/bianddataanalytics">BI AND DATA ANALYTICS</Link>
+              </li>
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
@@ -210,29 +231,45 @@ const DeskTopMenu = () => {
           <li className="dropdown">
             <a href="/industries">INDUSTRIES</a>
             <ul>
-              <li>
-                <Link href="/industries/financial">FINANCIAL</Link>
-              </li>
-              
-              <li>
-                <Link href="/industries/eduvation">EDUCATION</Link>
-              </li>
-              <li>
-                <Link href="industries/healthcare">HEALTHCARE </Link>
-              </li>
-              <li>
-                <Link href="industries/manufacturing">MANUFACTURING</Link>
-              </li>
-              <li>
-                <Link href="industries/technology">TECHNOLOGY</Link>
-              </li>
+            <li>
+                  <Link href="/industries/media">Media</Link>
+                </li>
+                <li>
+                  <Link href="/industries/entertainment-and-gaming">Entertainment And Gaming</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Real Estate</Link>
+                </li>
+                <li>
+                  <Link href="/industries/alternative-investment">Alternative Investment</Link>
+                  
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Financial</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Healthcare</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Education</Link>
+                </li>
+                <li>
+                  <Link href="/industries/real-estate">Manufacturing</Link>
+                </li>
+                <li>
+                  <Link href="/industries/insurance">Insurance</Link>
+                </li>
+                <li>
+                  <Link href="/industries/security">Security</Link>
+                </li>
+               
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
             </div>
           </li>
           <li className="dropdown">
-            <a href="contact">CONTACT</a>
+            <a href="/contact">CONTACT</a>
 
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />

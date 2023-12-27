@@ -86,33 +86,40 @@ const Index = () => {
               shaping the future, and we are privileged to embark on this
               transformative journey together
             </p>
+
+            <h5>
+            Our developers and Partners has experience in delivering projects to top tier companies like:
+
+            </h5>
           </div>
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
             <div className="col">
-              <Link legacyBehavior href="/contact">
+              <h3>
+              </h3>
+              <Link legacyBehavior href="/https://www.allstate.com/">
                 <a className="partner-item wow fadeInUp delay-0-3s">
                   <img
-                    src="/assets/images/partners/partner1.png"
+                    src="/assets/images/partners/all-state.png"
                     alt="Partner"
                   />
                 </a>
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/contact">
+              <Link legacyBehavior href="/https://www.americanexpress.com/">
                 <a className="partner-item wow fadeInUp delay-0-4s">
                   <img
-                    src="/assets/images/partners/partner2.png"
+                    src="/assets/images/partners/american-express.png"
                     alt="Partner"
                   />
                 </a>
               </Link>
             </div>
             <div className="col">
-              <Link legacyBehavior href="/contact">
+              <Link legacyBehavior href="/https://www.autodesk.com/">
                 <a className="partner-item wow fadeInUp delay-0-5s">
                   <img
-                    src="/assets/images/partners/partner3.png"
+                    src="/assets/images/partners/autodesk.png"
                     alt="Partner"
                   />
                 </a>
@@ -122,7 +129,7 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-6s">
                   <img
-                    src="/assets/images/partners/partner4.png"
+                    src="/assets/images/partners/bay-alarm.png"
                     alt="Partner"
                   />
                 </a>
@@ -132,7 +139,62 @@ const Index = () => {
               <Link legacyBehavior href="/contact">
                 <a className="partner-item wow fadeInUp delay-0-7s">
                   <img
-                    src="/assets/images/partners/partner5.png"
+                    src="/assets/images/partners/csi.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div>
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/eandjgallo.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/hbo.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/trinchero.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/university-of-california.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/veritas.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div><div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="/assets/images/partners/wells-fargo.png"
                     alt="Partner"
                   />
                 </a>
@@ -231,7 +293,7 @@ const Index = () => {
                   />
                   <img
                     className="wow zoomIn delay-0-5s"
-                    src="/node_modulesassets/images/about/about-logo.png"
+                    src="/assets/images/about/about-logo.png"
                     alt="About"
                   />
                 </div>
@@ -456,7 +518,10 @@ const Index = () => {
         </div>
       </section>
      
-      <section className="team-area pb-100 rpb-70 rel z-1">
+    
+
+
+<section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-15">Team Member</span>
@@ -464,10 +529,10 @@ const Index = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-2s">
+              <div className="team-member style-two wow fadeInUp delay-0-2s">
                 <img src="assets/images/team/member1.jpg" alt="Team" />
-                <h4>Johnathan P. Bailey</h4>
-                <span className="designation">UX/UI Designer</span>
+                <h4>Nimesh Kuinkel</h4>
+                <span className="designation">CEO & Founder</span>
                 <div className="social-style-two">
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -485,71 +550,49 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-4s">
+              <div className="team-member style-two wow fadeInUp delay-0-4s">
                 <img src="assets/images/team/member2.jpg" alt="Team" />
-                <h4>Mark M. Hughes</h4>
+                <h4>Apsan Regmi</h4>
                 <span className="designation">Web Developer</span>
                 <div className="social-style-two">
-                  <a href="#">
+                  <a href="https://www.facebook.com/apsan.regmi/">
                     <i className="fab fa-facebook-f" />
                   </a>
                   <a href="#">
                     <i className="fab fa-twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fapsanregmi%3Ffbclid%3DIwAR1uPhOFaNP6QX5AUySco3CZLcsPlLzY8xCjEap8R1M0WGhKfuPrdBOMNhU&h=AT3afhdc1hWKTqtuMqzqrnEP3rHas-o622boJF531ZRndmINYn8rMGoZMubaNXOHM5sKq98ctMAcivwqTUO0ldJsEnw-naVWrbWunDxse7CiAPlZsT71kwmE2xTYtZSjwJL6ZVoqiW4zvc0N_IQk">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fapsan-regmi-b735a91bb%2F%3Ffbclid%3DIwAR2j3gdRMltDrq-sO0dA4dSVy3sG3B_c3AuM48rHQYjoZLVz3QhXiQJzB1I&h=AT2HWojt7AMW9XUS1J5l2wpJLyO76bftwVjsnSV2q7CP_klUYYxrcqY0bquxXbsQQIxB0FJsTeMKE7VziHZxTfVmOUXe9smtU263I2m4P3VcwitS3TcqiY01HUIheASgAKnp5S8FNZeOVpSBChKSkQ">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-6s">
-                <img src="assets/images/team/member3.jpg" alt="Team" />
-                <h4>Donald B. Mitchell</h4>
-                <span className="designation">Software Engineer</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-8s">
-                <img src="assets/images/team/member4.jpg" alt="Team" />
-                <h4>Bennie N. Bannister</h4>
-                <span className="designation">Senior Consultant</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
+           
           </div>
         </div>
+        <div className="team-shapes">
+          <img
+            className="shape one"
+            src="/assets/images/team/team-shape-one.png"
+            alt="Shape"
+          />
+          <img
+            className="shape two"
+            src="/assets/images/team/team-shape-two.png"
+            alt="Shape"
+          />
+        </div>
       </section>
+
+
+
+
+
+
+
             <section className="testimonials-area py-130 rpy-100 rel z-1">
         <div className="container">
           <div className="row align-items-center justify-content-between">

@@ -1,40 +1,4 @@
-// import React, { useEffect, useState } from "react";
-// import Link from "next/link";
 
-// const Index = () => {
-//   const [services, setServices] = useState([]);
-//   console.log("services", services)
-
-//   useEffect(() => {
-//     console.log("useEffect is running ");
-
-//     fetch(window.origin +"/api/services/dataengineering/services")
-//       .then((response) => response.json())
-//       .then((parsed) => {
-//         setServices(parsed);
-//       })
-//       .catch((error) => {
-//         console.error("Error fetching services:", error);
-//       });
-//   }, []);
-
-//   return (
-//     <div>
-//       <h2>Data Engineering Landing Page</h2>
-//       {services && services.map((service) => (
-//         <div key={service.slug}>
-//           <Link href={`/services/dataengineering/${service.slug}`}>
-//             <h3>{service.title}</h3>
-//           </Link>
-
-//           <p>{service.description}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Index;
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -59,18 +23,7 @@ const Index = () => {
   }, []);
 
   return (
-    // <div>
-    //   <h2>Data Engineering Landing Page</h2>
-    //   {services.map((service) => (
-    //     <div key={service.slug}>
-    //       <Link href={`/services/cloudengineering/${service.slug}`}>
-    //         <h3>{service.title}</h3>
-    //       </Link>
-
-    //       <p>{service.description}</p>
-    //     </div>
-    //   ))}
-    // </div>
+    //
     <Layout>
       <PageBanner pageName={"Data Engineering"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
@@ -158,7 +111,7 @@ const Index = () => {
                       <div key={service.slug}>
                         <li>
                           <Link
-                            href={`/services/cloudengineering/${service.slug}`}
+                            href={`/services/dataengineering/${service.slug}`}
                           >
                             {service.title}
                           </Link>

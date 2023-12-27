@@ -3,6 +3,7 @@ import Layout from "@/layout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Nav, Tab } from "react-bootstrap";
+import Partner from "@/src/components/Partner";
 
 const Pricing = () => {
   const [cloudServices, setCloudServices] = useState([]);

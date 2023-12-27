@@ -51,9 +51,8 @@ const Header1 = () => {
             <div className="logo-outer">
               <div className="logo">
                 <Link legacyBehavior href="/">
-                  <a>
-                    <img
-                      className="navBarLogo"
+                <a>
+                    <img className="navBarLogo"
                       src="/assets/images/logos/cloudpro.png"
                       alt="Logo"
                       title="Logo"
