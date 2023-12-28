@@ -6,9 +6,12 @@ import HeaderTop from "./HeaderTop";
 import Menu from "./Menu";
 
 const Header4 = () => {
+  const handleMouseOver = () => {
+    console.log('defaultheader44')
+  } 
   return (
     <Fragment>
-      <header className="main-header header-four">
+      <header className="main-header header-four" onMouseOver={handleMouseOver}>
         <HeaderTop />
         {/*Header-Upper*/}
         <div className="header-upper bg-white">

@@ -3,8 +3,11 @@ import Search from "../Search";
 import Menu from "./Menu";
 
 const Header1 = () => {
+  const handleMouseOver = () => {
+    console.log('header1')
+  } 
   return (
-    <header className="main-header header-one menu-white">
+    <header className="main-header header-one menu-white" onMouseOver={handleMouseOver}>
       <div className="header-top-wrap bgc-gray">
         <div className="container">
           <div className="header-top">

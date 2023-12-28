@@ -3371,7 +3371,7 @@ h6, .h6 {
     cursor: pointer;
     background: transparent; }
     .main-menu .navbar-header .navbar-toggle .icon-bar {
-      background: var(--base-color);
+      background: var(--base-color);  
       height: 2px;
       width: 30px;
       display: block;
@@ -3681,7 +3681,7 @@ h6, .h6 {
 
 .main-header.header-one .mobile-logo {
   padding: 10px 25px;
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
   clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%); }
   .main-header.header-one .mobile-logo img {
@@ -3696,7 +3696,7 @@ h6, .h6 {
   padding-top: 10px;
   padding-bottom: 10px; }
   .main-header.header-one.fixed-header .logo-outer .logo img {
-    max-height: 60px; }
+    max-height: 75px; }
 
 /* Header Two */
 @media only screen and (max-width: 375px) {

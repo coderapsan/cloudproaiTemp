@@ -4,8 +4,11 @@ import HeaderTop from "./HeaderTop";
 import Menu from "./Menu";
 
 const DefaultHeader = () => {
+  const handleMouseOver = () => {
+    console.log('defaultheader')
+  } 
   return (
-    <header className="main-header header-two">
+    <header className="main-header header-two" onMouseOver={handleMouseOver}>
       <HeaderTop />
       {/*Header-Upper*/}
       <div className="header-upper bg-white">

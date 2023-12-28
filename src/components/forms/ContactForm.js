@@ -1,49 +1,47 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
 
-    const [formData, setFormData] = useState({
-        name: '',
-        phone_number: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-          ...formData,
-          [name]: value,
-        });
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-    
-        try {
-          const response = await fetch('/submit-form', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          });
-    
-          if (response.ok) {
-            console.log('Form submitted successfully!');
-            // Handle any further actions upon successful form submission
-          } else {
-            console.error('Form submission failed!');
-          }
-        } catch (error) {
-          console.error('Error submitting form:', error);
-        }
-      };
-  
+  const [formData, setFormData] = useState({
+    name: '',
+    phone_number: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formData,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
+      );
+
+      if (res.status === 200) alert("Sent Successfully, We will get back to you soon.");
+
+    } catch (error) {
+      console.log("EmailJS error:", error);
+      alert("Can't send, please check and try again.");
+    }
+  };
+
+
   return (
     <form onSubmit={handleSubmit} className="contactForm">
-      
+
       <div className="form-group">
         <input
           type="text"
