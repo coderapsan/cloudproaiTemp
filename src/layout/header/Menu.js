@@ -70,20 +70,22 @@ const MobileMenu = () => {
               <a href="/services" onClick={() => active("services")}>
                 SERVICES
               </a>
-              <ul style={activeSubMenu("services")}>
-                <li>
-                  <Link href="/services/generativeaiandml">Generative AI and ML</Link>
-                </li>
-                <li>
-                  <Link href="/services/cloudengineering">Cloud Engineering</Link>
-                </li>
-                <li>
-                  <Link href="/services/dataengineering">Data Engineering</Link>
-                </li>
-                <li>
-                <Link href="/services/bianddataanalytics">BI AND DATA ANALYTICS</Link>
+              <ul>
+              <li>
+                <Link href="/services/generativeaiandml">
+                  Generative AI And ML
+                </Link>
               </li>
-              </ul>
+              <li>
+                <Link href="/services/cloudengineering">Cloud Engineering </Link>
+              </li>
+              <li>
+                <Link href="/services/dataengineering">Data Engineering</Link>
+              </li>
+              <li>
+                <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
+              </li>
+            </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
                 <span className="fas fa-chevron-down" />
               </div>
@@ -93,11 +95,9 @@ const MobileMenu = () => {
                 INDUSTRIES
               </a>
               <ul style={activeSubMenu("industries")}>
+                
                 <li>
-                  <Link href="/industries/media">Media</Link>
-                </li>
-                <li>
-                  <Link href="/industries/entertainment-and-gaming">Entertainment And Gaming</Link>
+                  <Link href="/industries/entertainment-and-gaming">Media, Entertainment And Gaming</Link>
                 </li>
                 <li>
                   <Link href="/industries/real-estate">Real Estate</Link>
@@ -211,17 +211,17 @@ const DeskTopMenu = () => {
             <ul>
               <li>
                 <Link href="/services/generativeaiandml">
-                  GENERATIVE AI AND ML
+                  Generative AI And ML
                 </Link>
               </li>
               <li>
-                <Link href="/services/cloudengineering">CLOUD ENGINEERING</Link>
+                <Link href="/services/cloudengineering">Cloud Engineering </Link>
               </li>
               <li>
-                <Link href="/services/dataengineering">DATA ENGINEERING</Link>
+                <Link href="/services/dataengineering">Data Engineering</Link>
               </li>
               <li>
-                <Link href="/services/bianddataanalytics">BI AND DATA ANALYTICS</Link>
+                <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
               </li>
             </ul>
             <div className="dropdown-btn">
@@ -231,11 +231,9 @@ const DeskTopMenu = () => {
           <li className="dropdown">
             <a href="/industries">INDUSTRIES</a>
             <ul>
-            <li>
-                  <Link href="/industries/media">Media</Link>
-                </li>
+           
                 <li>
-                  <Link href="/industries/entertainment-and-gaming">Entertainment And Gaming</Link>
+                  <Link href="/industries/entertainment-and-gaming">Media, Entertainment And Gaming</Link>
                 </li>
                 <li>
                   <Link href="/industries/real-estate">Real Estate</Link>
@@ -271,9 +269,7 @@ const DeskTopMenu = () => {
           <li className="dropdown">
             <a href="/contact">CONTACT</a>
 
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
+            
           </li>
           <li className="dropdown">
             <a href="/about">ABOUT US</a>
@@ -281,12 +277,7 @@ const DeskTopMenu = () => {
               <li>
                 <Link href="/about">ABOUT US</Link>
               </li>
-              <li>
-                <Link href="index2">OUR TEAM</Link>
-              </li>
-              <li>
-                <Link href="index3">CAREERS</Link>
-              </li>
+             
               <li>
                 <Link href="/contact">CONTACT US</Link>
               </li>

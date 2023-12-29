@@ -125,7 +125,7 @@ const Index = () => {
                     <div className="content">
                       <span>Hotline</span>
                       <br />
-                      <a href="callto:+000(123)45688">++1 415-393-2021</a>
+                      <a href="callto:+000(123)45688">+1 415-393-2021</a>
                     </div>
                   </div>
                 </div>

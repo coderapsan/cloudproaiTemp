@@ -18,10 +18,9 @@ const ContactForm = () => {
       [name]: value,
     });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const res = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -29,14 +28,25 @@ const ContactForm = () => {
         formData,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
       );
-
-      if (res.status === 200) alert("Sent Successfully, We will get back to you soon.");
-
+  
+      if (res.status === 200) {
+        alert("Sent Successfully, We will get back to you soon.");
+  
+        // Reset the form fields
+        setFormData({
+          name: '',
+          phone_number: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      }
     } catch (error) {
       console.log("EmailJS error:", error);
       alert("Can't send, please check and try again.");
     }
   };
+  
 
 
   return (

@@ -3666,7 +3666,7 @@ h6, .h6 {
   
 
 .main-header.header-one .logo-outer {
-  margin-top: -50px;
+  margin-top: -20px;
   margin-right: 25px;
   padding: 25px 30px;
   /* border-radius: 50%; */
@@ -3696,7 +3696,7 @@ h6, .h6 {
   padding-top: 10px;
   padding-bottom: 10px; }
   .main-header.header-one.fixed-header .logo-outer .logo img {
-    max-height: 75px; }
+    max-height: 100px; }
 
 /* Header Two */
 @media only screen and (max-width: 375px) {

@@ -22,8 +22,8 @@ const DefaultHeader = () => {
                       src="/assets/images/logos/logowhite.png"
                       alt="Logo"
                       title="Logo"
-                      height={75}
-                      width={75}
+                      height={100}
+                      width={100}
                     />
                   </a>
                 </Link>
@@ -42,7 +42,7 @@ const DefaultHeader = () => {
             <div className="menu-btns">
               <Link legacyBehavior href="/contact">
                 <a className="theme-btn">
-                  Get a Quote <i className="fas fa-long-arrow-right" />
+                #FreeAdvice #ConsultNow <i className="fas fa-long-arrow-right" />
                 </a>
               </Link>
             </div>
