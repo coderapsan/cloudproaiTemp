@@ -501,14 +501,14 @@ const Index = () => {
                   src="assets/images/testimonials/testimonial.jpg"
                   alt="Testimonial"
                 />
-               
+                
                 <div className="dot-shapes">
                   <img
-                    src="assets/images/testimonials/testimonial-dots.png"
+                    src="/assets/images/testimonials/testimonial-dots.png"
                     alt="Dots"
                   />
                   <img
-                    src="assets/images/testimonials/testimonial-dots.png"
+                    src="/assets/images/testimonials/testimonial-dots.png"
                     alt="Dots"
                   />
                 </div>

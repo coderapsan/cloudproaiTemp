@@ -21,7 +21,7 @@ const Header1 = () => {
               </li>
               <li>
                 <i className="far fa-phone" />{" "}
-                <a href="callto:+1 415-393-2021">+1 415-393-2021</a>
+                <a href="callto:+000(123)45688">+1 415-393-2021</a>
               </li>
               <li className="for-none">
                 <i className="far fa-clock" /> Working Hours : Monday- Friday 

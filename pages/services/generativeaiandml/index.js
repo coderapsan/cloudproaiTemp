@@ -14,6 +14,7 @@ const Index = () => {
       .then((response) => response.json())
       .then((parsed) => {
         setServices(parsed);
+        console.log(parsed);
       })
       .catch((error) => {
         console.error("Error fetching services:", error);

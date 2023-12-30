@@ -29,15 +29,22 @@ const MobileMenu = () => {
                 src="/assets/images/logos/cloudpro.png"
                 alt="Logo"
                 title="Logo"
+                style={{ minHeight: '70px', minWidth: '70px' }}
+
               />
             </Link>
+
+
           </div>
-          <div
-            style={{ marginLeft: "200px", color: "red" }}
-            className="mobile-title"
-          >
-            <h5 style={{ color: "white" }}>CLOUD PRO AI</h5>
+          <div style={{
+            marginLeft: '50%', whiteSpace: 'nowrap', paddingRight: '3%', color: 'red',
+            marginTop: '1%'
+          }} className="mobile-title">
+            <h4>CLOUD PRO AI</h4>
           </div>
+
+
+
 
           {/* Toggle Button */}
           <Accordion.Toggle
@@ -74,17 +81,13 @@ const MobileMenu = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/cloudengineering">
-                    Cloud Engineering
-                  </Link>
+                  <Link href="/services/cloudengineering">Cloud Engineering </Link>
                 </li>
                 <li>
                   <Link href="/services/dataengineering">Data Engineering</Link>
                 </li>
                 <li>
-                  <Link href="/services/bianddataanalytics">
-                    BI And Data Analytics
-                  </Link>
+                  <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
                 </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
@@ -96,30 +99,27 @@ const MobileMenu = () => {
                 INDUSTRIES
               </a>
               <ul style={activeSubMenu("industries")}>
+
                 <li>
-                  <Link href="/industries/entertainment-and-gaming">
-                    Media, Entertainment And Gaming
-                  </Link>
+                  <Link href="/industries/media-entertainment-gaming">Media, Entertainment And Gaming</Link>
                 </li>
                 <li>
                   <Link href="/industries/real-estate">Real Estate</Link>
                 </li>
                 <li>
-                  <Link href="/industries/real-estate">Financial</Link>
+                  <Link href="/industries/financial">Financial</Link>
                 </li>
                 <li>
-                  <Link href="/industries/real-estate">Healthcare</Link>
+                  <Link href="/industries/healthcare">Healthcare</Link>
                 </li>
                 <li>
-                  <Link href="/industries/real-estate">Education</Link>
+                  <Link href="/industries/education">Education</Link>
                 </li>
                 <li>
-                  <Link href="/industries/real-estate">Manufacturing</Link>
+                  <Link href="/industries/manufacturing">Manufacturing</Link>
                 </li>
                 <li>
-                  <Link href="/industries/alternative-investment">
-                    Alternative Investment
-                  </Link>
+                  <Link href="/industries/alternative-investment">Alternative Investment</Link>
                 </li>
                 <li>
                   <Link href="/industries/insurance">Insurance</Link>
@@ -127,6 +127,7 @@ const MobileMenu = () => {
                 <li>
                   <Link href="/industries/security">Security</Link>
                 </li>
+
               </ul>
               <div
                 className="dropdown-btn"
@@ -140,6 +141,10 @@ const MobileMenu = () => {
                 CONTACT
               </a>
             </li>
+
+
+
+
 
             <li className="dropdown">
               <a href="/about" onClick={() => active("about")}>
@@ -158,8 +163,13 @@ const MobileMenu = () => {
                 <li>
                   <Link href="/about/contact">Contact</Link>
                 </li>
+
+
               </ul>
-              <div className="dropdown-btn" onClick={() => active("about")}>
+              <div
+                className="dropdown-btn"
+                onClick={() => active("about")}
+              >
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
@@ -170,6 +180,7 @@ const MobileMenu = () => {
   );
 };
 const DeskTopMenu = () => {
+
   return (
     <nav className="main-menu navbar-expand-lg desktop-menu">
       <div className="navbar-header">
@@ -208,17 +219,13 @@ const DeskTopMenu = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/services/cloudengineering">
-                  Cloud Engineering{" "}
-                </Link>
+                <Link href="/services/cloudengineering">Cloud Engineering </Link>
               </li>
               <li>
                 <Link href="/services/dataengineering">Data Engineering</Link>
               </li>
               <li>
-                <Link href="/services/bianddataanalytics">
-                  BI And Data Analytics
-                </Link>
+                <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
               </li>
             </ul>
             <div className="dropdown-btn">
@@ -228,30 +235,28 @@ const DeskTopMenu = () => {
           <li className="dropdown">
             <a href="/industries">INDUSTRIES</a>
             <ul>
+
               <li>
-                <Link href="/industries/entertainment-and-gaming">
-                  Media, Entertainment And Gaming
-                </Link>
+                <Link href="/industries/media-entertainment-gaming">Media, Entertainment And Gaming</Link>
               </li>
               <li>
                 <Link href="/industries/real-estate">Real Estate</Link>
               </li>
               <li>
-                <Link href="/industries/alternative-investment">
-                  Alternative Investment
-                </Link>
+                <Link href="/industries/alternative-investment">Alternative Investment</Link>
+
               </li>
               <li>
-                <Link href="/industries/real-estate">Financial</Link>
+                <Link href="/industries/financial">Financial</Link>
               </li>
               <li>
-                <Link href="/industries/real-estate">Healthcare</Link>
+                <Link href="/industries/healthcare">Healthcare</Link>
               </li>
               <li>
-                <Link href="/industries/real-estate">Education</Link>
+                <Link href="/industries/education">Education</Link>
               </li>
               <li>
-                <Link href="/industries/real-estate">Manufacturing</Link>
+                <Link href="/industries/manufacturing">Manufacturing</Link>
               </li>
               <li>
                 <Link href="/industries/insurance">Insurance</Link>
@@ -259,6 +264,7 @@ const DeskTopMenu = () => {
               <li>
                 <Link href="/industries/security">Security</Link>
               </li>
+
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
@@ -266,6 +272,8 @@ const DeskTopMenu = () => {
           </li>
           <li className="dropdown">
             <a href="/contact">CONTACT</a>
+
+
           </li>
           <li className="dropdown">
             <a href="/about">ABOUT US</a>
