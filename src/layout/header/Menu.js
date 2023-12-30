@@ -5,16 +5,16 @@ import { Accordion } from "react-bootstrap";
 
 import { Fragment } from "react";
 
-const Menu = () => {
+const Menu = ({ whiteLogo }) => {
   return (
     <Fragment>
       <DeskTopMenu />
-      <MobileMenu />
+      <MobileMenu whiteLogo={whiteLogo} />
     </Fragment>
   );
 };
 
-const MobileMenu = () => {
+const MobileMenu = ({ whiteLogo }) => {
   const [activeMenu, setActiveMenu] = useState(null);
   const active = (value) => setActiveMenu(value === activeMenu ? null : value),
     activeSubMenu = (value) =>
@@ -26,16 +26,14 @@ const MobileMenu = () => {
           <div className="mobile-logo">
             <Link href="/">
               <img
-                src="/assets/images/logos/cloudpro.png"
+                src={whiteLogo ? '/assets/images/logos/logowhite.png' : '/assets/images/logos/cloudpro.png'}
                 alt="Logo"
                 title="Logo"
-                style={{ minHeight: '70px', minWidth: '70px' }}
-
+                style={{ maxHeight: '123px', maxWidth: '123px' }}
               />
             </Link>
-
-
           </div>
+
           <div style={{
             marginLeft: '50%', whiteSpace: 'nowrap', paddingRight: '3%', color: 'red',
             marginTop: '1%'
