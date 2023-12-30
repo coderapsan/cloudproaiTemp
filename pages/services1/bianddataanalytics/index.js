@@ -14,7 +14,6 @@ const Index = () => {
       .then((response) => response.json())
       .then((parsed) => {
         setServices(parsed);
-        console.log(parsed);
       })
       .catch((error) => {
         console.error("Error fetching services:", error);
@@ -308,13 +307,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <div className="menu-btns">
-              <Link legacyBehavior href="/businesscases">
-                <a className="theme-btn">
-                Learn More About Business use cases<i className="fas fa-long-arrow-right" />
-                </a>
-              </Link>
-            </div>
 
       {/* Service Details Area end */}
       {/* Next Prev Service start */}

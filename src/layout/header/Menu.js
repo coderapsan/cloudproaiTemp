@@ -29,13 +29,17 @@ const MobileMenu = () => {
                 src="/assets/images/logos/cloudpro.png"
                 alt="Logo"
                 title="Logo"
+                style={{ minHeight: '70px', minWidth: '70px' }}
 
               />
             </Link>
 
 
           </div>
-          <div style={{ marginLeft: '200px', color: 'red' }} className="mobile-title">
+          <div style={{
+            marginLeft: '50%', whiteSpace: 'nowrap', paddingRight: '3%', color: 'red',
+            marginTop: '1%'
+          }} className="mobile-title">
             <h4>CLOUD PRO AI</h4>
           </div>
 
