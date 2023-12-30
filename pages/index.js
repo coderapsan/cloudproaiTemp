@@ -501,13 +501,7 @@ const Index = () => {
                   src="assets/images/testimonials/testimonial.jpg"
                   alt="Testimonial"
                 />
-                <div className="testi-image-over">
-                  <h3>We Have More 3248+ Reviews From Global Clients</h3>
-                  <img
-                    src="assets/images/testimonials/signature.png"
-                    alt="Signature"
-                  />
-                </div>
+               
                 <div className="dot-shapes">
                   <img
                     src="assets/images/testimonials/testimonial-dots.png"
