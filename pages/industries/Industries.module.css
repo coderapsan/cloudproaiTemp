@@ -1,0 +1,81 @@
+
+.industrySection {
+  padding: 50px 0;
+}
+
+.industryHeading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.industryOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 5%;
+}
+
+.industryLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.industryLink:hover {
+  transform: translateY(-5px);
+}
+
+.industryImage {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.industryTitle {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.media-entertainment-gaming {
+  background-image: url('https://kashmirage.net/wp-content/uploads/2022/08/Kashmirage-7J-Indias-Media-and-Entertainment-Industry-to-Grow-Spearheaded-by-Online-Gaming.jpg');
+}
+.real-state {
+  background-image: url('https://ellingtonproperties.ae/wp-content/uploads/how-does-investing-in-real-estate-work-1301x700.jpg');
+}
+.alternative-investment {
+  background-image: url('https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Business-professional-evaluating-alternative-investments-in-real-estate.jpg&w=1200&h=630');
+}
+
+
+.financial {
+  background-image: url('https://dynamics.folio3.com/blog/wp-content/uploads/2021/04/Financial-Management.png');
+}
+
+.healthcare {
+  background-image: url('https://imageio.forbes.com/specials-images/imageserve/651bbeb1c78cc403f92a6abd/The-10-Biggest-Trends-Revolutionizing-Healthcare-In-2024/0x0.jpg?crop=2500,1405,x0,y0,safe&height=399&width=711&fit=bounds');
+}
+
+.education {
+  background-image: url('https://img.freepik.com/free-photo/education-day-arrangement-table-with-copy-space_23-2148721266.jpg');
+}
+
+.manufacturing {
+  background-image: url('https://www.twi-global.com/CachedImage.axd?ImageName=What-is-Manufacturing.jpg&ImageWidth=784&ImageHeight=379&ImageVersionID=104810&ImageModified=20210302095954');
+}
+
+.insurance {
+  background-image: url('https://prod-sitefinity-library.kappro.com/images/default-source/career-corner/starting-career/insurance-producer_16.jpg?sfvrsn=d94c9803_5');
+}
+
+.security {
+  background-image: url('https://www.hurix.com/wp-content/uploads/2022/01/Cyber-security.jpg');
+}

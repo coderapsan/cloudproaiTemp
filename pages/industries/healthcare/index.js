@@ -1,37 +1,39 @@
 import { Tab } from "react-bootstrap";
 import Link from "next/link";
 import Layout from "@/layout";
+import PageBanner from "@/src/components/PageBanner";
 
-export default function Insurance() {
+export default function Healthcare() {
     return (
         <Layout>
+            <PageBanner pageName={"Healthcare"} />
             <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
                 <div className="price-page-shapes">
                     <img
                         className="shape two"
-                        src="https://prod-sitefinity-library.kappro.com/images/default-source/career-corner/starting-career/insurance-producer_16.jpg?sfvrsn=d94c9803_5"
+                        src="https://imageio.forbes.com/specials-images/imageserve/651bbeb1c78cc403f92a6abd/The-10-Biggest-Trends-Revolutionizing-Healthcare-In-2024/0x0.jpg?crop=2500,1405,x0,y0,safe&height=399&width=711&fit=bounds"
                         alt="Shape"
                     />
                 </div>
                 <div className="container">
-                    <Tab.Container defaultActiveKey="insuranceCloud">
+                    <Tab.Container defaultActiveKey="dataEngineering">
                         <div className="row">
                             <div className="col-xl-4 col-lg-8 col-md-10">
                                 <div className="pricing-tab-wrap mt-75 wow fadeInUp delay-0-2s">
                                     <div className="section-title mb-25">
-                                        <Link href="/services/insurancecloud">
-                                            <span className="sub-title mb-15">Insurance Cloud</span>
+                                        <Link href="">
+                                            <span className="sub-title mb-15">Healthcare</span>
                                         </Link>
-                                        <h2>Revolutionizing Insurance with AI Cloud</h2>
+                                        <h2>Transforming Healthcare through Data</h2>
                                     </div>
                                     <p>
-                                        Enter the future of insurance with Cloud Pro AI. Our cloud solutions powered by AI 
-                                        redefine insurance management, enabling real-time insights, efficient processes, 
-                                        and strategic decision-making.
+                                        Embrace the power of data in healthcare. Our data engineering solutions 
+                                        enable healthcare providers to derive meaningful insights, optimize operations, 
+                                        and deliver improved patient care.
                                     </p>
-                                    <Link href="/services/insurancecloud">
+                                    <Link href="/services/dataengineering">
                                         <span className="sub-title mb-15">
-                                            Discover More Insurance Cloud Services
+                                            Discover More Data Engineering Services
                                         </span>
                                     </Link>
                                 </div>

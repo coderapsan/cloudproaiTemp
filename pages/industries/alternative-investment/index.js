@@ -2,39 +2,40 @@ import { Tab } from "react-bootstrap";
 import Link from "next/link";
 import Layout from "@/layout";
 
-export default function RealEstate() {
+export default function AlternativeInvestment() {
     return (
         <Layout>
             <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
                 <div className="price-page-shapes">
                     <img
                         className="shape two"
-                        src="https://ellingtonproperties.ae/wp-content/uploads/how-does-investing-in-real-estate-work-1301x700.jpg"
+                        src="https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Business-professional-evaluating-alternative-investments-in-real-estate.jpg&w=1200&h=630"
                         alt="Shape"
                     />
                 </div>
                 <div className="container">
-                    <Tab.Container defaultActiveKey="realEstateCloud">
+                    <Tab.Container defaultActiveKey="alternativeInvestmentCloud">
                         <div className="row">
                             <div className="col-xl-4 col-lg-8 col-md-10">
                                 <div className="pricing-tab-wrap mt-75 wow fadeInUp delay-0-2s">
                                     <div className="section-title mb-25">
-                                        <Link href="/services/realestatecloud">
-                                            <span className="sub-title mb-15">Real Estate Cloud</span>
+                                        <Link href="/services/alternativeinvestmentcloud">
+                                            <span className="sub-title mb-15">Alternative Investment Cloud</span>
                                         </Link>
-                                        <h2>Revolutionizing Real Estate with AI Cloud</h2>
+                                        <h2>Revolutionizing Investments with Alternative Strategies</h2>
                                     </div>
                                     <p>
-                                        Enter the future of real estate with Cloud Pro AI. Our cloud solutions powered by AI 
-                                        redefine property management, investment analytics, market insights, and smart decision-making.
+                                        Step into the world of alternative investments with Cloud Pro AI. Our cloud-based solutions 
+                                        leverage alternative strategies, providing diversified investment opportunities 
+                                        across various asset classes beyond traditional stocks and bonds.
                                     </p>
                                     <p>
-                                        Explore a new era of real estate technology that empowers investors, developers, and agents
-                                        to innovate and succeed in a dynamic market.
+                                        Explore new avenues for generating returns and mitigating risks in the dynamic landscape 
+                                        of alternative investments.
                                     </p>
-                                    <Link href="/services/realestatecloud">
+                                    <Link href="/services/alternativeinvestmentcloud">
                                         <span className="sub-title mb-15">
-                                            Discover More Real Estate Cloud Services
+                                            Discover More Alternative Investment Cloud Services
                                         </span>
                                     </Link>
                                 </div>
