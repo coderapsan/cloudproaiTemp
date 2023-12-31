@@ -1,11 +1,15 @@
 import { Tab } from "react-bootstrap";
 import Link from "next/link";
 import Layout from "@/layout";
+import PageBanner from "@/src/components/PageBanner";
+import ExploreSection from "@/src/components/Industries/ExploreSection";
 
 export default function RealEstate() {
     return (
         <Layout>
-            <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+            
+      <PageBanner pageName={"Industries"} pageTitle={"Real Estate"}/>
+            <section className="price-plan-page-middle bgc-lighter rpt-100 pb-100 rpb-70 rel z-1">
                 <div className="price-page-shapes">
                     <img
                         className="shape two"
@@ -43,6 +47,7 @@ export default function RealEstate() {
                     </Tab.Container>
                 </div>
             </section>
+            <ExploreSection/>
         </Layout>
     );
 }

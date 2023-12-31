@@ -1,11 +1,15 @@
 import { Tab } from "react-bootstrap";
 import Link from "next/link";
 import Layout from "@/layout";
+import PageBanner from "@/src/components/PageBanner";
+import ExploreSection from "@/src/components/Industries/ExploreSection";
 
 export default function Security() {
     return (
         <Layout>
-            <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+
+            <PageBanner pageName={"Industries"} pageTitle={"Security"} />
+            <section className="price-plan-page-middle bgc-lighter rpt-100 pb-100 rpb-70 rel z-1">
                 <div className="price-page-shapes">
                     <img
                         className="shape two"
@@ -25,12 +29,12 @@ export default function Security() {
                                         <h2>Elevating Security with Cloud Solutions</h2>
                                     </div>
                                     <p>
-                                        Embrace robust security measures with Cloud Pro AI. Our cloud security solutions 
-                                        utilize cutting-edge technologies to safeguard your data, infrastructure, and 
+                                        Embrace robust security measures with Cloud Pro AI. Our cloud security solutions
+                                        utilize cutting-edge technologies to safeguard your data, infrastructure, and
                                         applications from cyber threats and vulnerabilities.
                                     </p>
                                     <p>
-                                        Explore comprehensive security strategies to protect your digital assets in 
+                                        Explore comprehensive security strategies to protect your digital assets in
                                         an ever-evolving threat landscape.
                                     </p>
                                     <Link href="/services/securitycloud">
@@ -44,6 +48,9 @@ export default function Security() {
                     </Tab.Container>
                 </div>
             </section>
+
+            <ExploreSection/>
+
         </Layout>
     );
 }
