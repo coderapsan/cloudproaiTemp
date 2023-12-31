@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <Link legacyBehavior href="/contact">
               <a className="theme-btn style-three wow fadeInRight delay-0-2s">
-              Want a Pro? 
+              Want a Pro? <br/>
  Schedule a Free Consultation  <i className="fas fa-long-arrow-right" />
               </a>
             </Link>

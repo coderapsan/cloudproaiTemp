@@ -124,7 +124,7 @@ const Index = () => {
                       <div key={service.slug}>
                         <li>
                           <Link
-                            href={`/services/cloudservices/${service.slug}`}
+                            href={`/services/cloudengineering/${service.slug}`}
                           >
                             {service.title}
                           </Link>

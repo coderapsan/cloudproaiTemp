@@ -123,7 +123,7 @@ const Index = () => {
                     {services.map((service) => (
                       <div key={service.slug}>
                         <li>
-                          <Link href={`/services/dataservices/${service.slug}`}>
+                          <Link href={`/services/dataengineering/${service.slug}`}>
                             {service.title}
                           </Link>
                         </li>
