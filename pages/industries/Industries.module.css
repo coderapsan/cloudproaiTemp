@@ -1,13 +1,17 @@
-
 .industrySection {
   padding: 50px 0;
 }
 
-.industryHeading {
+.industryDescription {
+  font-size: calc(1vw + 1.1rem); /* Example calculation, adjust as needed */
+  line-height: 1.6;
+  color: #333;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
+  margin: 5% 0;
+  margin-bottom: 10%;
+  font-weight: lighter;
 }
+
 
 .industryOptions {
   display: flex;
@@ -36,7 +40,7 @@
   height: 200px;
   background-size: cover;
   background-position: center;
- 
+
 }
 
 .industryTitle {
@@ -48,9 +52,11 @@
 .media-entertainment-gaming {
   background-image: url('https://kashmirage.net/wp-content/uploads/2022/08/Kashmirage-7J-Indias-Media-and-Entertainment-Industry-to-Grow-Spearheaded-by-Online-Gaming.jpg');
 }
+
 .real-state {
   background-image: url('https://ellingtonproperties.ae/wp-content/uploads/how-does-investing-in-real-estate-work-1301x700.jpg');
 }
+
 .alternative-investment {
   background-image: url('https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Business-professional-evaluating-alternative-investments-in-real-estate.jpg&w=1200&h=630');
 }
@@ -78,4 +84,62 @@
 
 .security {
   background-image: url('https://www.hurix.com/wp-content/uploads/2022/01/Cyber-security.jpg');
+}
+
+.professionalSection {
+  display: flex;
+  background-color: #f5f5f5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+  margin-top: -3%;
+  padding-bottom: 16%;
+  padding-top: 5%;
+}
+
+.textContainer {
+  flex: 1;
+  margin-right: 0px;
+}
+
+.sectionText {
+  font-size: calc(1vw + 1rem); /* Dynamic font size based on viewport width */
+  line-height: 1.6;
+  color: #333;
+  max-width: 70%;
+  margin: 0 auto; /* Centers the text horizontally */
+  text-align: center; /* Centers the text content */
+  font-weight: lighter;
+}
+
+
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .imageContainer {
+    display: none;
+  }
+  .sectionText {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .professionalSection {
+    padding-bottom: 25%;
+  }
 }

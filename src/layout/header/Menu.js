@@ -34,12 +34,12 @@ const MobileMenu = ({ whiteLogo }) => {
             </Link>
           </div>
 
-          <div style={{
+          {/* <div style={{
             marginLeft: '50%', whiteSpace: 'nowrap', paddingRight: '3%', color: 'red',
             marginTop: '1%'
           }} className="mobile-title">
             <h4>CLOUD PRO AI</h4>
-          </div>
+          </div> */}
 
 
 
