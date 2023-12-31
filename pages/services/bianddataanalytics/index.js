@@ -22,14 +22,14 @@ const Index = () => {
 
   return (
     <Layout>
-      <PageBanner pageName={"Generative AI And ML"} />
+      <PageBanner pageName={"Services"} pageTitle={"Generative AI And ML"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Generative AI and Machine Learning Services</h2>
+                  <h2>BI And Data Analytics</h2>
                 </div>
                 <p>
                   Unlock the Power of Intelligent Creation with CloudPro AI In

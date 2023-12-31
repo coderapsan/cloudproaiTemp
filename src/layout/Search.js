@@ -1,9 +1,11 @@
 import { Fragment, useState } from "react";
+import styles from "./Search.module.css";
+
 const Search = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Fragment>
+    <div className={styles.searchMain}>
       <button className="far fa-search" onClick={() => setToggle(!toggle)} />
       <form
         onSubmit={(e) => e.preventDefault()}
@@ -18,7 +20,7 @@ const Search = () => {
         />
         <button type="submit" className="searchbutton far fa-search" />
       </form>
-    </Fragment>
+    </div>
   );
 };
 export default Search;

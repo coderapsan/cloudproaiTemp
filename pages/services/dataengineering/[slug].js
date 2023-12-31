@@ -11,7 +11,7 @@ const Slug = () => {
 
   useEffect(() => {
     if (slug) {
-      fetch(window.origin +`/api/services/dataservices/getservice?slug=${slug}`)
+      fetch(window.origin +`/api/services/dataengineering/getservice?slug=${slug}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -42,7 +42,7 @@ const Slug = () => {
               <h2>{service.title}</h2>
             </div>
             <p>
-              {service.introduction}
+              {service.serviceDescription}
             </p>
             <div className="image my-45">
               <img
@@ -51,12 +51,12 @@ const Slug = () => {
               />
             </div>
             
-            <div className="section-title mt-60 mb-25">
+            {/* <div className="section-title mt-60 mb-25">
               <h3>{service.content.title1}</h3>
             </div>
             <p>
              {service.content.description1}
-            </p>
+            </p> */}
             <div className="row mt-50">
               <div className="col-xl-3 col-lg-4 mb-30">
                 <img
@@ -85,33 +85,27 @@ const Slug = () => {
             </div>
             
             <div className="section-title mt-60 mb-25">
-              <h3>{service.content.title2}</h3>
+              <h3>Key Features</h3>
             </div>
             <p>
-             {service.content.description2}
+             {service.keyFeatures}
             </p>
 
             
             <div className="section-title mt-60 mb-25">
-              <h3>{service.content.title3}</h3>
+              <h3>{service.caseStudies.title1}</h3>
             </div>
             <p>
-             {service.content.description3}
+             {service.caseStudies.description}
             </p>
             
             <div className="section-title mt-60 mb-25">
-              <h3>{service.content.title4}</h3>
+              <h3>{service.caseStudies.title2}</h3>
             </div>
             <p>
-             {service.content.description4}
+             {service.caseStudies.description}
             </p>
             
-            <div className="section-title mt-60 mb-25">
-              <h3>{service.content.title5}</h3>
-            </div>
-            <p>
-             {service.content.description5}
-            </p>
             
           </div>
         </div>

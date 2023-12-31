@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const DefaultHeader = () => {
   const handleMouseOver = () => {
-    console.log('defaultheader')
+    console.log('defaultheaderrrr ')
   } 
   return (
     <header className="main-header header-two" onMouseOver={handleMouseOver}>
@@ -31,7 +31,7 @@ const DefaultHeader = () => {
             </div>
             <div className="nav-outer mx-auto clearfix">
               {/* Main Menu */}
-              <Menu />
+              <Menu whiteLogo={true}/>
               {/* Main Menu End*/}
             </div>
             {/* Nav Search */}

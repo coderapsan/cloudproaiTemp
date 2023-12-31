@@ -11,7 +11,7 @@ const Slug = () => {
 
   useEffect(() => {
     if (slug) {
-      fetch(window.origin +`/api/services/cloudservices/getservice?slug=${slug}`)
+      fetch(window.origin +`/api/services/cloudengineering/getservice?slug=${slug}`)
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');

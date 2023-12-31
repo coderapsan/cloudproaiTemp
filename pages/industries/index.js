@@ -1,4 +1,3 @@
-
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import Link from "next/link";
@@ -9,12 +8,21 @@ const Industries = () => {
   return (
     <Layout>
       <PageBanner pageName={"Industries"} />
+
       <section className={styles.industrySection}>
         <Container>
-          <h2 className={styles.industryHeading}>Explore Industries</h2>
+          <h6 className={styles.industryDescription}>
+            Leading the way for international success,
+            <br />
+            we stand alongside top-tier organizations across diverse industries,
+            <br />
+            driving their digital engineering initiatives forward,
+            <br />
+            and ensuring they are equipped to meet any future demands.
+          </h6>
           <Row className={styles.industryOptions}>
             {industries.map((industry) => (
-              <Col lg={4} md={6}key={industry.name}>
+              <Col lg={4} md={6} key={industry.name}>
                 <Link href={industry.link}>
                   <div className={styles.industryLink}>
                     <div className={`${styles.industryImage} ${styles[industry.className]}`} />
@@ -25,6 +33,21 @@ const Industries = () => {
             ))}
           </Row>
         </Container>
+      </section>
+      <section>
+        <div className={styles.professionalSection}>
+          <div className={styles.textContainer}>
+            <h6 className={styles.sectionText}>
+              We empower our clients            with top-tier cloud and data practices,
+              enabling them to concentrate
+              on their core strengths
+              without worrying about the path to success.
+            </h6>
+          </div>
+          <div className={styles.imageContainer}>
+            <img src="https://talkshop.ph/blog/wp-content/uploads/2014/06/Team-Silhouettee-with-Globe-1024x819.jpg" alt="Team Silhouette with Globe" className={styles.sectionImage} />
+          </div>
+        </div>
       </section>
     </Layout>
   );

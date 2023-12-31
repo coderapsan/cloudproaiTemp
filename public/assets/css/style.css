@@ -5105,7 +5105,8 @@ h6,
 .navBarLogo {
   border-radius: 50%;
 
-  margin-top: 07px;
+  /* margin-top: 07px; */
+  transform: scale(1.5);
 }
 
 .main-header.header-one .header-top {
@@ -5132,8 +5133,8 @@ h6,
   padding: 25px 30px;
   /* border-radius: 50%; */
   /* background: var(--secondary-color); */
-  -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
-  clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+  /* -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+  clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%); */
 }
 
 @media only screen and (min-width: 992px) {

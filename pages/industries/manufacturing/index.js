@@ -1,11 +1,14 @@
 import { Tab } from "react-bootstrap";
 import Link from "next/link";
 import Layout from "@/layout";
+import PageBanner from "@/src/components/PageBanner";
+import ExploreSection from "@/src/components/Industries/ExploreSection";
 
 export default function Manufacturing() {
     return (
         <Layout>
-            <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1 manufacturing">
+            <PageBanner pageName={"Industries"} pageTitle={"Manufacturing"} />
+            <section className="price-plan-page-middle bgc-lighter rpt-100 pb-100 rpb-70 rel z-1 manufacturing">
                 <div className="price-page-shapes">
                     <img
                         className="shape two"
@@ -25,8 +28,8 @@ export default function Manufacturing() {
                                         <h2>Transforming Manufacturing with AI</h2>
                                     </div>
                                     <p>
-                                        Experience the future of manufacturing with Cloud Pro AI. Our AI-driven 
-                                        cloud solutions optimize processes, enhance productivity, and drive innovation 
+                                        Experience the future of manufacturing with Cloud Pro AI. Our AI-driven
+                                        cloud solutions optimize processes, enhance productivity, and drive innovation
                                         across manufacturing operations.
                                     </p>
                                     <Link href="/services/manufacturingcloud">
@@ -40,6 +43,7 @@ export default function Manufacturing() {
                     </Tab.Container>
                 </div>
             </section>
+            <ExploreSection/>
         </Layout>
     );
 }

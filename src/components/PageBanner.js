@@ -1,5 +1,6 @@
 import Link from "next/link";
 const PageBanner = ({ pageName, pageTitle }) => {
+  console.log(pageName, pageTitle)
   return (
     <section
       className="page-banner-area bgs-cover py-135 rpy-100"
@@ -18,6 +19,9 @@ const PageBanner = ({ pageName, pageTitle }) => {
                 </Link>
               </li>
               <li className="breadcrumb-item active">{pageName}</li>
+              {pageTitle &&
+              <li className="breadcrumb-item active">{pageTitle}</li>
+              }
             </ol>
           </nav>
         </div>
