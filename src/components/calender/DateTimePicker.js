@@ -2,20 +2,29 @@ import React, { useState } from 'react';
 import Datetime from 'react-datetime';
 import "react-datetime/css/react-datetime.css";
 import ContactForm from '../forms/ContactForm';
-// import './DateTimePicker.css'; // Import your custom CSS for styling
+
 
 const DateTimePicker = () => {
   const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedTime, setSelectedTime] = useState(null);
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
+  const handleTimeChange = (time) => {
+    setSelectedTime(time);
+  };
+
   const handleBookAppointment = () => {
-    if (selectedDate) {
-      // Add your logic to handle booking the appointment
-      console.log("Appointment booked for:", selectedDate);
-      // You can send the selectedDate to your backend or perform further actions here
+    if (selectedDate && selectedTime) {
+      
+      const completeDateTime = new Date(selectedDate);
+      completeDateTime.setHours(selectedTime.hours());
+      completeDateTime.setMinutes(selectedTime.minutes());
+
+      
+      console.log("Appointment booked for:", completeDateTime);
     } else {
       alert("Please select a valid date and time for the appointment.");
     }
@@ -23,13 +32,25 @@ const DateTimePicker = () => {
 
   return (
     <div className="datetime-picker-container">
-      <Datetime
-        value={selectedDate}
-        onChange={handleDateChange}
-        inputProps={{ placeholder: 'Select date and time', readOnly: true }}
-        className='appearance-none shadow border rounded py-3 px-2 text-gray-darker'
-      />
-      <ContactForm/>
+      <div className="date-picker">
+        <Datetime
+          value={selectedDate}
+          onChange={handleDateChange}
+          inputProps={{ placeholder: 'Select date', readOnly: true }}
+          className='appearance-none shadow border rounded py-3 px-2 text-gray-darker'
+        />
+      </div>
+      <div className="time-picker">
+        <Datetime
+          value={selectedTime}
+          onChange={handleTimeChange}
+          inputProps={{ placeholder: 'Select time', readOnly: true }}
+          dateFormat={false} 
+          timeFormat="HH:mm" 
+          className='appearance-none shadow border rounded py-3 px-2 text-gray-darker'
+        />
+      </div>
+      <ContactForm />
       <button className="book-appointment-btn" onClick={handleBookAppointment}>
         Book Appointment
       </button>
