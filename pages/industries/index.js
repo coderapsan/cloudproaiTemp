@@ -58,7 +58,7 @@ export default Industries;
 
 const industries = [
   { name: 'Media, Entertainment & Gaming', link: '/industries/media-entertainment-gaming', className: 'media-entertainment-gaming' },
-  { name: 'Real Estate', link: '/industries/real-state', className: 'real-state' },
+  { name: 'Real Estate', link: '/industries/real-estate', className: 'real-estate' },
   { name: 'Alternative Investment', link: '/industries/alternative-investment', className: 'alternative-investment' },
   { name: 'Financial', link: '/industries/financial', className: 'financial' },
   { name: 'Healthcare', link: '/industries/healthcare', className: 'healthcare' },
