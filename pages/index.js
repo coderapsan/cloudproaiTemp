@@ -6,6 +6,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 import Data from "../src/jsonData/services.json";
 import Partner from "@/src/components/Partner";
+import DateTimePicker from "@/src/components/calender/DateTimePicker";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -20,6 +21,7 @@ const Index = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 align-self-center">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
+                
                 <h1>Cloud Pro AI: Cloud Services Consultant </h1>
                 <p>
                   In the vast realm of cloud technology, CloudProAI emerges as a
@@ -501,20 +503,14 @@ const Index = () => {
                   src="assets/images/testimonials/testimonial.jpg"
                   alt="Testimonial"
                 />
-                <div className="testi-image-over">
-                  <h3>We Have More 3248+ Reviews From Global Clients</h3>
-                  <img
-                    src="assets/images/testimonials/signature.png"
-                    alt="Signature"
-                  />
-                </div>
+                
                 <div className="dot-shapes">
                   <img
-                    src="assets/images/testimonials/testimonial-dots.png"
+                    src="/assets/images/testimonials/testimonial-dots.png"
                     alt="Dots"
                   />
                   <img
-                    src="assets/images/testimonials/testimonial-dots.png"
+                    src="/assets/images/testimonials/testimonial-dots.png"
                     alt="Dots"
                   />
                 </div>

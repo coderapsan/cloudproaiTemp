@@ -14,7 +14,7 @@ export default function handler(req, res) {
       return;
     }
 
-    console.log(req.query.slug);
+    // console.log(req.query.slug);
 
     res.status(200).json(JSON.parse(data));
   });

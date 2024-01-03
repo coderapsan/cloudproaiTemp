@@ -18,7 +18,9 @@ const Footer = () => {
             </div>
             <Link legacyBehavior href="/contact">
               <a className="theme-btn style-three wow fadeInRight delay-0-2s">
-              #FreeAdvice #ConsultNow <i className="fas fa-long-arrow-right" />
+                Want a Pro? <br />
+                Schedule a Free Consultation{" "}
+                <i className="fas fa-long-arrow-right" />
               </a>
             </Link>
             <div className="hotline wow fadeInRight delay-0-2s">
@@ -29,15 +31,15 @@ const Footer = () => {
                 <a href="callto:+000(123)45688">+1 415-393-2021</a>
               </div>
             </div>
-           
-       
 
             <div className="hotline wow fadeInRight delay-0-2s">
-              <i className="fas fa-envelope"/>
+              <i className="fas fa-envelope" />
               <div className="content">
                 <span>Email</span>
                 <br />
-                <a href="mailto:contact@cloudproai.com">contact@cloudproai.com</a>
+                <a href="mailto:contact@cloudproai.com">
+                  contact@cloudproai.com
+                </a>
               </div>
             </div>
           </div>
@@ -48,15 +50,13 @@ const Footer = () => {
           <div className="col-xl-3 col-sm-6">
             <div className="footer-widget widget_about wow fadeInUp delay-0-2s">
               {/* <div className="footer-logo mb-30"> */}
-                <Link legacyBehavior href="/">
-                  <a>
-                    <img  src="/assets/images/logos/cloudpro.png" alt="Logo" />
-                  </a>
-                </Link>
+              <Link legacyBehavior href="/">
+                <a>
+                  <img src="/assets/images/logos/cloudpro.png" alt="Logo" />
+                </a>
+              </Link>
               {/* </div> */}
-              <p>
-               Cloud Pro AI: Cloud Services Consultant
-              </p>
+              <p>Cloud Pro AI: Cloud Services Consultant</p>
               <Link legacyBehavior href="/about">
                 <a className="read-more">
                   Learn More Us <i className="fas fa-long-arrow-right" />
@@ -68,7 +68,8 @@ const Footer = () => {
             <div className="footer-widget widget_newsletter wow fadeInUp delay-0-6s">
               <h4 className="footer-title">Newsletter</h4>
               <p>
-                Newsletter Features will be updated soon 👍👍 Get connected with us 
+                Newsletter Features will be updated soon 👍👍 Get connected with
+                us
               </p>
               <form onSubmit={(e) => e.preventDefault()} action="#">
                 <label htmlFor="email">
@@ -108,35 +109,38 @@ const Footer = () => {
                     <li>
                       <Link
                         legacyBehavior
-                        href="404"
-                      > Security and Complianace </Link>
+                        href="/industries/alternative-investment"
+                      >
+                        Alternative Investment
+                      </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="404">Updates and Release Notes</Link>
-                    </li>
-                    <li>
-                      <Link
+                      {/* <Link
                         legacyBehavior
-                        href="services"
-                      >Our Services </Link>
+                        href="/industries/media-entertainment-and-gaming"
+                      >
+                        Media, Entertainment and Gaming
+                      </Link> */}
                     </li>
                     <li>
-                      <Link
-                        legacyBehavior
-                        href="project-grid"
-                      >Models</Link>
+                      <Link legacyBehavior href="services/generativeaiandml">
+                        Generative AI And ML
+                      </Link>
                     </li>
                     <li>
-                      <Link
-                        legacyBehavior
-                        href="404"
-                      >Frequently Asked Questions</Link>
+                      <Link legacyBehavior href="/services/dataengineering">
+                        Data Engineering Services
+                      </Link>
                     </li>
                     <li>
-                      <Link
-                        legacyBehavior
-                        href="404"
-                      >  Feedback And Suggestions  </Link>
+                      <Link legacyBehavior href="/services/cloudengineering">
+                        Cloud Engineering Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link legacyBehavior href="services/bianddataanalytics">
+                        BI And Data Analytics
+                      </Link>
                     </li>
                     <li>
                       <Link legacyBehavior href="contact">{`Contact us`}</Link>
@@ -149,40 +153,44 @@ const Footer = () => {
                   <h4 className="footer-title">Services</h4>
                   <ul className="list-style-two">
                     <li>
-                      <Link legacyBehavior href="404">
-                        <a>Data Analytics & Engineering</a>
+                      <Link legacyBehavior href="services/generativeaiandml">
+                        Generative AI And ML
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="404">
-                        <a>AI Chatbots</a>
-                      </Link>
-                    </li>
-                    {/* <li>
-                      <Link legacyBehavior href="404">
-                        <a>Data Services Best Practices on Cloud</a>
-                      </Link>
-                    </li> */}
-                    <li>
-                      <Link legacyBehavior href="404">
-                        <a>Serverless Architecture</a>
+                      <Link legacyBehavior href="/services/dataengineering">
+                        Data Engineering Services
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="404">
-                        <a>End to End Data Pipeline Solutions"</a>
+                      <Link legacyBehavior href="/services/cloudengineering">
+                        Cloud Engineering Services
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="service-details">
-                        <a>Data Lakes and Warehouses</a>
+                      <Link
+                        legacyBehavior
+                        href="/services/generativeaiandml/ai-chatbots"
+                      >
+                        AI Chatbots
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="service-details">
-                        <a>Cloud Services Operations And Maintainance</a>
+                      <Link legacyBehavior href="/services/dataengineering/api-data-extraction">
+                        API Data Extraction
+
                       </Link>
                     </li>
+
+
+                    <li>
+                      <Link
+                    legacyBehavior href="/services/cloudengineering/serverless-architecture"
+                      >
+                        Serverless Architecture
+                      </Link>
+                    </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -218,25 +226,25 @@ const Footer = () => {
                     <li>
                       <Link legacyBehavior href="404">
                         Events
-                        
                       </Link>
                     </li>
                   </ul>
                 </div>
                 {/* <div className="footer-widget widget_nav_menu wow fadeInUp delay-0-5s */}
-                  <h4 className="footer-title">Solutions</h4>
-                  <ul className="list-style-two">
+                <h4 className="footer-title">Solutions</h4>
+                <ul className="list-style-two">
                   <li>
-                      <Link legacyBehavior href="404">
-                        <a>Data Cost Optimizer </a>
-                      </Link>
-                    </li><li>
-                      <Link legacyBehavior href="404">
-                        <a>Data & AI Lab </a>
-                      </Link>
-                    </li>
-                  </ul>
-                  {/* </div> */}
+                    <Link legacyBehavior href="404">
+                      <a>Data Cost Optimizer </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="404">
+                      <a>Data & AI Lab </a>
+                    </Link>
+                  </li>
+                </ul>
+                {/* </div> */}
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <PageBanner pageName={"Cloud Engineering Services"} />
+      <PageBanner pageName={"Services"} pageTitle={"Cloud Engineering Services"}/>
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
@@ -124,7 +124,7 @@ const Index = () => {
                       <div key={service.slug}>
                         <li>
                           <Link
-                            href={`/services/cloudservices/${service.slug}`}
+                            href={`/services/cloudengineering/${service.slug}`}
                           >
                             {service.title}
                           </Link>

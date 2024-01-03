@@ -23,7 +23,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <PageBanner pageName={"Generative AI And ML"} />
+      <PageBanner pageName={"Services"} pageTitle={'Generative AI And ML'} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">

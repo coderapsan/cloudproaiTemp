@@ -22,7 +22,8 @@ const Index = () => {
 
   return (
     <Layout>
-      <PageBanner pageName={"Data Engineering Services"} />
+      <PageBanner pageName={"Services"} pageTitle={'Data Engineering Services'} />
+      
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
@@ -123,7 +124,7 @@ const Index = () => {
                     {services.map((service) => (
                       <div key={service.slug}>
                         <li>
-                          <Link href={`/services/dataservices/${service.slug}`}>
+                          <Link href={`/services/dataengineering/${service.slug}`}>
                             {service.title}
                           </Link>
                         </li>
