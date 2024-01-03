@@ -67,9 +67,9 @@ const Contact = () => {
                 <div className="icon">
                   <i className="fal fa-clock" />
                 </div>
-                <h4>Working Hour</h4>
-                <b>Monday _ Friday,</b>
-                <span>08:00am - 06:00pm</span>
+                <h4>Business Hours</h4>
+                <b>Monday - Friday,</b>
+                <span>8:00am -5:00pm PST </span>
               </div>
             </div>
           </div>

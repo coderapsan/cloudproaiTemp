@@ -227,7 +227,7 @@ const TestimonialsSlider2 = () => {
         </div>
         <div className="testi-image-item">
           <img
-            src="assets/images/testimonials/testi-author1.jpg"
+            src="assets/images/testimonials/testi-author6.jpg"
             alt="Author"
           />
         </div>
@@ -273,8 +273,8 @@ const TestimonialsSlider2 = () => {
             scalability and innovation.
           </p>
           <div className="author">
-            <span className="h4">Andrew D. Bricker</span>
-            <span>CEO &amp; Founder</span>
+            <span className="h4">Dipendra Adhikari</span>
+            <span>CTO &amp; Founder</span>
           </div>
         </div>
         <div className="testi-content-item">
@@ -286,7 +286,7 @@ const TestimonialsSlider2 = () => {
             business information.
           </p>
           <div className="author">
-            <span className="h4">Andrew D. Bricker</span>
+            <span className="h4">Suman Aryal</span>
             <span>CEO &amp; Founder</span>
           </div>
         </div>
@@ -299,8 +299,8 @@ const TestimonialsSlider2 = () => {
             decision-making.
           </p>
           <div className="author">
-            <span className="h4">Andrew D. Bricker</span>
-            <span>CEO &amp; Founder</span>
+            <span className="h4">Jay Sloan</span>
+            <span>Data Engineer </span>
           </div>
         </div>
         <div className="testi-content-item">
@@ -312,7 +312,7 @@ const TestimonialsSlider2 = () => {
             downtime, and extend the lifespan of machinery.
           </p>
           <div className="author">
-            <span className="h4">Andrew D. Bricker</span>
+            <span className="h4">Leslie Parker</span>
             <span>CEO &amp; Founder</span>
           </div>
         </div>

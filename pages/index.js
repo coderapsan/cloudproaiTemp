@@ -21,7 +21,7 @@ const Index = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 align-self-center">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
-                <DateTimePicker/>
+                
                 <h1>Cloud Pro AI: Cloud Services Consultant </h1>
                 <p>
                   In the vast realm of cloud technology, CloudProAI emerges as a
