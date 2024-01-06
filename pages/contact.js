@@ -2,13 +2,8 @@ import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
 import ContactForm from "@/components/forms/ContactForm"
 const Contact = () => {
-  
+
   return (
-    
-
-   
-
-     
     <Layout>
       <PageBanner pageName={"Contact Us"} />{" "}
       <section className="contact-page-info pt-130 rpt-100 pb-100 rpb-70 rel z-1">
@@ -78,19 +73,19 @@ const Contact = () => {
       {/* Contact Info Area end */}
       {/* Location Map Area Start */}
       <div className="contact-page-map wow fadeInUp delay-0-2s">
-      <div className="our-location">
-        <div>
+        <div className="our-location">
+          <div>
 
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.1033732124775!2d-122.4371189847955!3d37.76271087976288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807b4e1ae0ef%3A0xf4a32d9b8c4b60f0!2s584%20Castro%20St%20%232165%2C%20San%20Francisco%2C%20CA%2094114-2512!5e0!3m2!1sen!2sus!4v1663473911885!5m2!1sen!2sus"
-    style={{ border: 0, width: "100%" }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.1033732124775!2d-122.4371189847955!3d37.76271087976288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807b4e1ae0ef%3A0xf4a32d9b8c4b60f0!2s584%20Castro%20St%20%232165%2C%20San%20Francisco%2C%20CA%2094114-2512!5e0!3m2!1sen!2sus!4v1663473911885!5m2!1sen!2sus"
+              style={{ border: 0, width: "100%" }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+
         </div>
-
-</div>
 
       </div>
       {/* Location Map Area End */}
@@ -114,7 +109,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <ContactForm/>
+            <ContactForm />
           </div>
         </div>
       </section>

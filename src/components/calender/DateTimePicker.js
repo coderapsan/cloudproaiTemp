@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Datetime from 'react-datetime';
 import "react-datetime/css/react-datetime.css";
 import ContactForm from '../forms/ContactForm';
 import styles from './DateTimePicker.module.css';
