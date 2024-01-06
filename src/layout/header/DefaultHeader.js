@@ -40,7 +40,7 @@ const DefaultHeader = () => {
             </div>
             {/* Menu Button */}
             <div className="menu-btns">
-              <Link legacyBehavior href="/contact">
+              <Link legacyBehavior href="/schedule-appointment">
                 <a className="theme-btn">
                 Want a Pro? <br/>
  Schedule a Free Consultation  <i className="fas fa-long-arrow-right" />

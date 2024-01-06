@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 const Header1 = () => {
   const handleMouseOver = () => {
-    console.log('header1')
+    
   } 
   return (
     <header className="main-header header-one menu-white" onMouseOver={handleMouseOver}>
@@ -24,8 +24,8 @@ const Header1 = () => {
                 <a href="callto:+000(123)45688">+1 415-393-2021</a>
               </li>
               <li className="for-none">
-                <i className="far fa-clock" /> Working Hours : Monday- Friday 
-                10 am to 5pm
+                <i className="far fa-clock" /> Business Hours : Monday- Friday 
+                8am to 5pm PST
               </li>
               <li>
                 <div className="social-style-one">

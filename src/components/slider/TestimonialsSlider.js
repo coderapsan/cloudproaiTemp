@@ -46,7 +46,7 @@ export default class TestimonialsSlider extends Component {
           <div className="testimonial-item wow fadeInUp delay-0-2s">
             <div className="image">
               <img
-                src="assets/images/testimonials/testi-author1.jpg"
+                src="assets/images/testimonials/testi-author5.jpg"
                 alt="Author"
               />
             </div>
@@ -62,17 +62,20 @@ export default class TestimonialsSlider extends Component {
                 </div>
               </div>
               <div className="testi-text">
-                Sed ut perspiciatis unde omnis iste natus voluptatem accus
-                antiume dolorem queauy antium totam aperiam eaque quaey abillosa
-                inventore veritatis vitaec
+                CloudPro AI has been an invaluable partner in transforming our
+                business through their expertise in AI and ML. Their seamless
+                integration of cloud solutions and data engineering has elevated
+                our operational efficiency, and their exceptional web
+                development services have significantly enhanced our online
+                presence.
               </div>
               <div className="testi-footer">
                 <div className="icon">
                   <i className="flaticon-quotation" />
                 </div>
                 <div className="title">
-                  <h4>Andrew D. Bricker</h4>
-                  <span className="designation">CEO &amp; Founder</span>
+                  <h4>Roshan D.</h4>
+                  <span className="designation">CTO, Fixez </span>
                 </div>
               </div>
             </div>
@@ -90,9 +93,11 @@ export default class TestimonialsSlider extends Component {
                 </div>
               </div>
               <div className="testi-text">
-                On the other hand denounce righteous indignations and dislike
-                men who beguiled and demoralized by the charms of pleasure
-                moment blinded foresee
+                Choosing Cloud Pro AI was a game-changer for our business. Their
+                unmatched proficiency in cloud data and AI has not only
+                streamlined our operations but propelled us into a new era of
+                competitiveness. A partnership with impact, delivering success
+                at every turn.
               </div>
               <div className="testi-footer">
                 <div className="icon">
@@ -124,9 +129,11 @@ export default class TestimonialsSlider extends Component {
                 </div>
               </div>
               <div className="testi-text">
-                Unde omnis iste natus voluptatem accus antiume dolorem queauy
-                antium totam aperiam eaque quaey abillosa inventore veritatis
-                etuarchite beatae vitaec
+                At the forefront of technological innovation, redefines
+                excellence in cloud data and AI services. Their Cloud Pro AI
+                tailored solutions have empowered us to navigate the
+                complexities of the digital landscape with confidence, achieving
+                unprecedented results
               </div>
               <div className="testi-footer">
                 <div className="icon">

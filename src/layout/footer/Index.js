@@ -16,7 +16,7 @@ const Footer = () => {
               <span className="sub-title">Need Any Consultations ?</span>
               <h2>We’re Ready to Growth IT Business</h2>
             </div>
-            <Link legacyBehavior href="/contact">
+            <Link legacyBehavior href="/schedule-appointment">
               <a className="theme-btn style-three wow fadeInRight delay-0-2s">
                 Want a Pro? <br />
                 Schedule a Free Consultation{" "}
@@ -138,12 +138,12 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="services/bianddataanalytics">
+                      <Link legacyBehavior href="/services/bianddataanalytics">
                         BI And Data Analytics
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="contact">{`Contact us`}</Link>
+                      <Link legacyBehavior href="/contact">{`Contact us`}</Link>
                     </li>
                   </ul>
                 </div>
@@ -153,7 +153,7 @@ const Footer = () => {
                   <h4 className="footer-title">Services</h4>
                   <ul className="list-style-two">
                     <li>
-                      <Link legacyBehavior href="services/generativeaiandml">
+                      <Link legacyBehavior href="/services/generativeaiandml">
                         Generative AI And ML
                       </Link>
                     </li>
@@ -208,7 +208,7 @@ const Footer = () => {
                         Brief Solutions
                       </Link>
                     </li> */}
-                    <li>
+                    {/* <li>
                       <Link legacyBehavior href="404">
                         <a>Blogs and Posts</a>
                       </Link>
@@ -222,8 +222,8 @@ const Footer = () => {
                       <Link legacyBehavior href="404">
                         <a> Podcasts</a>
                       </Link>
-                    </li>
-                    <li>
+                    </li>*/}
+                    <li> 
                       <Link legacyBehavior href="404">
                         Events
                       </Link>
