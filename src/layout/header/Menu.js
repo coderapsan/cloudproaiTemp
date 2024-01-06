@@ -87,6 +87,9 @@ const MobileMenu = ({ whiteLogo }) => {
                 <li>
                   <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
                 </li>
+                <li>
+                  <Link href="/services/webappdevelopment">Web App Development </Link>
+                </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
                 <span className="fas fa-chevron-down" />
@@ -225,6 +228,9 @@ const DeskTopMenu = () => {
               <li>
                 <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
               </li>
+              <li>
+                  <Link href="/services/webappdevelopment">WebApp Development </Link>
+                </li>
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
