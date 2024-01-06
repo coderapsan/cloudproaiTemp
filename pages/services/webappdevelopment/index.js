@@ -10,7 +10,7 @@ const Index = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin + "/api/services/dataengineering/services")
+    fetch(window.origin + "/api/services/webappdevelopment/services")
       .then((response) => response.json())
       .then((parsed) => {
         setServices(parsed);
@@ -22,26 +22,24 @@ const Index = () => {
 
   return (
     <Layout>
-      <PageBanner pageName={"Services"} pageTitle={'Data Engineering Services'} />
-      
+      <PageBanner pageName={"Services"} pageTitle={"Web App Develpoment"} />
+
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Data Engineering Services</h2>
+                  <h2>Web App Development Services</h2>
                 </div>
                 <p>
-                  Data engineering services encompass the design, development,
-                  and management of robust data architecture to facilitate
-                  efficient data processing and analytics. These services
-                  involve constructing data pipelines, integrating diverse data
-                  sources, and ensuring data quality and security. Data
-                  engineering plays a pivotal role in transforming raw data into
-                  valuable insights, empowering organizations to make informed
-                  decisions and derive actionable intelligence from their data
-                  assets
+                  In the ever-evolving digital landscape, web applications stand
+                  as the cornerstone of innovation, offering dynamic and
+                  interactive solutions that drive businesses forward. Web app
+                  development services encompass a broad spectrum of expertise,
+                  seamlessly blending technology, creativity, and functionality
+                  to deliver bespoke solutions tailored to the unique needs of
+                  businesses across industries.
                 </p>
                 <div className="image my-40 wow fadeInUp delay-0-2s">
                   <img
@@ -51,39 +49,50 @@ const Index = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>What Are Data Engineering Services?</h3>
+                    <h3>What are Web App Development Services?</h3>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <ul className="list-style-one">
-                      <li>Real-Time Data Processing</li>
-                      <li>Innovation and Business Growth</li>
-                      <li>Efficient Data Processing</li>
+                      <li>Customization and Innovation</li>
+                      <li>User-Centric Design</li>
+                      <li>Scalability and Performance</li>
                       <li>Data Quality Improvement</li>
-                      <li>Enhanced Decision-Making</li>
+                      <li>Comprehensive Services</li>
                     </ul>
                   </div>
                 </div>
                 <div className="row pb-30">
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Data engineering services encompass a comprehensive range
-                      of activities and processes focused on the effective
-                      management and utilization of data within an organization.
-                      This includes the design and implementation of robust data
-                      architectures, ensuring the seamless flow and integration
-                      of data across various systems and platforms. Data
-                      engineers are responsible for developing and maintaining
-                      the infrastructure that allows for the efficient
-                      processing, storage, and retrieval of data.
+                      Web app development services involve the creation,
+                      deployment, and maintenance of applications accessible via
+                      web browsers. These services encompass a range of tasks,
+                      including designing user interfaces, programming backend
+                      functionality, integrating databases, and ensuring
+                      seamless performance. Web app development focuses on
+                      crafting interactive, scalable, and user-friendly
+                      applications tailored to meet specific business needs.
+                      Developers leverage technologies like HTML, CSS,
+                      JavaScript, and various frameworks to create dynamic web
+                      applications that enhance digital experiences.
                     </p>
                     <p>
-                      These services also involve the implementation of data
-                      pipelines, ETL (Extract, Transform, Load) processes, and
-                      data cleansing techniques to ensure the quality and
-                      reliability of the data. Data engineering plays a pivotal
-                      role in preparing raw data for analysis, enabling
-                      organizations to derive meaningful insights, make informed
-                      decisions, and drive innovation.
+                      The development process extends to backend programming,
+                      where servers, databases, and application logic are
+                      intricately woven together to ensure seamless
+                      functionality. These services also include database
+                      management, API integrations, and the implementation of
+                      scalable architecture, enabling applications to grow with
+                      the evolving needs of businesses. Quality assurance,
+                      testing, and ongoing maintenance play pivotal roles,
+                      guaranteeing the reliability, security, and optimal
+                      performance of web applications. Strategic consulting is
+                      often part of the service, guiding clients in aligning
+                      their digital objectives with the broader goals of their
+                      businesses. In essence, web app development services offer
+                      a holistic approach to crafting tailored, user-centric
+                      solutions that elevate online experiences and drive
+                      business success.
                     </p>
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
@@ -124,7 +133,9 @@ const Index = () => {
                     {services.map((service) => (
                       <div key={service.slug}>
                         <li>
-                          <Link href={`/services/dataengineering/${service.slug}`}>
+                          <Link
+                            href={`/services/webappdevelopment/${service.slug}`}
+                          >
                             {service.title}
                           </Link>
                         </li>
@@ -148,13 +159,14 @@ const Index = () => {
                   </div>
                   <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
                     <p>
-                      Data engineering services form the backbone of modern
-                      organizations by ensuring effective data management. These
-                      services involve the design, development, and maintenance
-                      of data architecture, allowing businesses to streamline
-                      data processes. They enhance data quality, support
-                      scalability, and enable efficient data processing,
-                      contributing to informed decision-making.
+                      Web app development offers businesses a global reach and
+                      cross-platform compatibility, enabling users to access
+                      applications from any device with an internet connection.
+                      Cost-effective and easy to maintain, web apps allow for
+                      rapid development and real-time updates without requiring
+                      manual intervention from users. With scalability and
+                      user-centric design, web apps provide a responsive and
+                      engaging interface. 
                     </p>
                   </div>
                   <span className="h5">Let's Work Together</span>

@@ -10,7 +10,7 @@ const Index = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin + "/api/services/bianddataanalytics/services")
+    fetch(window.origin + "/api/services/bianddataanalytics")
       .then((response) => response.json())
       .then((parsed) => {
         setServices(parsed);
@@ -22,14 +22,14 @@ const Index = () => {
 
   return (
     <Layout>
-      <PageBanner pageName={"Services"} pageTitle={"Cloud Engineering Services"}/>
+      <PageBanner pageName={"Services"} pageTitle={"BI And Data Analytics"}/>
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
           <div className="row gap-100">
             <div className="col-lg-8">
               <div className="service-details-content">
                 <div className="section-title mb-30">
-                  <h2>Cloud Engineering Services</h2>
+                  <h2>BI And Data Analytics Services</h2>
                 </div>
                 <p>
                   Cloud engineering services encompass the strategic planning,
