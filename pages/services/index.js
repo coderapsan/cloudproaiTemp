@@ -55,8 +55,7 @@ const Pricing = () => {
 
   return (
     <Layout>
-      ,
-      <PageBanner pageName={"Services"} />{" Services "}
+      <PageBanner pageName={"Services"} />
       <section className="price-plan-page-top pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">

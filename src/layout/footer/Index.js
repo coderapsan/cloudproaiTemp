@@ -199,7 +199,7 @@ const Footer = () => {
                   <h4 className="footer-title">Resources</h4>
                   <ul className="list-style-two">
                     <li>
-                      <Link legacyBehavior href="404">
+                      <Link legacyBehavior href="/others/case-studies">
                         <a>Case Studies </a>
                       </Link>
                     </li>
