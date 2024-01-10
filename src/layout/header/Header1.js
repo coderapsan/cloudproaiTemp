@@ -29,7 +29,7 @@ const Header1 = () => {
               </li>
               <li>
                 <div className="social-style-one">
-                  <a href="#">
+                  {/* <a href="#">
                     <i className="fab fa-facebook-f" />
                   </a>
                   <a href="#">
@@ -37,8 +37,8 @@ const Header1 = () => {
                   </a>
                   <a href="#">
                     <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
+                  </a> */}
+                  <a href="https://www.linkedin.com/company/cloudproai/">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>

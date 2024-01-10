@@ -14,7 +14,7 @@ const Footer = () => {
           >
             <div className="section-title wow fadeInLeft delay-0-2s">
               <span className="sub-title">Need Any Consultations ?</span>
-              <h2>We’re Ready to Growth IT Business</h2>
+              <h4>Empower, Innovate, Accelerate:: Your IT Growth Partner</h4>
             </div>
             <Link legacyBehavior href="/schedule-appointment">
               <a className="theme-btn style-three wow fadeInRight delay-0-2s">
@@ -85,7 +85,7 @@ const Footer = () => {
               </form>
               <h5>Follow Us</h5>
               <div className="social-style-one">
-                <a href="#">
+                {/* <a href="#">
                   <i className="fab fa-facebook-f" />
                 </a>
                 <a href="#">
@@ -93,8 +93,8 @@ const Footer = () => {
                 </a>
                 <a href="#">
                   <i className="fab fa-instagram" />
-                </a>
-                <a href="#">
+                </a> */}
+                <a href="https://www.linkedin.com/company/cloudproai/">
                   <i className="fab fa-linkedin-in" />
                 </a>
               </div>
@@ -224,7 +224,7 @@ const Footer = () => {
                       </Link>
                     </li>*/}
                     <li> 
-                      <Link legacyBehavior href="404">
+                      <Link legacyBehavior href="#">
                         Events
                       </Link>
                     </li>
@@ -234,12 +234,12 @@ const Footer = () => {
                 <h4 className="footer-title">Solutions</h4>
                 <ul className="list-style-two">
                   <li>
-                    <Link legacyBehavior href="404">
+                    <Link legacyBehavior href="#">
                       <a>Data Cost Optimizer </a>
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="404">
+                    <Link legacyBehavior href="#">
                       <a>Data & AI Lab </a>
                     </Link>
                   </li>

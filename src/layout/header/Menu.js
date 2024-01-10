@@ -153,16 +153,11 @@ const MobileMenu = ({ whiteLogo }) => {
               </a>
               <ul style={activeSubMenu("about")}>
                 <li>
-                  <Link href="/about/aboutus">About us</Link>
+                  <Link href="/about">About us</Link>
                 </li>
+               
                 <li>
-                  <Link href="/about/our-partners">Our Partners</Link>
-                </li>
-                <li>
-                  <Link href="/about/our-team">Our Team</Link>
-                </li>
-                <li>
-                  <Link href="/about/contact">Contact</Link>
+                  <Link href="/contact">Contact us</Link>
                 </li>
 
 

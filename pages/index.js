@@ -4,9 +4,10 @@ import { projectSliderActive } from "@/src/sliderProps";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Slider from "react-slick";
-import Data from "../src/jsonData/services.json";
+
 import Partner from "@/src/components/Partner";
-import DateTimePicker from "@/src/components/calender/DateTimePicker";
+import SignupForm from "@/src/components/forms/SignupForm";
+
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -21,8 +22,17 @@ const Index = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 align-self-center">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
-                
                 <h1>Cloud Pro AI: Cloud Services Consultant </h1>
+                {/* <SignupForm/> */}
+                
+
+                <p className="tagline">
+                  <u>
+                    Transform Your Vision into Reality with our Data-Driven
+                    Intelligence, AI and Cutting-Edge Cloud Solutions
+                  </u>
+                </p>
+
                 <p>
                   In the vast realm of cloud technology, CloudProAI emerges as a
                   beacon of efficiency, offering bespoke services that propel
@@ -89,11 +99,9 @@ const Index = () => {
               shaping the future, and we are privileged to embark on this
               transformative journey together
             </p>
-
-          
-            </div>
           </div>
-          <Partner/>
+        </div>
+        <Partner />
       </section>
       {/* Partners Area end */}
       {/* About Area start */}
@@ -220,7 +228,6 @@ const Index = () => {
                 <div className="icon">
                   <i className="flaticon-networking" />
                 </div>
-                
 
                 <div className="content">
                   <h4>
@@ -328,7 +335,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="work-process-area pt-130 pb-100 rpt-100 rpb-70 rel z-1">
         <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
           <span className="sub-title mb-15">Working Process</span>
@@ -409,11 +416,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-     
-    
 
-
-<section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+      <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-15">Team Member</span>
@@ -462,7 +466,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-           
           </div>
         </div>
         <div className="team-shapes">
@@ -479,13 +482,7 @@ const Index = () => {
         </div>
       </section>
 
-
-
-
-
-
-
-            <section className="testimonials-area py-130 rpy-100 rel z-1">
+      <section className="testimonials-area py-130 rpy-100 rel z-1">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-xl-5 col-lg-6">
@@ -503,7 +500,7 @@ const Index = () => {
                   src="assets/images/testimonials/testimonial.jpg"
                   alt="Testimonial"
                 />
-                
+
                 <div className="dot-shapes">
                   <img
                     src="/assets/images/testimonials/testimonial-dots.png"
@@ -519,7 +516,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-        </Layout>
+    </Layout>
   );
 };
 export default Index;

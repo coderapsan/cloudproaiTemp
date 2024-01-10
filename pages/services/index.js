@@ -182,7 +182,7 @@ const Pricing = () => {
                     cloud services.
                   </p>
                   <div className="menu-btns">
-        <Link legacyBehavior href="/businesscases">
+        <Link legacyBehavior href="/others/case-studies">
           <a className="theme-btn">
             Learn More About Business use cases
             <i className="fas fa-long-arrow-right" />
@@ -248,7 +248,7 @@ const Pricing = () => {
                     unparalleled insights and strategic decision-making
                   </p>
                   <div className="menu-btns">
-        <Link legacyBehavior href="/businesscases">
+        <Link legacyBehavior href="/others/case-studies">
           <a className="theme-btn">
             Learn More About Business use cases
             <i className="fas fa-long-arrow-right" />
@@ -303,7 +303,7 @@ const Pricing = () => {
           </Tab.Container>
         </div>
         <div className="menu-btns">
-        <Link legacyBehavior href="/businesscases">
+        <Link legacyBehavior href="/others/case-studies">
           <a className="theme-btn">
             Learn More About Business use cases
             <i className="fas fa-long-arrow-right" />

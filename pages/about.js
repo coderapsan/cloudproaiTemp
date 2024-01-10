@@ -54,53 +54,32 @@ const About = () => {
                     limitless, and the future is powered by innovation.
                   </p>
                 </div>
-                <div className="row gap-40">
-                  <div className="col-md-6">
-                    <div className="service-item style-three">
-                      <div className="icon">
-                        <i className="flaticon-trophy" />
-                      </div>
-                      <h4>
-                        <Link legacyBehavior href="service-details">
-                          Our Goal
-                        </Link>
-                      </h4>
-                      <p>
-                        We aim to be a catalyst for innovation, offering a
-                        comprehensive suite of services encompassing cloud
-                        architecture, data engineering, machine learning, and IT
-                        consulting
-                      </p>
-                      <Link legacyBehavior href="404">
-                        <a className="read-more">
-                          Read More <i className="far fa-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="service-item style-three">
-                      <div className="icon">
-                        <i className="flaticon-pie-chart" />
-                      </div>
-                      <h4>
-                        <Link legacyBehavior href="service-details">
-                          Startup IT Solution &amp; Business Dev
-                        </Link>
-                      </h4>
-                      <p>
-                        Cloud Pro AI's Startup IT Solutions are designed to
-                        empower emerging businesses with the technological tools
-                        needed to thrive in today's competitive landscape.
-                      </p>
-                      <Link legacyBehavior href="404">
-                        <a className="read-more">
-                          Read More <i className="far fa-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
+
+                <div className="section-title mb-60 rmb-40">
+                  <span className="sub-title mb-15">Our Mission</span>
+                  <p>
+                    In the ever-evolving landscape of technology, businesses
+                    face the constant challenge of staying ahead in a digital
+                    world. At our consulting firm, we understand the importance
+                    of innovation and adaptation. With a dedicated focus on data
+                    engineering, cloud engineering, web app development, AI,
+                    Machine Learning, and Generative AI services, our mission is
+                    clear: to empower organizations to harness the
+                    transformative power of technology. We provide tailored
+                    solutions that not only address current needs but also
+                    prepare clients for future challenges. Through expertise,
+                    collaboration, and a commitment to excellence, we strive to
+                    help our clients thrive in an increasingly competitive and
+                    data-driven environment. 
+                    <br></br>Our mission is to be at the
+                    forefront of technological advancement and provide top-notch
+                    services that empower businesses to innovate, grow, and
+                    succeed. We exist to empower organizations with the tools
+                    and expertise they need to thrive in a data-centric world.
+                  </p>
                 </div>
+
+                
               </div>
             </div>
           </div>
@@ -327,6 +306,7 @@ const About = () => {
           />
         </div>
       </section>
+      
 
       {/* Team Area end */}
       {/* Why Choose Us Area start */}
@@ -495,10 +475,9 @@ const About = () => {
           <TestimonialsSlider />
         </div>
       </section>
-      <Partner/>
+      <Partner />
       {/* Testimonials Area Two end */}
       {/* Partners Area start */}
-      
     </Layout>
   );
 };

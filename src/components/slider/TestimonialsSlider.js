@@ -268,7 +268,7 @@ const TestimonialsSlider2 = () => {
           </p>
           <div className="author">
             <span className="h4">Andrew D. Bricker</span>
-            <span>CEO &amp; Founder</span>
+            <span>Cloud DevOps Engineer</span>
           </div>
         </div>
         <div className="testi-content-item">
@@ -281,7 +281,7 @@ const TestimonialsSlider2 = () => {
           </p>
           <div className="author">
             <span className="h4">Dipendra Adhikari</span>
-            <span>CTO &amp; Founder</span>
+            <span>Hybrid Cloud Solutions Architect for Financial Services</span>
           </div>
         </div>
         <div className="testi-content-item">
@@ -294,7 +294,7 @@ const TestimonialsSlider2 = () => {
           </p>
           <div className="author">
             <span className="h4">Suman Aryal</span>
-            <span>CEO &amp; Founder</span>
+            <span>Cloud Security Specialist for Small Businesses</span>
           </div>
         </div>
         <div className="testi-content-item">
@@ -320,7 +320,7 @@ const TestimonialsSlider2 = () => {
           </p>
           <div className="author">
             <span className="h4">Leslie Parker</span>
-            <span>CEO &amp; Founder</span>
+            <span>Predictive Maintenance ML Specialist</span>
           </div>
         </div>
       </Slider>

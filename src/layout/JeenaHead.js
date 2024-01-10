@@ -12,7 +12,7 @@ const JeenaHead = () => {
       />
       {/* Title */}
       <title>
-        Cloud Pro AI- Cloud Service Provider 
+      Software, Data and AI | Innovative Cloud Solutions
       </title>
       {/* Favicon Icon */}
       <link

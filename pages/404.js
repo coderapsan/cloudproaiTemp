@@ -58,7 +58,7 @@ const E404 = () => {
                 <a href="#">
                   <i className="fab fa-instagram" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/cloudproai/">
                   <i className="fab fa-linkedin-in" />
                 </a>
               </div>
