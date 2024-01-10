@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = 'mongodb+srv://dipendra14:lL9PD8YonKxUFAje@cloudproai.vjb5vdv.mongodb.net/cloudProAi?retryWrites=true&w=majority';
+const MONGODB_CONNECTION_STRING = process.env.NEXT_PUBLIC_MONGODB_CONNECTION_STRING
 
 const dbConnect = async () => {
   try {
     if (mongoose.connection.readyState !== 1) {
-      await mongoose.connect(MONGODB_URI, {
+      await mongoose.connect(MONGODB_CONNECTION_STRING, {
         useUnifiedTopology: true,
       });
       console.log('Connected to MongoDB');

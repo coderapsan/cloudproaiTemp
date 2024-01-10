@@ -1,7 +1,37 @@
 import Link from "next/link";
 import Data from "../../jsonData/services.json";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/newsletters', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+      console.log(response)
+      if (response.ok) {
+        alert('Email submitted successfully!');
+      } else {
+        alert('Failed to submit email');
+      }
+    } catch (error) {
+      console.error('Error submitting email:', error);
+      alert("Some error occured, please check and try again")
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <footer className="main-footer bgc-gray footer-white rel z-1">
       <div className="footer-cta-wrap">
@@ -68,10 +98,9 @@ const Footer = () => {
             <div className="footer-widget widget_newsletter wow fadeInUp delay-0-6s">
               <h4 className="footer-title">Newsletter</h4>
               <p>
-                Newsletter Features will be updated soon 👍👍 Get connected with
-                us
+                👍👍 Get connected with us
               </p>
-              <form onSubmit={(e) => e.preventDefault()} action="#">
+              <form onSubmit={handleSubmit} action="#">
                 <label htmlFor="email">
                   <i className="far fa-envelope" />
                 </label>
@@ -79,9 +108,11 @@ const Footer = () => {
                   id="email"
                   type="email"
                   placeholder="contact@cloudproai.com"
+                  value={email}
+                  onChange={handleEmailChange}
                   required
                 />
-                <button>Sign Up</button>
+                <button type="submit">Sign Up</button>
               </form>
               <h5>Follow Us</h5>
               <div className="social-style-one">
@@ -185,12 +216,12 @@ const Footer = () => {
 
                     <li>
                       <Link
-                    legacyBehavior href="/services/cloudengineering/serverless-architecture"
+                        legacyBehavior href="/services/cloudengineering/serverless-architecture"
                       >
                         Serverless Architecture
                       </Link>
                     </li>
-                   
+
                   </ul>
                 </div>
               </div>
@@ -223,7 +254,7 @@ const Footer = () => {
                         <a> Podcasts</a>
                       </Link>
                     </li>*/}
-                    <li> 
+                    <li>
                       <Link legacyBehavior href="#">
                         Events
                       </Link>
