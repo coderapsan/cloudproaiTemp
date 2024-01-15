@@ -1,6 +1,6 @@
 import Link from "next/link";
 // import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Accordion } from "react-bootstrap";
 
 import { Fragment } from "react";
@@ -155,7 +155,7 @@ const MobileMenu = ({ whiteLogo }) => {
                 <li>
                   <Link href="/about">About us</Link>
                 </li>
-               
+
                 <li>
                   <Link href="/contact">Contact us</Link>
                 </li>
@@ -176,6 +176,78 @@ const MobileMenu = ({ whiteLogo }) => {
   );
 };
 const DeskTopMenu = () => {
+
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch(window.origin + "/api/services/generativeaiandml/services")
+      .then((response) => response.json())
+      .then((data) => {
+        setServices(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
+  const [cloudServices, setCloudServices] = useState([]);
+
+  useEffect(() => {
+
+    fetch(window.origin + "/api/services/cloudengineering/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setCloudServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
+  const [dataEngineeringServices, setDataEngineeringServices] = useState([]);
+
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/dataengineering/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setDataEngineeringServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
+  const [biDataServices, setBiDataServices] = useState([]);
+
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/bianddataanalytics/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setBiDataServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
+  const [webAppServices, setWebAppServices] = useState([]);
+
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/webappdevelopment/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setWebAppServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
 
   return (
     <nav className="main-menu navbar-expand-lg desktop-menu">
@@ -209,23 +281,43 @@ const DeskTopMenu = () => {
           <li className="dropdown">
             <a href="/services">SERVICES</a>
             <ul>
-              <li>
+              <li className="dropdown">
                 <Link href="/services/generativeaiandml">
                   Generative AI And ML
                 </Link>
+                <ul>
+                  {services.map(service =>
+                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                </ul>
               </li>
-              <li>
+              <li className="dropdown">
                 <Link href="/services/cloudengineering">Cloud Engineering </Link>
+                <ul>
+                  {cloudServices.map(service =>
+                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                </ul>
               </li>
-              <li>
+              <li className="dropdown">
                 <Link href="/services/dataengineering">Data Engineering</Link>
+                <ul>
+                  {dataEngineeringServices.map(service =>
+                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                </ul>
               </li>
-              <li>
+              <li className="dropdown">
                 <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
+                <ul>
+                  {biDataServices .map(service =>
+                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                </ul>
               </li>
-              <li>
-                  <Link href="/services/webappdevelopment">WebApp Development </Link>
-                </li>
+              <li className="dropdown">
+                <Link href="/services/webappdevelopment">WebApp Development </Link>
+                <ul>
+                  {webAppServices .map(service =>
+                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                </ul>
+              </li>
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
