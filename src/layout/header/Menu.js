@@ -294,28 +294,28 @@ const DeskTopMenu = () => {
                 <Link href="/services/cloudengineering">Cloud Engineering </Link>
                 <ul>
                   {cloudServices.map(service =>
-                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                    <li key={service.slug}><Link href={`/services/cloudengineering/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
               </li>
               <li className="dropdown">
                 <Link href="/services/dataengineering">Data Engineering</Link>
                 <ul>
                   {dataEngineeringServices.map(service =>
-                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                    <li key={service.slug}><Link href={`/services/dataengineering/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
               </li>
               <li className="dropdown">
                 <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
                 <ul>
                   {biDataServices .map(service =>
-                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                    <li key={service.slug}><Link href={`/services/bianddataanalytics/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
               </li>
               <li className="dropdown">
                 <Link href="/services/webappdevelopment">WebApp Development </Link>
                 <ul>
                   {webAppServices .map(service =>
-                    <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+                    <li key={service.slug}><Link href={`/services/webappdevelopment/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
               </li>
             </ul>
