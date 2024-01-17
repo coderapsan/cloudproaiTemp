@@ -7,6 +7,7 @@ import Slider from "react-slick";
 
 import Partner from "@/src/components/Partner";
 import SignupForm from "@/src/components/forms/SignupForm";
+import TechnologyUsed from "@/src/components/technologyused/TechnologyUsed";
 
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
@@ -18,6 +19,8 @@ const Index = () => {
     <Layout header={1}>
       {/* Hero Section Start */}
       <section className="hero-area bgc-gray rel z-1">
+      <TechnologyUsed/>
+
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 align-self-center">
@@ -416,6 +419,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+
+      <TechnologyUsed/>
+
+      
+      
 
       <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
