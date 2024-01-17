@@ -14,6 +14,10 @@ const Menu = ({ whiteLogo }) => {
   );
 };
 
+const RightArrow = () => {
+  return <span className="fas fa-chevron-right" />
+}
+
 const MobileMenu = ({ whiteLogo }) => {
   const [activeMenu, setActiveMenu] = useState(null);
   const active = (value) => setActiveMenu(value === activeMenu ? null : value),
@@ -178,76 +182,39 @@ const MobileMenu = ({ whiteLogo }) => {
 const DeskTopMenu = () => {
 
   const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    fetch(window.origin + "/api/services/generativeaiandml/services")
-      .then((response) => response.json())
-      .then((data) => {
-        setServices(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching services:", error);
-      });
-  }, []);
-
   const [cloudServices, setCloudServices] = useState([]);
-
-  useEffect(() => {
-
-    fetch(window.origin + "/api/services/cloudengineering/services")
-      .then((response) => response.json())
-      .then((parsed) => {
-        setCloudServices(parsed);
-      })
-      .catch((error) => {
-        console.error("Error fetching services:", error);
-      });
-  }, []);
-
   const [dataEngineeringServices, setDataEngineeringServices] = useState([]);
-
-  useEffect(() => {
-    console.log("useEffect is running ");
-
-    fetch(window.origin + "/api/services/dataengineering/services")
-      .then((response) => response.json())
-      .then((parsed) => {
-        setDataEngineeringServices(parsed);
-      })
-      .catch((error) => {
-        console.error("Error fetching services:", error);
-      });
-  }, []);
-
   const [biDataServices, setBiDataServices] = useState([]);
-
-  useEffect(() => {
-    console.log("useEffect is running ");
-
-    fetch(window.origin + "/api/services/bianddataanalytics/services")
-      .then((response) => response.json())
-      .then((parsed) => {
-        setBiDataServices(parsed);
-      })
-      .catch((error) => {
-        console.error("Error fetching services:", error);
-      });
-  }, []);
-
   const [webAppServices, setWebAppServices] = useState([]);
 
-  useEffect(() => {
-    console.log("useEffect is running ");
+  const [hoveredService, setHoveredService] = useState(null)
 
-    fetch(window.origin + "/api/services/webappdevelopment/services")
+  const fetchAndSet = (url, setFunction) => {
+    fetch(window.origin + url)
       .then((response) => response.json())
-      .then((parsed) => {
-        setWebAppServices(parsed);
+      .then((data) => {
+        setFunction(data);
       })
       .catch((error) => {
         console.error("Error fetching services:", error);
       });
+  }
+
+  useEffect(() => {
+    fetchAndSet("/api/services/generativeaiandml/services", setServices)
+    fetchAndSet("/api/services/cloudengineering/services", setCloudServices)
+    fetchAndSet("/api/services/dataengineering/services", setDataEngineeringServices)
+    fetchAndSet("/api/services/bianddataanalytics/services", setBiDataServices)
+    fetchAndSet("/api/services/webappdevelopment/services", setWebAppServices)
   }, []);
+
+  const handleMouseOver = (service) => {
+    setHoveredService(service)
+  }
+
+  const handleMouseOut = () => {
+    setHoveredService(null)
+  }
 
   return (
     <nav className="main-menu navbar-expand-lg desktop-menu">
@@ -281,7 +248,7 @@ const DeskTopMenu = () => {
           <li className="dropdown">
             <a href="/services">SERVICES</a>
             <ul>
-              <li className="dropdown">
+              <li className="dropdown2" onMouseOver={() => handleMouseOver('generative')} onMouseOut={handleMouseOut}>
                 <Link href="/services/generativeaiandml">
                   Generative AI And ML
                 </Link>
@@ -289,34 +256,39 @@ const DeskTopMenu = () => {
                   {services.map(service =>
                     <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
+                {hoveredService === "generative" && <RightArrow />}
               </li>
-              <li className="dropdown">
+              <li className="dropdown2" onMouseOver={() => handleMouseOver('cloud')} onMouseOut={handleMouseOut}>
                 <Link href="/services/cloudengineering">Cloud Engineering </Link>
                 <ul>
                   {cloudServices.map(service =>
                     <li key={service.slug}><Link href={`/services/cloudengineering/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
+                {hoveredService === "cloud" && <RightArrow />}
               </li>
-              <li className="dropdown">
+              <li className="dropdown2" onMouseOver={() => handleMouseOver('data')} onMouseOut={handleMouseOut}>
                 <Link href="/services/dataengineering">Data Engineering</Link>
                 <ul>
                   {dataEngineeringServices.map(service =>
                     <li key={service.slug}><Link href={`/services/dataengineering/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
+                {hoveredService === "data" && <RightArrow />}
               </li>
-              <li className="dropdown">
+              <li className="dropdown2" onMouseOver={() => handleMouseOver('biData')} onMouseOut={handleMouseOut}>
                 <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
                 <ul>
-                  {biDataServices .map(service =>
+                  {biDataServices.map(service =>
                     <li key={service.slug}><Link href={`/services/bianddataanalytics/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
+                {hoveredService === "biData" && <RightArrow />}
               </li>
-              <li className="dropdown">
+              <li className="dropdown2" onMouseOver={() => handleMouseOver('webApp')} onMouseOut={handleMouseOut}>
                 <Link href="/services/webappdevelopment">WebApp Development </Link>
                 <ul>
-                  {webAppServices .map(service =>
+                  {webAppServices.map(service =>
                     <li key={service.slug}><Link href={`/services/webappdevelopment/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
+                {hoveredService === "webApp" && <RightArrow />}
               </li>
             </ul>
             <div className="dropdown-btn">

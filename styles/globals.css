@@ -2,6 +2,12 @@
   display: block;
 }
 
+.main-menu li.dropdown2:hover > ul {
+  display: block;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
 /* Slick slider */
 .slick-dots {
   display: flex !important;

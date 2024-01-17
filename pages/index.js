@@ -466,6 +466,27 @@ const Index = () => {
                 </div>
               </div>
             </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="team-member style-two wow fadeInUp delay-0-4s">
+                <img src="assets/images/team/dipendra.jpeg" alt="Team" />
+                <h4>Dipendra Pahadi</h4>
+                <span className="designation">Web Developer</span>
+                <div className="social-style-two">
+                  <a href="https://www.facebook.com/dipendrabr0">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a href="https://twitter.com/dipendra_bro">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a href="https://www.dipendrapahadi.com.np">
+                    <i className="fab fa-instagram" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/dipendra14/">
+                    <i className="fab fa-linkedin-in" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="team-shapes">

@@ -38,7 +38,7 @@ const E404 = () => {
 
             </div>
             <div className="image mb-80 rmb-55 wow fadeInUp delay-0-4s">
-              <img src="assets/images/background/404.png" alt="Error" />
+              <img src="/assets/images/background/404.png" alt="Error" />
             </div>
            
             </div>
