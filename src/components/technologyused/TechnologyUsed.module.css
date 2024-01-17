@@ -25,3 +25,9 @@
   height: auto;
   margin: 10px; /* Add margin for spacing between logos */
 }
+
+.scrollableContainer{
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc; 
+}
