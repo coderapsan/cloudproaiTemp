@@ -186,6 +186,7 @@ const DeskTopMenu = () => {
   const [dataEngineeringServices, setDataEngineeringServices] = useState([]);
   const [biDataServices, setBiDataServices] = useState([]);
   const [webAppServices, setWebAppServices] = useState([]);
+  const [mobileAppServices, setMobileAppServices] = useState([]);
 
   const [hoveredService, setHoveredService] = useState(null)
 
@@ -206,6 +207,7 @@ const DeskTopMenu = () => {
     fetchAndSet("/api/services/dataengineering/services", setDataEngineeringServices)
     fetchAndSet("/api/services/bianddataanalytics/services", setBiDataServices)
     fetchAndSet("/api/services/webappdevelopment/services", setWebAppServices)
+    fetchAndSet("/api/services/mobileappdevelopment/services", setMobileAppServices)
   }, []);
 
   const handleMouseOver = (service) => {
@@ -289,6 +291,16 @@ const DeskTopMenu = () => {
                     <li key={service.slug}><Link href={`/services/webappdevelopment/${service.slug}`}>{service.title}</Link></li>)}
                 </ul>
                 {hoveredService === "webApp" && <RightArrow />}
+              </li>
+              <li className="dropdown2" onMouseOver={() => handleMouseOver('mobileapp')} onMouseOut={handleMouseOut}>
+                <Link href="/services/mobileappdevelopment">
+                  Mobile App Development
+                </Link>
+                <ul>
+                  {mobileAppServices.map(service =>
+                    <li key={service.slug}><Link href={`/services/mobileappdevelopment/${service.slug}`}>{service.title}</Link></li>)}
+                </ul>
+                {hoveredService === "mobileapp" && <RightArrow />}
               </li>
             </ul>
             <div className="dropdown-btn">

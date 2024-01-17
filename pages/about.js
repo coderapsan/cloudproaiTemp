@@ -292,7 +292,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className="col-xl-3 col-lg-4 col-md-6">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="team-member style-two wow fadeInUp delay-0-4s">
                 <img src="assets/images/team/dipendra.jpeg" alt="Team" />
                 <h4>Dipendra Pahadi</h4>
@@ -312,7 +312,7 @@ const About = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="team-shapes">
