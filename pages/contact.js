@@ -14,13 +14,13 @@ const Contact = () => {
                 <span className="sub-title mb-15">Need any Helps</span>
                 <h2>Contact Informations</h2>
               </div>
-              <p>
+              {/* <p>
                 Ensuring a seamless line of communication is at the heart of our
                 commitment to client satisfaction. Cloud Pro AI values the
                 importance of staying connected. For any inquiries,
                 collaborations, or simply to reach out and connect, feel free to
                 use the contact information provided below
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="row justify-content-center">

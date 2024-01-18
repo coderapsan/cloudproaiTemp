@@ -274,6 +274,7 @@ const TechnologyUsed = () => {
               </div>
             </Col>
           </Row>
+          
         </div>
       </Container>
     </div>

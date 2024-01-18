@@ -9,7 +9,6 @@ import Partner from "@/src/components/Partner";
 import SignupForm from "@/src/components/forms/SignupForm";
 import TechnologyUsed from "@/src/components/technologyused/TechnologyUsed";
 
-
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
 });
@@ -19,14 +18,12 @@ const Index = () => {
     <Layout header={1}>
       {/* Hero Section Start */}
       <section className="hero-area bgc-gray rel z-1">
-
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 align-self-center">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
                 <h1>Cloud Pro AI: Cloud Services Consultant </h1>
                 {/* <SignupForm/> */}
-                
 
                 <p className="tagline">
                   <u>
@@ -419,16 +416,94 @@ const Index = () => {
         </div>
       </section>
 
-
       <section className="team-area-two pt-130 rpt-100 pb-100 ">
+        <TechnologyUsed />
+      </section><section className="about-area-five py-130 rpt-100 rpb-65 rel z-1">
+        <div className="container">
+          <div className="row align-items-center gap-100">
+            <div className="col-lg-6">
+              <div className="about-five-images mt-55 rel z-1 wow fadeInRight delay-0-2s">
+                <img src="/assets/images/about/about-five1.jpg" alt="About" />
+                <img src="/assets/images/about/about-five2.jpg" alt="About" />
+                {/* <div className="experience-years">
+                  <span className="years">25</span>
+                  <h4>Years Of ExperienceIT Solutions</h4>
+                </div> */}
+                <img
+                  className="abut-bg-shape"
+                  src="/assets/images/about/about-five-bg.png"
+                  alt="Shape"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="about-content mt-55 rel z-1 wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-60 rmb-40">
 
-        <TechnologyUsed/>
-        </section>
+                <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+        <div className="container">
+          <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+            <span className="sub-title mb-15">Team Member</span>
+            <h2>CEO & Founder</h2>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div 
+              // className="team-member style-two wow fadeInUp delay-0-2s"
+              >
+                <img src="assets/images/team/member1.jpg" alt="Team" />
+                <h4>Nimesh Kuinkel</h4>
+                {/* <span className="designation">CEO & Founder</span> */}
+                <div className="social-style-two">
+                  <a href="#">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-instagram" />
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-linkedin-in" />
+                  </a>
+                </div>
+              </div>
+            </div>
+      </div></div></section>
+                 
+                </div>
 
-      
+                <div className="section-title mb-60 rmb-40">
+                  <span className="sub-title mb-15">Our Mission</span>
+                  <p>
+                    In the ever-evolving landscape of technology, businesses
+                    face the constant challenge of staying ahead in a digital
+                    world. At our consulting firm, we understand the importance
+                    of innovation and adaptation. With a dedicated focus on data
+                    engineering, cloud engineering, web app development, AI,
+                    Machine Learning, and Generative AI services, our mission is
+                    clear: to empower organizations to harness the
+                    transformative power of technology. We provide tailored
+                    solutions that not only address current needs but also
+                    prepare clients for future challenges. Through expertise,
+                    collaboration, and a commitment to excellence, we strive to
+                    help our clients thrive in an increasingly competitive and
+                    data-driven environment. 
+                    <br></br>Our mission is to be at the
+                    forefront of technological advancement and provide top-notch
+                    services that empower businesses to innovate, grow, and
+                    succeed. We exist to empower organizations with the tools
+                    and expertise they need to thrive in a data-centric world.
+                  </p>
+                </div>
 
-      
-      
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
@@ -479,27 +554,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member style-two wow fadeInUp delay-0-4s">
-                <img src="assets/images/team/dipendra.jpeg" alt="Team" />
-                <h4>Dipendra Pahadi</h4>
-                <span className="designation">Web Developer</span>
-                <div className="social-style-two">
-                  <a href="https://www.facebook.com/dipendrabr0">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="https://twitter.com/dipendra_bro">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="https://www.dipendrapahadi.com.np">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/dipendra14/">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="team-shapes">

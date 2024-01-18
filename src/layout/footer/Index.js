@@ -3,28 +3,28 @@ import Data from "../../jsonData/services.json";
 import { useState } from "react";
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/newsletters', {
-        method: 'POST',
+      const response = await fetch("/api/newsletters", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
       });
-      console.log(response)
+      console.log(response);
       if (response.ok) {
-        alert('Email submitted successfully!');
+        alert("Email submitted successfully!");
       } else {
-        alert('Failed to submit email');
+        alert("Failed to submit email");
       }
     } catch (error) {
-      console.error('Error submitting email:', error);
-      alert("Some error occured, please check and try again")
+      console.error("Error submitting email:", error);
+      alert("Some error occured, please check and try again");
     }
   };
 
@@ -97,9 +97,7 @@ const Footer = () => {
           <div className="col-xl-3 col-sm-6 order-xl-2">
             <div className="footer-widget widget_newsletter wow fadeInUp delay-0-6s">
               <h4 className="footer-title">Newsletter</h4>
-              <p>
-                👍👍 Get connected with us
-              </p>
+              <p>👍👍 Get connected with us</p>
               <form onSubmit={handleSubmit} action="#">
                 <label htmlFor="email">
                   <i className="far fa-envelope" />
@@ -111,7 +109,9 @@ const Footer = () => {
                   value={email}
                   onChange={handleEmailChange}
                   required
+                  style={{ color: "white" }}
                 />
+
                 <button type="submit">Sign Up</button>
               </form>
               <h5>Follow Us</h5>
@@ -207,21 +207,22 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="/services/dataengineering/api-data-extraction">
+                      <Link
+                        legacyBehavior
+                        href="/services/dataengineering/api-data-extraction"
+                      >
                         API Data Extraction
-
                       </Link>
                     </li>
 
-
                     <li>
                       <Link
-                        legacyBehavior href="/services/cloudengineering/serverless-architecture"
+                        legacyBehavior
+                        href="/services/cloudengineering/serverless-architecture"
                       >
                         Serverless Architecture
                       </Link>
                     </li>
-
                   </ul>
                 </div>
               </div>
