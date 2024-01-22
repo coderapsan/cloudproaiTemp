@@ -4,12 +4,14 @@ import { projectSliderActive } from "@/src/sliderProps";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Slider from "react-slick";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 import Partner from "@/src/components/Partner";
 import SignupForm from "@/src/components/forms/SignupForm";
 import TechnologyUsed from "@/src/components/technologyused/TechnologyUsed";
 import { Col, Container, Figure, Row } from "react-bootstrap";
-
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
 });
@@ -21,9 +23,13 @@ const Index = () => {
       <section className="hero-area bgc-gray rel z-1">
         <div className="container">
           <div className="row align-items-center">
+          <h1 style={{ "color":"white" }}>
+                  Cloud Pro AI</h1><h2 style={{ "color":"white" }}> Data AI and Software Cloud Services Consultant{" "}</h2>
+                
             <div className="col-lg-6 align-self-center">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
-                <h1>Cloud Pro AI: Cloud Services Consultant </h1>
+               
+
                 {/* <SignupForm/> */}
 
                 <p className="tagline">
@@ -62,6 +68,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-lg-6 align-self-end">
               <div className="hero-images mt-80 wow fadeInLeft">
                 <img src="/assets/images/hero/hero-one.jpg" alt="Hero" />
@@ -420,84 +427,49 @@ const Index = () => {
       <section className="team-area-two pt-130 rpt-100 pb-100 ">
         <TechnologyUsed />
       </section>
-      <section className="about-area-five py-130 rpt-100 rpb-65 rel z-1">
-        <div className="container">
-          <div className="row align-items-center gap-100">
-            <div className="col-lg-6">
-              <div className="about-five-images mt-55 rel z-1 wow fadeInRight delay-0-2s">
-                <img src="/assets/images/about/about-five1.jpg" alt="About" />
-                <img src="/assets/images/about/about-five2.jpg" alt="About" />
-                {/* <div className="experience-years">
-                  <span className="years">25</span>
-                  <h4>Years Of ExperienceIT Solutions</h4>
-                </div> */}
-                <img
-                  className="abut-bg-shape"
-                  src="/assets/images/about/about-five-bg.png"
-                  alt="Shape"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="about-content mt-55 rel z-1 wow fadeInLeft delay-0-2s">
-                <div className="section-title mb-60 rmb-40">
-                  <span className="sub-title mb-15">Our Mission</span>
-                  <p>
-                    In the ever-evolving landscape of technology, businesses
-                    face the constant challenge of staying ahead in a digital
-                    world. At our consulting firm, we understand the importance
-                    of innovation and adaptation. With a dedicated focus on data
-                    engineering, cloud engineering, web app development, AI,
-                    Machine Learning, and Generative AI services, our mission is
-                    clear: to empower organizations to harness the
-                    transformative power of technology. We provide tailored
-                    solutions that not only address current needs but also
-                    prepare clients for future challenges. Through expertise,
-                    collaboration, and a commitment to excellence, we strive to
-                    help our clients thrive in an increasingly competitive and
-                    data-driven environment.
-                    <br></br>Our mission is to be at the
-                    forefront of technological advancement and provide top-notch
-                    services that empower businesses to innovate, grow, and
-                    succeed. We exist to empower organizations with the tools
-                    and expertise they need to thrive in a data-centric world.
-                  </p>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
 
       <section className="services-area bgc-gray text-white p-30 pt-100 pb-100 rel z-1">
-      <Container>
-      <Row>
-        <Col lg={6} className="text-center">
-          <Figure>
-            <Figure.Image
-              src="assets/images/team/member1.jpg"
-              alt="CEO"
-              roundedCircle
-              fluid
-              style={{ width: '40%', height: '40%%' }} // Adjust the size as needed
-            />
-          </Figure>
-          <h4 className="fw-lighter mt-30">Nimesh Kuinkel</h4>
-          <h4>Ceo & Founder</h4>
-        </Col>
-        <Col lg={6}>
-          <blockquote className="blockquote text-center mt-30">
-          </blockquote>
-            <h4 className="fw-lighter" style={{ fontSize: '180%', }}> {/* Adjust the font size as needed */}
-            "No matter how random life might seem to be sometimes, we can always find a way to make others smile."
-            </h4>
-        </Col>
-      </Row>
-    </Container>
+        <h2 style={{ textAlign: "center" }}>Message From CEO</h2>
+
+        <Container>
+          <Row>
+            <Col lg={6} className="text-center">
+              <Figure>
+                <Figure.Image
+                  src="assets/images/team/member1.jpg"
+                  alt="CEO"
+                  roundedCircle
+                  fluid
+                  style={{ width: "40%", height: "40%%" }} // Adjust the size as needed
+                />
+              </Figure>
+              <h4 className="fw-lighter mt-30">Nimesh Kuinkel</h4>
+              <h4>CEO & Founder</h4>
+              <a href="https://www.linkedin.com/in/nimesh-kuinkel-78a622120/">
+                <i className="fab fa-linkedin-in" />
+              </a>
+
+            </Col>
+            <Col lg={6}>
+              <blockquote className="blockquote text-center mt-30"></blockquote>
+              <h6 className="fw-lighter" style={{ fontSize: "100%" }}>
+                {" "}
+                {/* Adjust the font size as needed */}
+                With over a decade of experience in the IT industry, I bring a
+                wealth of knowledge in diverse domains to my role. My focus is
+                on innovation, especially in harnessing Data and AI
+                technologies. This expertise is crucial in developing
+                cutting-edge software products that keep our clients at the
+                forefront of the digital landscape. I am deeply passionate about
+                using data for effective decision-making. In leading our team, I
+                emphasize creativity and technical excellence, constantly
+                pushing the boundaries in AI and software development. This
+                approach fosters a culture where breakthroughs are not just
+                possible, but expected
+              </h6>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       <section className="testimonials-area py-130 rpy-100 rel z-1">

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Data from "../../jsonData/services.json";
 import { useState } from "react";
 
-const Footer = () => {
+const Footer = ({ showCtaSection = true }) => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
@@ -34,6 +34,7 @@ const Footer = () => {
 
   return (
     <footer className="main-footer bgc-gray footer-white rel z-1">
+      {showCtaSection && (
       <div className="footer-cta-wrap">
         <div className="container">
           <div
@@ -75,6 +76,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      )}
       <div className="container">
         <div className="row medium-gap">
           <div className="col-xl-3 col-sm-6">
@@ -86,7 +88,7 @@ const Footer = () => {
                 </a>
               </Link>
               {/* </div> */}
-              <p>Cloud Pro AI: Cloud Services Consultant</p>
+              <p>Cloud Pro AI:Data, AI and Software Cloud Services Consultant</p>
               <Link legacyBehavior href="/about">
                 <a className="read-more">
                   Learn More Us <i className="fas fa-long-arrow-right" />

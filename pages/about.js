@@ -4,6 +4,8 @@ import Layout from "@/src/layout/Layout";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Partner from "@/src/components/Partner";
+import { Col, Container, Figure, Row } from "react-bootstrap";
+
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -170,7 +172,7 @@ const About = () => {
                 <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
                   <div className="section-title mb-30">
                     <span className="sub-title mb-15">Company Statistics</span>
-                    <h2>Learn About Our Comapny Statistics</h2>
+                    <h2>Learn About Our Company Statistics</h2>
                   </div>
                   <Link legacyBehavior href="/about">
                     <a className="read-more">
@@ -191,7 +193,7 @@ const About = () => {
                       >
                         <Counter end={50} />
                       </span>
-                      <span className="counter-title">Project Complated</span>
+                      <span className="counter-title">Project Completed</span>
                     </div>
                   </div>
                   <div className="col-xl-3 col-small col-6">
@@ -242,93 +244,49 @@ const About = () => {
       {/* Statistics Area end */}
       {/* Team Area start */}
 
-      <section className="team-area-two pt-130 rpt-100 pb-100 rpb-70 rel z-1">
-        <div className="container">
-          <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Team Member</span>
-            <h2>Amazing Team Members</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member style-two wow fadeInUp delay-0-2s">
-                <img src="assets/images/team/member1.jpg" alt="Team" />
-                <h4>Nimesh Kuinkel</h4>
-                <span className="designation">CEO & Founder</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member style-two wow fadeInUp delay-0-4s">
-                <img src="assets/images/team/member2.jpg" alt="Team" />
-                <h4>Apsan Regmi</h4>
-                <span className="designation">Web Developer</span>
-                <div className="social-style-two">
-                  <a href="https://www.facebook.com/apsan.regmi/">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fapsanregmi%3Ffbclid%3DIwAR1uPhOFaNP6QX5AUySco3CZLcsPlLzY8xCjEap8R1M0WGhKfuPrdBOMNhU&h=AT3afhdc1hWKTqtuMqzqrnEP3rHas-o622boJF531ZRndmINYn8rMGoZMubaNXOHM5sKq98ctMAcivwqTUO0ldJsEnw-naVWrbWunDxse7CiAPlZsT71kwmE2xTYtZSjwJL6ZVoqiW4zvc0N_IQk">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fapsan-regmi-b735a91bb%2F%3Ffbclid%3DIwAR2j3gdRMltDrq-sO0dA4dSVy3sG3B_c3AuM48rHQYjoZLVz3QhXiQJzB1I&h=AT2HWojt7AMW9XUS1J5l2wpJLyO76bftwVjsnSV2q7CP_klUYYxrcqY0bquxXbsQQIxB0FJsTeMKE7VziHZxTfVmOUXe9smtU263I2m4P3VcwitS3TcqiY01HUIheASgAKnp5S8FNZeOVpSBChKSkQ">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-             */}
-            {/* <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member style-two wow fadeInUp delay-0-4s">
-                <img src="assets/images/team/dipendra.jpeg" alt="Team" />
-                <h4>Dipendra Pahadi</h4>
-                <span className="designation">Web Developer</span>
-                <div className="social-style-two">
-                  <a href="https://www.facebook.com/dipendrabr0">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="https://twitter.com/dipendra_bro">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="https://www.dipendrapahadi.com.np">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/dipendra14/">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div> */}
-          </div>
-        </div>
-        <div className="team-shapes">
-          <img
-            className="shape one"
-            src="/assets/images/team/team-shape-one.png"
-            alt="Shape"
-          />
-          <img
-            className="shape two"
-            src="/assets/images/team/team-shape-two.png"
-            alt="Shape"
-          />
-        </div>
+      <section className="services-area bgc-gray text-white p-30 pt-100 pb-100 rel z-1">
+        <h2 style={{ textAlign: "center" }}>Message From CEO</h2>
+
+        <Container>
+          <Row>
+            <Col lg={6} className="text-center">
+              <Figure>
+                <Figure.Image
+                  src="assets/images/team/member1.jpg"
+                  alt="CEO"
+                  roundedCircle
+                  fluid
+                  style={{ width: "40%", height: "40%%" }} // Adjust the size as needed
+                />
+              </Figure>
+              <h4 className="fw-lighter mt-30">Nimesh Kuinkel</h4>
+              <h4>CEO & Founder</h4>
+              <a href="https://www.linkedin.com/in/nimesh-kuinkel-78a622120/">
+                <i className="fab fa-linkedin-in" />
+              </a>
+            </Col>
+            <Col lg={6}>
+              <blockquote className="blockquote text-center mt-30"></blockquote>
+              <h6 className="fw-lighter" style={{ fontSize: "100%" }}>
+                {" "}
+                {/* Adjust the font size as needed */}
+                With over a decade of experience in the IT industry, I bring a
+                wealth of knowledge in diverse domains to my role. My focus is
+                on innovation, especially in harnessing Data and AI
+                technologies. This expertise is crucial in developing
+                cutting-edge software products that keep our clients at the
+                forefront of the digital landscape. I am deeply passionate about
+                using data for effective decision-making. In leading our team, I
+                emphasize creativity and technical excellence, constantly
+                pushing the boundaries in AI and software development. This
+                approach fosters a culture where breakthroughs are not just
+                possible, but expected
+              </h6>
+            </Col>
+          </Row>
+        </Container>
       </section>
-      
+
 
       {/* Team Area end */}
       {/* Why Choose Us Area start */}

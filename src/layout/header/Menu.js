@@ -19,6 +19,35 @@ const RightArrow = () => {
 }
 
 const MobileMenu = ({ whiteLogo }) => {
+  const [services, setServices] = useState([]);
+  const [cloudServices, setCloudServices] = useState([]);
+  const [dataEngineeringServices, setDataEngineeringServices] = useState([]);
+  const [biDataServices, setBiDataServices] = useState([]);
+  const [webAppServices, setWebAppServices] = useState([]);
+  const [mobileAppServices, setMobileAppServices] = useState([]);
+
+  const [hoveredService, setHoveredService] = useState(null)
+
+  const fetchAndSet = (url, setFunction) => {
+    fetch(window.origin + url)
+      .then((response) => response.json())
+      .then((data) => {
+        setFunction(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }
+
+  useEffect(() => {
+    fetchAndSet("/api/services/generativeaiandml/services", setServices)
+    fetchAndSet("/api/services/cloudengineering/services", setCloudServices)
+    fetchAndSet("/api/services/dataengineering/services", setDataEngineeringServices)
+    fetchAndSet("/api/services/bianddataanalytics/services", setBiDataServices)
+    fetchAndSet("/api/services/webappdevelopment/services", setWebAppServices)
+    fetchAndSet("/api/services/mobileappdevelopment/services", setMobileAppServices)
+  }, []);
+
   const [activeMenu, setActiveMenu] = useState(null);
   const active = (value) => setActiveMenu(value === activeMenu ? null : value),
     activeSubMenu = (value) =>
