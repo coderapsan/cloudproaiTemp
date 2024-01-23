@@ -11,10 +11,9 @@ const Pricing = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin+'/api/services/cloudengineering/services')
+    fetch(window.origin + "/api/services/cloudengineering/services")
       .then((response) => response.json())
       .then((parsed) => {
-
         setCloudServices(parsed);
       })
       .catch((error) => {
@@ -27,11 +26,10 @@ const Pricing = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin +'/api/services/dataengineering/services')
+    fetch(window.origin + "/api/services/dataengineering/services")
       .then((response) => response.json())
       .then((parsed) => {
         setDataServices(parsed);
-      
       })
       .catch((error) => {
         console.error("Error fetching services:", error);
@@ -43,10 +41,57 @@ const Pricing = () => {
   useEffect(() => {
     console.log("useEffect is running ");
 
-    fetch(window.origin +'/api/services/generativeaiandml/services')
+    fetch(window.origin + "/api/services/generativeaiandml/services")
       .then((response) => response.json())
       .then((parsed) => {
         setAiServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+  //This is where i started to
+
+  const [biServices, setBiServices] = useState([]);
+  // console.log(parsed);
+
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/bianddataanalytics/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setBiServices(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+
+  const [mobileApp, setMobileApp] = useState([]);
+
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/mobileappdevelopment/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setMobileApp(parsed);
+      })
+      .catch((error) => {
+        console.error("Error fetching services:", error);
+      });
+  }, []);
+  const [webApp, setWebApp] = useState([]);
+  // console.log(parsed);
+
+  useEffect(() => {
+    console.log("useEffect is running ");
+
+    fetch(window.origin + "/api/services/webappdevelopment/services")
+      .then((response) => response.json())
+      .then((parsed) => {
+        setWebApp(parsed);
       })
       .catch((error) => {
         console.error("Error fetching services:", error);
@@ -71,8 +116,7 @@ const Pricing = () => {
 
                 <span className="price-count">
                   Services We Offer
-                  {/* {aiServices.length} Services Included */}
-                  </span>
+                </span>
 
                 <ul>
                   {dataServices.slice(0, 5).map((service) => (
@@ -86,7 +130,6 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-               
                 <Link legacyBehavior href="/services/dataengineering">
                   <a className="theme-btn style-two">
                     View More <i className="fas fa-long-arrow-right" />
@@ -103,7 +146,7 @@ const Pricing = () => {
                 <span className="price-count">
                   Services We Offer
                   {/* {aiServices.length} Services Included */}
-                  </span>
+                </span>
 
                 <ul>
                   {aiServices.slice(0, 6).map((service) => (
@@ -135,15 +178,13 @@ const Pricing = () => {
                 <span className="price-count">
                   Services We Offer
                   {/* {aiServices.length} Services Included */}
-                  </span>
+                </span>
                 <ul>
                   {cloudServices.slice(0, 4).map((service) => (
                     <li key={service.slug}>
                       <Link href={`/services/cloudengineering/${service.slug}`}>
                         <h5>{service.title}</h5>
                       </Link>
-
-                      
                     </li>
                   ))}
                 </ul>
@@ -152,6 +193,99 @@ const Pricing = () => {
                   <a className="theme-btn style-two">
                     Show More
                     <i className="fas fa-long-arrow-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-md-6">
+              <div className="pricing-plan-item style-three wow fadeInUp delay-0-4s">
+                <Link href="/services/bianddatanalytics">
+                  <h4 className="title">BI And Data Analytics</h4>
+                </Link>
+
+                <span className="price-count">
+                  Services We Offer
+                  {/* {aiServices.length} Services Included */}
+                </span>
+
+                <ul>
+                  {biServices.slice(0, 6).map((service) => (
+                    <li key={service.slug}>
+                      <Link href={`/services/bianddataanalytics/${service.slug}`}>
+                        <h5>{service.title}</h5>
+                      </Link>
+
+                      {/* <p>{service.description}</p> */}
+                    </li>
+                  ))}
+                </ul>
+
+                <Link legacyBehavior href="/services/bianddataanalytics">
+                  <a className="theme-btn style-two">
+                    View More <i className="fas fa-long-arrow-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-4 col-md-6">
+              <div className="pricing-plan-item style-three wow fadeInUp delay-0-4s">
+                <Link href="/services/webappdevelopment">
+                  <h4 className="title">Web App Development</h4>
+                </Link>
+
+                <span className="price-count">
+                  Services We Offer
+                  {/* {aiServices.length} Services Included */}
+                </span>
+
+                <ul>
+                  {webApp.slice(0, 6).map((service) => (
+                    <li key={service.slug}>
+                      <Link
+                        href={`/services/webappdevelopment/${service.slug}`}
+                      >
+                        <h5>{service.title}</h5>
+                      </Link>
+
+                      {/* <p>{service.description}</p> */}
+                    </li>
+                  ))}
+                </ul>
+
+                <Link legacyBehavior href="/services/webappdevelopment">
+                  <a className="theme-btn style-two">
+                    View More <i className="fas fa-long-arrow-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-4 col-md-6">
+              <div className="pricing-plan-item style-three wow fadeInUp delay-0-4s">
+                <Link href="/services/mobileappdevelopment">
+                  <h4 className="title">Mobile App Development</h4>
+                </Link>
+
+                <span className="price-count">
+                  Services We Offer
+                </span>
+
+                <ul>
+                  {mobileApp.slice(0, 6).map((service) => (
+                    <li key={service.slug}>
+                      <Link
+                        href={`/services/mobileappdevelopment/${service.slug}`}
+                      >
+                        <h5>{service.title}</h5>
+                      </Link>
+
+                    </li>
+                  ))}
+                </ul>
+
+                <Link legacyBehavior href="/services/generativeaiandml">
+                  <a className="theme-btn style-two">
+                    View More <i className="fas fa-long-arrow-right" />
                   </a>
                 </Link>
               </div>
@@ -182,22 +316,20 @@ const Pricing = () => {
                     cloud services.
                   </p>
                   <div className="menu-btns">
-        <Link legacyBehavior href="/others/case-studies">
-          <a className="theme-btn">
-            Learn More About Business use cases
-            <i className="fas fa-long-arrow-right" />
-          </a>
-        </Link>
-      </div>
+                    <Link legacyBehavior href="/others/case-studies">
+                      <a className="theme-btn">
+                        Learn More About Business use cases
+                        <i className="fas fa-long-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
                   <Link href="/services/cloudengineering">
                     <span className="sub-title mb-10">
                       More Cloud Engineering Services
                     </span>
                   </Link>
-                  
                 </div>
               </div>
-             
             </div>
           </Tab.Container>
         </div>
@@ -207,12 +339,11 @@ const Pricing = () => {
             src="assets/images/shapes/cloud1.png"
             alt="Shape"
           />
-           <img
+          <img
             className="shape one"
             src="assets/images/shapes/cloud1.png"
             alt="Shape"
           />
-          
         </div>
       </section>
       <section className="price-plan-page-middle bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
@@ -248,20 +379,19 @@ const Pricing = () => {
                     unparalleled insights and strategic decision-making
                   </p>
                   <div className="menu-btns">
-        <Link legacyBehavior href="/others/case-studies">
-          <a className="theme-btn">
-            Learn More About Business use cases
-            <i className="fas fa-long-arrow-right" />
-          </a>
-        </Link>
-      </div>
+                    <Link legacyBehavior href="/others/case-studies">
+                      <a className="theme-btn">
+                        Learn More About Business use cases
+                        <i className="fas fa-long-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
 
                   <Link href="/services/dataengineering">
                     <span className="sub-title mb-15">
                       More Data Engineering Services
                     </span>
                   </Link>
-                  
                 </div>
               </div>
             </div>
@@ -296,20 +426,19 @@ const Pricing = () => {
                       More Generative AI And ML Services
                     </span>
                   </Link>
-                  
                 </div>
               </div>
             </div>
           </Tab.Container>
         </div>
         <div className="menu-btns">
-        <Link legacyBehavior href="/others/case-studies">
-          <a className="theme-btn">
-            Learn More About Business use cases
-            <i className="fas fa-long-arrow-right" />
-          </a>
-        </Link>
-      </div>
+          <Link legacyBehavior href="/others/case-studies">
+            <a className="theme-btn">
+              Learn More About Business use cases
+              <i className="fas fa-long-arrow-right" />
+            </a>
+          </Link>
+        </div>
         <div className="price-page-shapes">
           {/* <img
             className="shape one"
@@ -321,13 +450,11 @@ const Pricing = () => {
           <img
             className="shape two"
             src="assets/images/shapes/aimlright.png"
-            
             alt="Shape"
           />
           <img
             className="shape two"
             src="assets/images/shapes/aimlright.png"
-            
             alt="Shape"
           />
         </div>

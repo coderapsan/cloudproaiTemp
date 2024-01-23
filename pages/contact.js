@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="col-xl-8 col-lg-10">
               <div className="section-title mb-25">
                 <span className="sub-title mb-15">Need any Helps</span>
-                <h2>Contact Informations</h2>
+                <h3>Contact Us</h3>
               </div>
               {/* <p>
                 Ensuring a seamless line of communication is at the heart of our

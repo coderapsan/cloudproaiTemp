@@ -5,7 +5,7 @@ import { animation } from "../utils";
 import Footer from "./footer/Index";
 import Header from "./header/Index";
 import ScrollTopButton from "./ScrollTopButton";
-const Layout = ({ children, header }) => {
+const Layout = ({ children, header,showCtaSection  }) => {
   useEffect(() => {
     animation();
   }, []);
@@ -20,7 +20,7 @@ const Layout = ({ children, header }) => {
         <Header header={header} />
         {children}
         {/* footer area start */}
-        <Footer />
+        <Footer showCtaSection={showCtaSection} />
         {/* footer area end */}
         {/* Scroll Top Button */}
         <ScrollTopButton />
