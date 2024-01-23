@@ -66,18 +66,6 @@ const MobileMenu = ({ whiteLogo }) => {
               />
             </Link>
           </div>
-
-          {/* <div style={{
-            marginLeft: '50%', whiteSpace: 'nowrap', paddingRight: '3%', color: 'red',
-            marginTop: '1%'
-          }} className="mobile-title">
-            <h4>CLOUD PRO AI</h4>
-          </div> */}
-
-
-
-
-          {/* Toggle Button */}
           <Accordion.Toggle
             as={"button"}
             type="button"
@@ -106,25 +94,73 @@ const MobileMenu = ({ whiteLogo }) => {
                 SERVICES
               </a>
               <ul>
-                <li>
+                <li className="dropdown">
                   <Link href="/services/generativeaiandml">
                     Generative AI And ML
                   </Link>
+                  <ul>
+                    {services.map(service =>
+                      <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+
+                  </ul>
+                  <div className="dropdown-btn" onClick={() => active("services")}>
+                    <span className="fas fa-chevron-down" />
+                  </div>
                 </li>
-                <li>
+                <li className="dropdown">
                   <Link href="/services/cloudengineering">Cloud Engineering </Link>
+                  <ul>
+                    {cloudServices.map(service =>
+                      <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+
+                  </ul>
+                  <div className="dropdown-btn" onClick={() => active("services")}>
+                    <span className="fas fa-chevron-down" />
+                  </div>
                 </li>
-                <li>
+                <li className="dropdown">
                   <Link href="/services/dataengineering">Data Engineering</Link>
+                  <ul>
+                    {dataEngineeringServices.map(service =>
+                      <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+
+                  </ul>
+                  <div className="dropdown-btn" onClick={() => active("services")}>
+                    <span className="fas fa-chevron-down" />
+                  </div>
                 </li>
-                <li>
+                <li className="dropdown">
                   <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
+                  <ul>
+                    {biDataServices.map(service =>
+                      <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+
+                  </ul>
+                  <div className="dropdown-btn" onClick={() => active("services")}>
+                    <span className="fas fa-chevron-down" />
+                  </div>
                 </li>
-                <li>
+                <li className="dropdown">
                   <Link href="/services/webappdevelopment">Web App Development </Link>
+                  <ul>
+                    {webAppServices.map(service =>
+                      <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+
+                  </ul>
+                  <div className="dropdown-btn" onClick={() => active("services")}>
+                    <span className="fas fa-chevron-down" />
+                  </div>
                 </li>
-                <li>
+                <li className="dropdown">
                   <Link href="/services/mobileappdevelopment">Mobile App Development </Link>
+                  <ul>
+                    {mobileAppServices.map(service =>
+                      <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
+
+                  </ul>
+                  <div className="dropdown-btn" onClick={() => active("services")}>
+                    <span className="fas fa-chevron-down" />
+                  </div>
                 </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
@@ -179,10 +215,6 @@ const MobileMenu = ({ whiteLogo }) => {
               </a>
             </li>
 
-
-
-
-
             <li className="dropdown">
               <a href="/about" onClick={() => active("about")}>
                 ABOUT
@@ -211,6 +243,7 @@ const MobileMenu = ({ whiteLogo }) => {
     </nav>
   );
 };
+
 const DeskTopMenu = () => {
 
   const [services, setServices] = useState([]);
