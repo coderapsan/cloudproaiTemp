@@ -6,6 +6,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "startProd": "cross-env NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -31,5 +32,8 @@
     "slick-carousel": "^1.8.1",
     "validator": "^13.11.0",
     "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

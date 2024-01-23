@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const MONGODB_CONNECTION_STRING = process.env.NEXT_PUBLIC_MONGODB_CONNECTION_STRING
+console.log('hi this is new', process.env)
 
 const dbConnect = async () => {
   try {

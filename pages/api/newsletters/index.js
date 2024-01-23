@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
         case 'GET':
             try {
-                const newsletters = await Newsletter.find({});
+                const newsletters = await Newsletter.find();
                 res.status(200).json({ newsletters });
             } catch (error) {
                 res.status(500).json({ message: 'Error fetching emails', error: error.message });
