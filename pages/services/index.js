@@ -116,7 +116,6 @@ const Pricing = () => {
 
                 <span className="price-count">
                   Services We Offer
-                  {/* {aiServices.length} Services Included */}
                 </span>
 
                 <ul>

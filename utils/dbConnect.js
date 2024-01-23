@@ -1,12 +1,17 @@
 import mongoose from 'mongoose';
 
-const MONGODB_CONNECTION_STRING = process.env.NEXT_PUBLIC_MONGODB_CONNECTION_STRING
+const MONGODB_CONNECTION_STRING = process.env.MONGODB_CONNECTION_STRING
 
 const dbConnect = async () => {
+  console.log('db connected');
   try {
+    console.log('hello tried')
     if (mongoose.connection.readyState !== 1) {
-      await mongoose.connect(MONGODB_CONNECTION_STRING, {
+      console.log('mongose.connection');
+      await mongoose.connect('mongodb+srv://rapsan363:NshFqcRnuwloF96J@cluster0.mw6iqkn.mongodb.net/finaldbms?retryWrites=true&w=majority', {
         useUnifiedTopology: true,
+
+
       });
       console.log('Connected to MongoDB');
     }

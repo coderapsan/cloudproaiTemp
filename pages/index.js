@@ -23,8 +23,10 @@ const Index = () => {
       <section className="hero-area bgc-gray rel z-1">
         <div className="container">
           <div className="row align-items-center">
-          <h1 style={{ "color":"white" }}>
-                  Cloud Pro AI</h1><h2 style={{ "color":"white" }}> Data AI and Software Cloud Services Consultant{" "}</h2>
+          <h1 style={{ color: 'white', fontSize: '3rem', '@media (min-width: 768px)': { fontSize: '3rem' } }}>
+  Cloud Pro AI:
+</h1>
+<h2 style={{ "color":"white" }}> Data AI and Software Cloud Services Consultant{" "}</h2>
                 
             <div className="col-lg-6 align-self-center">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
