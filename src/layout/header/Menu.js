@@ -49,9 +49,15 @@ const MobileMenu = ({ whiteLogo }) => {
   }, []);
 
   const [activeMenu, setActiveMenu] = useState(null);
-  const active = (value) => setActiveMenu(value === activeMenu ? null : value),
-    activeSubMenu = (value) =>
-      value == activeMenu ? { display: "block" } : { display: "none" };
+  const [activeMenu2, setActiveMenu2] = useState(null);
+
+  const active = (value) => setActiveMenu(value === activeMenu ? null : value)
+  const active2 = (value) => setActiveMenu2(value === activeMenu2 ? null : value)
+
+  const activeSubMenu = (value) =>
+    value == activeMenu ? { display: "block" } : { display: "none" };
+  const activeSubMenu2 = (value) =>
+    value == activeMenu2 ? { display: "block" } : { display: "none" };
   return (
     <nav className="main-menu navbar-expand-lg mobile-menu">
       <Accordion>
@@ -93,72 +99,74 @@ const MobileMenu = ({ whiteLogo }) => {
               <a href="/services" onClick={() => active("services")}>
                 SERVICES
               </a>
-              <ul>
+              <ul style={activeSubMenu("services")}>
                 <li className="dropdown">
-                  <Link href="/services/generativeaiandml">
+                  <Link href="/services/generativeaiandml" onClick={() => active2("servicesGenerative")}>
                     Generative AI And ML
                   </Link>
-                  <ul>
+                  <ul style={activeSubMenu2("servicesGenerative")}>
                     {services.map(service =>
                       <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
 
                   </ul>
-                  <div className="dropdown-btn" onClick={() => active("services")}>
+                  <div className="dropdown-btn" onClick={() => active2("servicesGenerative")}>
                     <span className="fas fa-chevron-down" />
                   </div>
                 </li>
                 <li className="dropdown">
-                  <Link href="/services/cloudengineering">Cloud Engineering </Link>
-                  <ul>
+                  <Link href="/services/cloudengineering" onClick={() => active2("servicesCloud")}>
+                    Cloud Engineering </Link>
+                  <ul style={activeSubMenu2("servicesCloud")}>
                     {cloudServices.map(service =>
                       <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
 
                   </ul>
-                  <div className="dropdown-btn" onClick={() => active("services")}>
+                  <div className="dropdown-btn" onClick={() => active2("servicesCloud")}>
                     <span className="fas fa-chevron-down" />
                   </div>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown" onClick={() => active2("servicesData")}>
                   <Link href="/services/dataengineering">Data Engineering</Link>
-                  <ul>
+                  <ul style={activeSubMenu2("servicesData")}>
                     {dataEngineeringServices.map(service =>
                       <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
 
                   </ul>
-                  <div className="dropdown-btn" onClick={() => active("services")}>
+                  <div className="dropdown-btn" onClick={() => active2("servicesData")}>
                     <span className="fas fa-chevron-down" />
                   </div>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown" onClick={() => active2("servicesBi")}>
                   <Link href="/services/bianddataanalytics">BI And Data Analytics</Link>
-                  <ul>
+                  <ul style={activeSubMenu2("servicesBi")}>
                     {biDataServices.map(service =>
                       <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
 
                   </ul>
-                  <div className="dropdown-btn" onClick={() => active("services")}>
+                  <div className="dropdown-btn" onClick={() => active2("servicesBi")}>
                     <span className="fas fa-chevron-down" />
                   </div>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown" onClick={() => active2("servicesWeb")}>
                   <Link href="/services/webappdevelopment">Web App Development </Link>
-                  <ul>
+                  <ul style={activeSubMenu2("servicesWeb")}>
                     {webAppServices.map(service =>
                       <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
 
                   </ul>
-                  <div className="dropdown-btn" onClick={() => active("services")}>
+                  <div className="dropdown-btn" onClick={() => active2("servicesWeb")}>
                     <span className="fas fa-chevron-down" />
                   </div>
                 </li>
                 <li className="dropdown">
-                  <Link href="/services/mobileappdevelopment">Mobile App Development </Link>
-                  <ul>
+                  <Link href="/services/mobileappdevelopment" onClick={() => active2("servicesMobile")}
+                  >Mobile App Development </Link>
+                  <ul style={activeSubMenu2("servicesMobile")}>
                     {mobileAppServices.map(service =>
                       <li key={service.slug}><Link href={`/services/generativeaiandml/${service.slug}`}>{service.title}</Link></li>)}
 
                   </ul>
-                  <div className="dropdown-btn" onClick={() => active("services")}>
+                  <div className="dropdown-btn" onClick={() => active2("servicesMobile")}>
                     <span className="fas fa-chevron-down" />
                   </div>
                 </li>
