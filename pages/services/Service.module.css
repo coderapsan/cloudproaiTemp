@@ -1,0 +1,11 @@
+.topdiv{
+    /* background-color: blue; */
+    padding: 40px;
+    align-items: center;
+
+}
+.lowdiv{
+    /* background-color: yellow; */
+    /* background-color: aqua; */
+    padding-left: 10px;
+}

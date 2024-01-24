@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Nav, Tab } from "react-bootstrap";
 import Partner from "@/src/components/Partner";
+import { Container, Row, Col } from "react-bootstrap";
+import style from "./Service.module.css";
 
 const Pricing = () => {
   const [cloudServices, setCloudServices] = useState([]);
@@ -100,6 +102,85 @@ const Pricing = () => {
 
   return (
     <Layout>
+      <Container>
+  <Row className="justify-content-center">
+    <Col xs={12} md={6}>
+      <div className={style.topdiv}>
+        <div className={style.lowdiv}>
+          <Link href="/services/cloudengineering">
+            <span className="sub-title mb-15">Cloud Engineering</span>
+          </Link>
+
+          <h2>Establishing The Most Effective Environment</h2>
+        </div>
+        <p>
+          Cloud Engineering emerges as the cornerstone for establishing highly
+          efficient and scalable environments. It goes beyond conventional
+          infrastructure management, introducing a paradigm shift by harnessing
+          the power of cloud services.
+        </p>
+        <div className="menu-btns">
+          <Link legacyBehavior href="/others/case-studies">
+            <a className="theme-btn">
+              Learn More About Business use cases
+              <i className="fas fa-long-arrow-right" />
+            </a>
+          </Link>
+        </div>
+        <Link href="/services/cloudengineering">
+          <span className="sub-title mb-10">
+            More Cloud Engineering Services
+          </span>
+        </Link>
+      </div>
+      <div className="price-page-shapes">
+        <img
+          className="shape one"
+          src="/assets/images/shapes/cloud1.png"
+          alt="Shape"
+        />
+        <img
+          className="shape one"
+          src="/assets/images/shapes/cloud1.png"
+          alt="Shape"
+        />
+      </div>
+    </Col>
+    <Col xs={12} md={6}>
+      <div className={style.topdiv}>
+        <div className={style.lowdiv}>
+          <Link href="/services/dataengineering">
+            <span className="sub-title mb-15">Data Engineering</span>
+          </Link>
+
+          <h2>Unleashing the Power of Data</h2>
+        </div>
+        <p>
+          Empowering businesses through innovative data engineering solutions,
+          we transform raw data into actionable intelligence, paving the way for
+          a future-driven world. Join us on the journey of harnessing the power
+          of data for unparalleled insights and strategic decision-making.
+        </p>
+        <div className="menu-btns">
+          <Link legacyBehavior href="/others/case-studies">
+            <a className="theme-btn">
+              Learn More About Business use cases
+              <i className="fas fa-long-arrow-right" />
+            </a>
+          </Link>
+        </div>
+
+        <Link href="/services/dataengineering">
+          <span className="sub-title mb-15">
+            More Data Engineering Services
+          </span>
+        </Link>
+      </div>
+    </Col>
+  </Row>
+</Container>
+
+
       <PageBanner pageName={"Services"} />
       <section className="price-plan-page-top pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
@@ -114,9 +195,7 @@ const Pricing = () => {
                   <h4 className="title">Data Engineering</h4>
                 </Link>
 
-                <span className="price-count">
-                  Services We Offer
-                </span>
+                <span className="price-count">Services We Offer</span>
 
                 <ul>
                   {dataServices.slice(0, 5).map((service) => (
@@ -212,7 +291,9 @@ const Pricing = () => {
                 <ul>
                   {biServices.slice(0, 6).map((service) => (
                     <li key={service.slug}>
-                      <Link href={`/services/bianddataanalytics/${service.slug}`}>
+                      <Link
+                        href={`/services/bianddataanalytics/${service.slug}`}
+                      >
                         <h5>{service.title}</h5>
                       </Link>
 
@@ -266,9 +347,7 @@ const Pricing = () => {
                   <h4 className="title">Mobile App Development</h4>
                 </Link>
 
-                <span className="price-count">
-                  Services We Offer
-                </span>
+                <span className="price-count">Services We Offer</span>
 
                 <ul>
                   {mobileApp.slice(0, 6).map((service) => (
@@ -278,7 +357,6 @@ const Pricing = () => {
                       >
                         <h5>{service.title}</h5>
                       </Link>
-
                     </li>
                   ))}
                 </ul>
