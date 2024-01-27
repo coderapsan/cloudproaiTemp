@@ -3,7 +3,7 @@
 }
 
 .industryDescription {
-  font-size: calc(1vw + 1.1rem); /* Example calculation, adjust as needed */
+  font-size: calc(1vw + 1.1rem);
   line-height: 1.6;
   color: #333;
   text-align: center;
@@ -29,7 +29,7 @@
   margin-bottom: 20px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .industryLink:hover {
@@ -88,7 +88,6 @@
 
 .professionalSection {
   display: flex;
-  background-color: #f5f5f5;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
@@ -104,7 +103,7 @@
 }
 
 .sectionText {
-  font-size: calc(1vw + 1rem); /* Dynamic font size based on viewport width */
+  font-size: calc(1vw + 1.5rem); /* Dynamic font size based on viewport width */
   line-height: 1.6;
   color: #333;
   max-width: 70%;

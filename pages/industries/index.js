@@ -11,16 +11,54 @@ const Industries = () => {
 
       <section className={styles.industrySection}>
         <Container>
-          <h6 className={styles.industryDescription}>
-            Leading the way for international success,
-            <br />
-            we stand alongside top-tier organizations across diverse industries,
-            <br />
-            driving their digital engineering initiatives forward,
-            <br />
-            and ensuring they are equipped to meet any future demands.
-          </h6>
-          <Row className={styles.industryOptions}>
+          <Row className="p-50">
+            <Col md={5} className={`position-relative ${styles.imageContainer}`}>
+              <img
+                src="https://www.transperfect.com/sites/default/files/styles/max_650x650/public/media/image/Generative%20AI%20Square.jpg?itok=wV8fIbPh"
+                alt="Generative AI"
+                className={`rounded-circle ${styles.sectionImage} position-absolute`}
+                style={{ maxWidth: "90%", left: "0%" }}
+              />
+              <img
+                src="https://images.wsj.net/im-440998/square"
+                alt="Generative AI"
+                className={`rounded-circle ${styles.sectionImage} position-absolute`}
+                style={{ maxWidth: "100%", left: "-99%" }}
+              />
+              <img
+                src="https://images.wsj.net/im-440998/square"
+                alt="Generative AI"
+                className={`rounded-circle ${styles.sectionImage} position-absolute`}
+                style={{ maxWidth: "100%", left: "240%" }}
+              />
+            </Col>
+
+
+            <Col md={7}>
+              <h6 className={styles.industryDescription}>
+                Leading the way for international success,
+                we stand alongside top-tier organizations across diverse industries,
+                driving their digital engineering initiatives forward,
+                and ensuring they are equipped to meet any future demands.
+              </h6>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section style={{backgroundColor: '#f5f5f5', padding: '3%' }}>
+
+        <Container>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh'}}>
+            <h6 style={{
+              fontWeight: 'lighter', fontSize: '3rem', textAlign: 'center',
+              maxWidth: '75%', lineHeight: '1.5', padding: '3%',
+            }}>
+              We bring cloud and data best practices to our customers so they can focus on what they do best—not how they get there
+            </h6>
+          </div>
+
+
+          <Row className={`${styles.industryOptions} justify-content-center`}>
             {industries.map((industry) => (
               <Col lg={4} md={6} key={industry.name}>
                 <Link href={industry.link}>
@@ -32,6 +70,7 @@ const Industries = () => {
               </Col>
             ))}
           </Row>
+
         </Container>
       </section>
       <section>
@@ -45,7 +84,11 @@ const Industries = () => {
             </h6>
           </div>
           <div className={styles.imageContainer}>
-            <img src="https://talkshop.ph/blog/wp-content/uploads/2014/06/Team-Silhouettee-with-Globe-1024x819.jpg" alt="Team Silhouette with Globe" className={styles.sectionImage} />
+            <img src="https://img.freepik.com/premium-photo/business-people-using-ai-technology-digital-transformation-change-management-internet-things_935552-6397.jpg"
+              alt="Team Silhouette with Globe"
+              className={`${styles.sectionImage} rounded-circle`}
+              style={{ maxWidth: '70%' }}
+            />
           </div>
         </div>
       </section>
